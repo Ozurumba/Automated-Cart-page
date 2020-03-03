@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Add Product:  Maian Cart Documentation</title>
+
+  <link href="content/css/bootstrap.css" rel="stylesheet">
+  <link href="content/css/font-awesome/font-awesome.css" rel="stylesheet">
+  <link href="content/css/mc-docs.css" rel="stylesheet">
+  <link href="content/css/jquery.ibox.css" rel="stylesheet">
+
+  <script src="content/js/jquery.js"></script>
+  <script src="content/js/functions.js"></script>
+
+  <link rel="ICON" href="favicon.ico">
+
+</head>
+
+<body>
+
+  <div id="wrapper">
+
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation" style="margin-bottom: 0">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-collapse">
+          <span class="sr-only">Toggle Navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">Documentation</a>
+      </div>
+
+      <div class="navbar-default navbar-static-side" role="navigation">
+        <div class="sidebar-collapse">
+        </div>
+      </div>
+    </nav>
+
+    <div id="page-wrapper">
+      <div class="row">
+        <div class="col-lg-12">
+          <h1 class="page-header">Add Product</h1>
+        </div>
+      </div>
+
+            <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Overview</div>
+            <div class="panel-body">
+              Enables you to add new products to the system. Batch importing is also supported, for further information see the '<a href="catalogue-10.html">Import Routines</a>' page.<br><br>
+              Please read below carefully about each option for the add product page. Note that some options appear on the add screen only, edit screen only and / or copy screem only.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Product Name or ISBN Code</div>
+            <div class="panel-body">
+              Enter product name (max 250 chars) or ISBN code. If using code, click the <i class="fa fa-book fa-fw"></i> icon to do a lookup
+              against the code. This service is offered free by the <a href="http://isbndb.com/" onclick="window.open(this);return false">ISBNDB</a> and not all codes will be supported. More info <a href="features-4.html">here</a>. If nothing is found, enter title manually. If code
+              is found it will attempt to auto complete the product name and description. Note that the book icon will only show if you have entered your ISBNDB API code in the <a href="settings-1.html">settings</a>.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Categories/Brands</div>
+            <div class="panel-body">
+              Use the checkboxes to specify categories and brands applicable to product. If you don`t select any categories, the product
+              will be assigned to all parent categories.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Short Description / Full Description:</div>
+            <div class="panel-body">
+              Enter short description and full description. Short description is initially seen on product list pages with a link to view the full description. Use the copy
+              functions to copy from short to full and vice versa. Full description can use BB code. More info <a href="features-6.html">here</a>.<br><br>
+              Note: For bigger textarea, click the crosshair, top right, in the textarea box.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Browser Title Text</div>
+            <div class="panel-body">
+              Alternative title that appears in browser title bar. These days modern browsers don`t show the title bar, but it can still be important
+              for <a href="https://en.wikipedia.org/wiki/Search_engine_optimization" onclick="window.open(this);return false">SEO</a>. This is optional, if
+              left blank it defaults to product name.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Meta Keywords / Meta Description</div>
+            <div class="panel-body">
+              Meta keywords and description. For <a href="https://en.wikipedia.org/wiki/Search_engine_optimization" onclick="window.open(this);return false">SEO</a>. Optional. If
+              left blank defaults to either category values or default settings values if set.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Rewrite URL Slug</div>
+            <div class="panel-body">
+              Custom url slug if required. This is optional. If left blank it will auto create a slug from the product name. For this to work, the
+              "Enable Search Engine Friendly URLs" option must be enabled in the <a href="settings-1.html">settings</a>. See the <a href="install-2.html">install</a> docs
+              for more information.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Product Tags</div>
+            <div class="panel-body">
+              If applicable, enter product tags. Useful for search engines, <a href="https://en.wikipedia.org/wiki/Search_engine_optimization" onclick="window.open(this);return false">SEO</a> and
+              visitors. Multiple tags to be comma delimited. Example:<br><br>
+              Tag One,Tag Two,Tag Three<br><br>
+              etc. If a tag is clicked it performs the same action as someone keying a keyword into the search box in your store.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Downloadable Product</div>
+            <div class="panel-body">
+              Specify if this is a downloadable product. File must be in a download friendly file format, eg: ZIP, RAR, PDF etc
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Local/HTTP/FTP Path to File</div>
+            <div class="panel-body">
+              Click the <i class="fa fa-file fa-fw"></i> to load local files in your 'product-downloads' folder. Select the file applicable to the product, this
+              is the file to be downloaded by the buyer after purchase. Alternatively, specify a full url to a remote file hosted on a cloud service like
+              DropBox or Amazon S3.<br><br>
+              For FTP, you must include your ftp username, password, host name and the file path. Lets say your remote file is located on a remote server at:<br><br>
+
+              <div class="alert alert-info">
+                public_html/downloads/file.zip
+              </div>
+
+              The path you should specify to this file would be:<br><br>
+
+              <div class="alert alert-info">
+                ftp://USERNAME:PASSWORD@HOST/public_html/downloads/file.zip
+              </div>
+
+              (Replace USERNAME,PASSWORD &amp; HOST with your own details). Another example might be:<br><br>
+
+              <div class="alert alert-info">
+                ftp://USERNAME:PASSWORD@HOST/example.com/public_html/downloads/file.zip
+              </div>
+
+              (Replace USERNAME,PASSWORD &amp; HOST with your own details and replace example.com)<br><br>
+              It depends on your server structure and path. This may be trial and error. The path will be generally from the location of your ftp root details. So when you log in via FTP
+              if you see a public_html folder the path should start with that. If you see a list of domains, it will start with the relevant domain. FTP files can be stored outside of the web root
+              on the remote server as well.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Download Limit</div>
+            <div class="panel-body">
+              The amount of times this file can be downloaded. Further options are available via "Store Settings > Global Store Settings > Downloads &amp; Restrictions".
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">YouTube / Vimeo / DailyMotion Video Code</div>
+            <div class="panel-body">
+              If you have a product video, you must first upload it to either YouTube, Vimeo or DailyMotion. Once this is done enter the codes in the boxes provided. See the urls
+              of the pages where the videos are hosted for the codes.<br><br>
+              Examples:<br><br>
+              https://www.youtube.com/watch?v=3h3h7Fjfcmg (Enter <b>3h3h7Fjfcmg</b> in the YouTube box)<br><br>
+              https://vimeo.com/100779652 (Enter <b>100779652</b> in the Vimeo box)<br><br>
+              http://www.dailymotion.com/embed/video/x3bkfrh (Enter <b>x3bkfrh</b> in the Daily Motion box)
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Enable Disqus Comments</div>
+            <div class="panel-body">
+              Maian Cart uses the <a href="https://disqus.com/" onclick="window.open(this);return false">Disqus comments system</a> so visitors can leave comments on your products. This is a free service and used by thousands of websites
+              worldwide. You may already use it. More info <a href="features-2.html">here</a>.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Product Not Available In</div>
+            <div class="panel-body">
+              Are there certain Countries that this product cannot be shipped to? If yes, check boxes against restricted Countries. Checkout won`t be available if a restricted Country is selected.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Optional Text/Instruction on Checkout Page</div>
+            <div class="panel-body">
+              Optional text/instruction which appears beneath the product title on the checkout page. Leave blank for no text.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Min Purchase Quantity / Max Purchase Quantity</div>
+            <div class="panel-body">
+              If minimum purchase quantity is set, buyer must purchase this quantity before they can checkout. Set to 0 to disable, which defaults to standard of min 1 item. Useful if you only sell volume amounts.<br><br>
+              If max purchase quantity is set, limits visitor to buying bulk purchases.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Assign to Drop Shipping Supplier:</div>
+            <div class="panel-body">
+              If you are using drop shippers, and this product is applicable, select drop shipping supplier. More info on drop shippers <a href="dropship.html">here</a>.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Stock</div>
+            <div class="panel-body">
+              Enter your stock level. For downloadable products you should specify a high amount, such as 999999. Or set the system to not reduce stock on downloadable items on the 'Store Settings > Global Store Settings' page.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Low Stock Notify</div>
+            <div class="panel-body">
+              The low stock notification option enables you to receive e-mail notification if the product or any of its attributes reaches a certain stock limit. This can be a useful way of knowing when to order new stock levels.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Availability Text</div>
+            <div class="panel-body">
+              You may have a scenario where you just want the system to say a product is available, rather than saying X amount are in stock. If you enter text here, this will appear beneath the 'Availability' text on the product page and replace the default stock text.<br><br><b>Max 250 Chars</b>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Hit Counter</div>
+            <div class="panel-body">
+              Hit / view counter. Start at 0 or any custom number.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Code/Model No</div>
+            <div class="panel-body">
+              Product code number or identification code. A tick or a cross will appear when you start typing. A tick indicates the code is unique, a cross indicates a product is already using that code.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Maian Cube Product ID</div>
+            <div class="panel-body">
+              If you are utilising <a href="http://www.maiancube.com" onclick="window.open(this);return false">Maian Cube</a> for software licences, this is the corresponding ID for this product that appears in your Maian Cube installation on the products admin page. This matches the product ID in Maian Cart to the one in Maian Cube.<br><br>
+              <img class="img-responsive screenshot" src="content/images/screenshots/8.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Maian Guardian Product ID</div>
+            <div class="panel-body">
+              If you are utilising <a href="http://www.maianguardian.com" onclick="window.open(this);return false">Maian Guardian</a> for software licences, this is the corresponding ID for this product that appears in your Maian Guardian installation on the products admin page. This matches the product ID in Maian Cart to the one in Maian Guardian.<br><br>
+              See above screenshot.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Weight</div>
+            <div class="panel-body">
+              Enter the product weight. This isn`t applicable if the product is downloadable, but is required for physical goods to determine shipping costs. This can be any kind of weight band, but must match your product weight. For example, if your products are in grammes, use a gramme range. eg: 0 to 1000.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Retail Price / Cost Price / Offer Price</div>
+            <div class="panel-body">
+              Prices should be entered with no commas. eg: 9.99, 23.99, 1023.45 etc<br><br>
+              If 0.00 is entered, item is FREE.<br><br>
+              <b>Retail Price</b> = Cost you are selling item for.<br>
+              <b>Cost Price</b> = Cost you are buying item in for (used for reporting ONLY - see <a href="sales-2.html">Sales Overview</a> screen).
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Product Expiry</div>
+            <div class="panel-body">
+              If applicable, enter product expiry date. After the date set, product is no longer available to buy.<br><br>
+              Alternatively, you can set other actions to occur once the product expires. This option is ONLY available on a product edit screen. Click
+              the <i class="fa fa-cog fa-fw"></i> icon next to the expiry box to show other options.<br><br>
+              <img class="img-responsive screenshot" src="content/images/screenshots/5.png" alt=""><br>
+              Details below:
+              <hr>
+              <b>When Product Expires, Set New Price or Percentage Reduction</b><br><br>
+              - This is required. Enter new price or percentage of price. Examples: 2.99 or 40% (Fixed new price or 40% off existing price)<br><br>
+              <b>Set Product as Special Offer Product</b><br><br>
+              Should this product be updated to be a special offer product?<br><br>
+              <b>Email Notification to Staff when Product Expiry Updates Occur</b><br><br>
+              If set, sends email notification to all enabled staff when the update triggers.<br><br>
+              <b>Append Text to Product Description (Optional)</b><br><br>
+              This is optional. If entered, appends to existing product description.<br><br>
+              <b class="mc_red">IMPORTANT</b>: Make sure you have set up the 'product-ops.php' cron job as detailed in the <a href="install-2.html">installation</a> instructions.<br><br>
+              Note that if stock levels are 0, expiry updates are ignored as the product is already disabled.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Offer Expiry Date</div>
+            <div class="panel-body">
+              If you have set an offer price you can use the expiry option to have the offer revert back to full price on a certain date.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Free Shipping:</div>
+            <div class="panel-body">
+              Do shipping rules apply to this product? If this is a downloadable product, shipping rules are not applied anyway
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Enable Cart Purchase</div>
+            <div class="panel-body">
+              Can this product be purchased in the store? If no, product still displays, but buy option is disabled. Useful if you want to advertise products available elsewhere and not sell them in your store.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Enable Product</div>
+            <div class="panel-body">
+              Enable or disable product. If disabled, does NOT display in the store. Bookmarked links will show 404.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Main Product Image</div>
+            <div class="panel-body">
+              The main product image can be uploaded at the time of adding the product. This is optional as pictures can be added later. Recommended size is around 150KB. Images that are too big will take longer to upload and also take longer to load on your website.<br><br>
+              You should also consider a width of around 350px to be compatible across all responsive devices.<br><br>
+              Specify which folder to save main image to for this product via the "Save Image to Folder" option. Create new folders inside the "content/products" folder and give them write permissions.<br><br>
+              Or click the <i class="fa fa-folder fa-fw"></i> button to add a new folder! When entering name, only the following characters are allowed:<br><br>
+              <div class="alert alert-info">0 to 9, A to Z, - &amp; _<br>(Letters, numbers, hyphens and underscores)</div>
+              Folders added must be removed manually.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Additional Images</div>
+            <div class="panel-body">
+              Use the <i class="fa fa-plus fa-fw"></i> and <i class="fa fa-minus fa-fw"></i> buttons and browse option to locate more product images. Images
+              can be added now or later.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Product Menu</div>
+            <div class="panel-body">
+              This will be shown if you are on any product management screen. Select option to navigate. Example screenshot:<br><br>
+              <img class="img-responsive screenshot" src="content/images/screenshots/9.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Do you wish to copy additional data from the original product to this new product?</div>
+            <div class="panel-body">
+              Copy screen ONLY. Select which data should be copied to the new product.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row footerArea">
+      </div>
+    </div>
+
+  </div>
+
+  <script>
+    //<![CDATA[
+    jQuery(document).ready(function() {
+      loadTopMenu();
+      loadLeftMenu();
+      loadFooter();
+    });
+    //]]>
+  </script>
+
+  <script src="content/js/bootstrap.js"></script>
+  <script src="content/js/plugins/jquery.metismenu.js"></script>
+  <script src="content/js/plugins/jquery.ibox.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,33 @@
+
+  <div id="windowcontent">      <div class="panel panel-default">
+        <div class="panel-heading">CCNow - Setup</div>
+          <div class="panel-body">
+            1: Sign up for a CCNow account and enter your control panel.<br>
+ 2: Click "Admin" > "Order APIs" from the menu. You need to enable the "Outgoing Order Push API".<br>
+ 3: For "Remote URL" enter the full http path to the 'checkout/ccnow.php' callback file in your cart installation:<br><br>
+ <b>Example</b>:<br>
+ http://www.example.com/checkout/ccnow.php (Or https if over SSL)<br><br>
+ 4: Enter "Hash Key" value or leave as default key.<br>
+ 5: For "Events" check the following: Order received, Cancellation, Refund, Order pending &amp; Test order.<br>
+ 6: For "Format" select "Named-Pair".<br>
+ 7: For "Details" select "Full Details".<br>
+ 8: For "Currency" select "Send only order currency prices".<br>
+ 9. When you click the "make changes" button you`ll have to make a test post to verify your callback is working. So, click the test button. This will create a file in your "logs" folder called
+ "ccnow-0.txt". View this file for the orderid sent and enter in box. Your API will then be live.<br>
+ 10: Enter applicable details in your Maian Cart admin area:<br><br><b>Sales > Payment Methods > CCNow</b>
+          </div>
+      </div>      <div class="panel panel-default">
+        <div class="panel-heading">CCNow - Callback Url</div>
+          <div class="panel-body">
+            The callback url for all operations is:<br><br>
+ <b>http://www.example.com/checkout/ccnow.php</b><br>
+ <b>https://www.example.com/checkout/ccnow.php (SSL)</b><br><br>
+ Where 'example.com' is your own domain.
+          </div>
+      </div>      <div class="panel panel-default">
+        <div class="panel-heading">CCNow - Sandbox</div>
+          <div class="panel-body">
+            To test a payment, use TEST as the credit card number on the checkout page. If this fails, contact CCNow.
+          </div>
+      </div></div>
+  

@@ -1,0 +1,179 @@
+/*
+  Admin CSS - Form Elements
+===================================================*/
+
+/* Form field formatting */
+
+.fieldHeadWrapper {
+  background: #F5F5F5;
+  border: 1px solid #ddd;
+  border-left: 3px solid #ddd;
+  padding: 10px 10px 8px 10px;
+  margin-bottom: 10px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.fieldHeadWrapper .float {
+  float: right;
+}
+
+.fieldSpinner {
+  background: #F5F5F5 url(../images/spinner.gif) no-repeat 50% 50%;
+}
+
+.fieldHeadWrapper .float a {
+  font-weight: normal;
+  text-transform: none;
+}
+
+.formFieldWrapper {
+  background: #fff;
+  border: 2px solid #ddd;
+  padding: 10px;
+  margin-bottom: 10px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+}
+
+.formFieldWrapper .formLeft {
+}
+
+.formFieldWrapper .formRight {
+  margin-top:10px;
+}
+
+.formFieldWrapper input[type="radio"] {
+}
+
+#fileList {
+  background: #F5F5F5;
+  border: 1px dashed #ddd;
+  padding: 0 10px 10px 10px;
+  overflow-y: auto;
+}
+
+.error-block {
+  border: 1px solid #ff9999;
+  background:#ff9999;
+  color:#fff;
+  padding:3px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+}
+
+.pad-error-block {
+  padding: 10px;
+}
+
+.error-block a {
+  color: #fff;
+  text-decoration:none;
+}
+
+label {
+  font-weight: normal;
+  display: block;
+  max-width: 100%;
+  margin-bottom: 5px;
+}
+
+label::first-letter {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.box,textarea {
+  display: block;
+  width: 100%;
+  height: 34px;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #555;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+  -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+  -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+  transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+
+.addon-no-radius {
+  border-radius:0 4px 4px 0;
+}
+
+.addon-no-radius-right {
+  border-radius:4px 0 0 4px;
+}
+
+.addon-no-radius-both {
+  border-radius:0px;
+}
+
+.box:focus,textarea:focus {
+  border-color: #66afe9;
+  outline: 0;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, .6);
+  box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, .6);
+}
+
+textarea {
+}
+
+.box::-moz-placeholder {
+  color: #999;
+  opacity: 1;
+}
+
+.box:-ms-input-placeholder {
+  color: #999;
+}
+
+.box::-webkit-input-placeholder {
+  color: #999;
+}
+
+textarea[disabled],
+.box[disabled],
+.box[readonly],
+fieldset[disabled] .box {
+  background-color: #eee;
+  opacity: 1;
+}
+
+.box[disabled],
+fieldset[disabled] .box {
+  cursor: not-allowed;
+}
+
+textarea.box {
+  height: auto;
+}
+
+textarea {
+}
+
+#content select,.formFieldWrapper select,#windowcontent select {
+  display: block;
+  width: auto;
+  height: 34px;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #555;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+#kgen {
+  margin-left: 20px;
+  color: #008080;
+}

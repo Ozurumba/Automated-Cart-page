@@ -1,0 +1,27 @@
+IP Download Restriction Notification
+
+<-{separater}->
+
+Your current cart settings are set to be notified when {BLOCKS} IP restriction event(s) occur for a sale and the downloads are auto locked.
+
+The following sale has triggered this email and all downloads are now locked:
+
+Buyer: {BUYER}
+Email: {EMAIL}
+Invoice No: #{INVOICE}
+Allowed IP(s): {ALLOW_IP}
+Blocked IP(s): {BLOCK_IP}
+
+Access block Log (if enabled)
+{LOG}
+
+To view this order:
+{WEBSITE_URL}/{ADMIN_FOLDER}/?loadOrder={ORDER_ID}
+
+To change settings:
+{WEBSITE_URL}/{ADMIN_FOLDER}/
+
+<-{separater}->
+
+{WEBSITE_NAME}
+{WEBSITE_URL}

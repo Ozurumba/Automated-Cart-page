@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Update Prices:  Maian Cart Documentation</title>
+
+  <link href="content/css/bootstrap.css" rel="stylesheet">
+  <link href="content/css/font-awesome/font-awesome.css" rel="stylesheet">
+  <link href="content/css/mc-docs.css" rel="stylesheet">
+  <link href="content/css/jquery.ibox.css" rel="stylesheet">
+
+  <script src="content/js/jquery.js"></script>
+  <script src="content/js/functions.js"></script>
+
+  <link rel="ICON" href="favicon.ico">
+
+</head>
+
+<body>
+
+  <div id="wrapper">
+
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation" style="margin-bottom: 0">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-collapse">
+          <span class="sr-only">Toggle Navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">Documentation</a>
+      </div>
+
+      <div class="navbar-default navbar-static-side" role="navigation">
+        <div class="sidebar-collapse">
+        </div>
+      </div>
+    </nav>
+
+    <div id="page-wrapper">
+      <div class="row">
+        <div class="col-lg-12">
+          <h1 class="page-header">Update Prices</h1>
+        </div>
+      </div>
+
+            <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Overview</div>
+            <div class="panel-body">
+              This feature lets you batch update your prices. Price increment can be a fixed amount or a percentage. This will apply to all products or attributes within the specified range
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Price Adjustment</div>
+            <div class="panel-body">
+              Specify price adjustment. This can be a set amount or a percentage. eg: 9.99 or 10%. No currency symbol for price and NO commas.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Omit Where Product/Attributes Prices are Between</div>
+            <div class="panel-body">
+              Do you wish to omit prices between a certain range? Both prices must be set. No currency symbol. eg: 9.99. NO Commas
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Clear Special Offers</div>
+            <div class="panel-body">
+              If you set special offers for the products in the selected category, do you wish to clear these offers when you update the prices?
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Apply to Products Added ONLY Between Selected Dates</div>
+            <div class="panel-body">
+              Do you only want to apply the update to products that were added between a certain date? YYYY-MM-DD format ONLY. Both dates must be specified.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Adjustment Type</div>
+            <div class="panel-body">
+              Please choose:<br><br><b>Increase or Decrease</b> - Takes existing price and increases or decreases price by amount specified.<br><br><b>Fixed</b> - A new fixed price.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Apply Adjustment To</div>
+            <div class="panel-body">
+              Do you want this update to apply to attributes and products or both? If none are specified, defaults to products.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Select Products NOT to update</div>
+            <div class="panel-body">
+              If applicable, specify products NOT to update. Use the radio buttons and categories provided.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row footerArea">
+      </div>
+    </div>
+
+  </div>
+
+  <script>
+    //<![CDATA[
+    jQuery(document).ready(function() {
+      loadTopMenu();
+      loadLeftMenu();
+      loadFooter();
+    });
+    //]]>
+  </script>
+
+  <script src="content/js/bootstrap.js"></script>
+  <script src="content/js/plugins/jquery.metismenu.js"></script>
+  <script src="content/js/plugins/jquery.ibox.js"></script>
+
+</body>
+
+</html>

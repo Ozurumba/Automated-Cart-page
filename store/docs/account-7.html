@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Import Accounts:  Maian Cart Documentation</title>
+
+  <link href="content/css/bootstrap.css" rel="stylesheet">
+  <link href="content/css/font-awesome/font-awesome.css" rel="stylesheet">
+  <link href="content/css/mc-docs.css" rel="stylesheet">
+  <link href="content/css/jquery.ibox.css" rel="stylesheet">
+
+  <script src="content/js/jquery.js"></script>
+  <script src="content/js/functions.js"></script>
+
+  <link rel="ICON" href="favicon.ico">
+
+</head>
+
+<body>
+
+  <div id="wrapper">
+
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation" style="margin-bottom: 0">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-collapse">
+          <span class="sr-only">Toggle Navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">Documentation</a>
+      </div>
+
+      <div class="navbar-default navbar-static-side" role="navigation">
+        <div class="sidebar-collapse">
+        </div>
+      </div>
+    </nav>
+
+    <div id="page-wrapper">
+      <div class="row">
+        <div class="col-lg-12">
+          <h1 class="page-header">Import Accounts</h1>
+        </div>
+      </div>
+
+            <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Overview</div>
+            <div class="panel-body">
+              Here you can batch import accounts from CSV. Please read the instructions here carefully before importing. Maian Cart uses standard CSV structure for importing, along with field mapping for easier uploads.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">CSV with Header</div>
+            <div class="panel-body">
+              Files must be standard CSV format. Text files are also fine providing the structure is the same. CSV file <b>MUST</b> have a header row at the top of the file for the field mapping
+  routine. This is a reference for the column names. For example, your account name column might be 'name', 'customer' or 'person' etc. Names are not that important, so long as you know what each
+  column is. See <a href="examples/import-accounts.csv">example file</a>.<br><br>It doesn`t matter if columns in your CSV are not going to be used by Maian Cart. Nor does it matter what order the columns are in. If you don`t specify a header row, you`ll
+  see previews of the first row, but may not be able to see what it relates to.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Field Mapping</div>
+            <div class="panel-body">
+              After you have uploaded your file you will be presented with field mapping options. This will be a list of your header column names along with the database fields from the cart system. You need to select the correct field in the database with
+  the corresponding column in your CSV. Data will be taken from that row and inserted into the correct field. If there are any fields in your CSV that are not going to be used, simply leave the corresponding
+  field selection blank.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Field Data Types</div>
+            <div class="panel-body">
+              It is important that the field you select matches the data type used by Maian Cart. For example, if you specify a string field for a DATE column this will revert to the default setting for that field. In the
+  case of DATE fields its 0000-00-00. If the data type doesn`t match, the import should still run but you may have to make account edits after to correct some data.<br><br>
+  Data types are as follows:<br><br>
+  [Boolean] = True or false, 0 or 1, Yes or No.<br>
+  [Integer] = Numeric value only. Default 0.<br>
+  [Decimal] = Decimal value or integer. eg: 34.76 or 34 <br>
+  [String] = For text field values.<br>
+  [Date] = Valid US date. Due to restrictions in PHP/MySQL, date must be a US formatted date. If cannot be converted to timestamp will revert to 0000-00-00. Examples: YYYY/MM/DD or YYYY-MM-DD or MM/DD/YYYY or MM-DD-YYYY<br>
+  [Monetary Value] = 0.00 default.<br><br>
+  If your columns don`t match the data type entry, the default will be imposed and you`ll have to re-edit after. Try some small test imports first.
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Account Import Columns</div>
+            <div class="panel-body">
+              Your import file can have the column data in any order as the field mapping routine will map the relevant position to the database. The account import file will map the following
+              database fields:<br><br>
+              Account Name (String - Max 200 chars)<br>
+              Account Email (String - Max 250 chars)<br>
+              Account Password (String - will be hashed on upload. If left blank, random password is created)<br><br>
+              Further options will be presented after the file has been uploaded. These will be the same as the <a href="account-1.html">Add Account</a> page.<br><br>
+              Note that if you upload an account with an email that already exists, it will be ignored.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Lines to Read</div>
+            <div class="panel-body">
+              Must be greater than the longest line (in characters) to be found in the CSV file (allowing for trailing line-end characters).<br><br>It became optional in PHP 5. Omitting this parameter (or setting it to 0 in PHP 5.0.4 and later) the maximum line length is not limited, which is slightly slower.<br><br><b>NO</b> commas or period symbols. Examples: 1000, 2000, 3000 etc<br><br>Text &copy;PHP.net
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Delimited/Enclosed by</div>
+            <div class="panel-body">
+              Set the field delimiter and field enclosure character. If left blank delimiter defaults to a comma.<br><br>Fields are enclosed if the delimiter is found in the string to prevent premature end of delimiter. Example on comma delimited string:<br><br><b>0,1,"The delimiter is , a comma",2,3</b><br><br>If left blank defaults to quotes (").
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row footerArea">
+      </div>
+    </div>
+
+  </div>
+
+  <script>
+    //<![CDATA[
+    jQuery(document).ready(function() {
+      loadTopMenu();
+      loadLeftMenu();
+      loadFooter();
+    });
+    //]]>
+  </script>
+
+  <script src="content/js/bootstrap.js"></script>
+  <script src="content/js/plugins/jquery.metismenu.js"></script>
+  <script src="content/js/plugins/jquery.ibox.js"></script>
+
+</body>
+
+</html>

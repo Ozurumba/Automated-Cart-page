@@ -1,0 +1,38 @@
+
+  <div id="windowcontent">      <div class="panel panel-default">
+        <div class="panel-heading">Paypal IPN - Setup</div>
+          <div class="panel-body">
+            1: Sign up for a Paypal premier or business account.<br>
+ 2: Log into your Paypal account.<br>
+ 3: From the "My Account" tab select "Profile" > "My Selling Preferences".<br>
+ 4: Find "Instant payment notifications" and click "update".<br>
+ 5: If the IPN is already turned on, you are good to go. If a url already exists, <b>DO NOT</b> change this!<br>
+ 6: If not enabled and no url exists, click to enable the IPN system by entering the full http path to the 'checkout/paypal.php' callback file in your cart installation:<br><br>
+ <b>Example</b>:<br>
+ http://www.example.com/checkout/paypal.php (Or https if over SSL)<br><br>
+ 7: Save settings.<br>
+ 8: Enter applicable details in your Maian Cart admin area:<br><br><b>Sales > Payment Methods > Paypal IPN</b>
+          </div>
+      </div>      <div class="panel panel-default">
+        <div class="panel-heading">Paypal - Callback Url</div>
+          <div class="panel-body">
+            The callback url for all operations is:<br><br>
+ <b>https://www.example.com/checkout/paypal.php (SSL)</b><br><br>
+ Where 'example.com' is your own domain. SSL MUST be installed for Paypal.
+          </div>
+      </div>      <div class="panel panel-default">
+        <div class="panel-heading">Paypal - Auto Return</div>
+          <div class="panel-body">
+            If you aren`t selling product downloads and you want visitors to return to your site quicker, you can enable the auto return option.<br><br>
+ 1: From the "My Selling Preferences" screen find "Website preferences" and click "Update".<br>
+ 2: Turn on "Auto Return" and enter a url to send the buyer to. This should comply with Paypal`s terms and conditions. Your url should use SSL.<br><br>
+ Sale/order info is emailed to the buyer as normal.
+          </div>
+      </div>      <div class="panel panel-default">
+        <div class="panel-heading">Paypal - Sandbox</div>
+          <div class="panel-body">
+            Paypal has a full test mode via its Sandbox system. Sign up at <a href="https://developer.paypal.com/">https://developer.paypal.com/</a>.<br><br>
+ Test mode should be enabled before going live. This is enabled/disabled in your admin area.<br><br>
+ <b>System > Global Store Settings</b>
+          </div>
+      </div></div>

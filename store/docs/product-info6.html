@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Product - Personalisation:  Maian Cart Documentation</title>
+
+  <link href="content/css/bootstrap.css" rel="stylesheet">
+  <link href="content/css/font-awesome/font-awesome.css" rel="stylesheet">
+  <link href="content/css/mc-docs.css" rel="stylesheet">
+  <link href="content/css/jquery.ibox.css" rel="stylesheet">
+
+  <script src="content/js/jquery.js"></script>
+  <script src="content/js/functions.js"></script>
+
+  <link rel="ICON" href="favicon.ico">
+
+</head>
+
+<body>
+
+  <div id="wrapper">
+
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation" style="margin-bottom: 0">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-collapse">
+          <span class="sr-only">Toggle Navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">Documentation</a>
+      </div>
+
+      <div class="navbar-default navbar-static-side" role="navigation">
+        <div class="sidebar-collapse">
+        </div>
+      </div>
+    </nav>
+
+    <div id="page-wrapper">
+      <div class="row">
+        <div class="col-lg-12">
+          <h1 class="page-header">Product - Personalisation</h1>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Overview</div>
+            <div class="panel-body">
+              Product personalisation is a strong feature of Maian Cart. It enables you to sell personalised items, such as business pens &amp; diaries or sell flowers where addresses are
+  required. In the commercial version you can have an unlimited number of options per product. Note that personalised options apply to a product, not its attributes.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Personalisation Instructions</div>
+            <div class="panel-body">
+              Instructions for visitor. For example, if you are selling products that can be personalised with someones name, the instructions might be:<br><br><b>Enter Your Name</b><br><br>You can also specify an alternative text to display in e-mails and on order pages, this is a second parameter separated with a pipe. Example:<br><br><b>Enter Your Name|Name</b><br><br>If the second parameter isn`t used, the main text is used. So, for example,
+  lets say you are selling football shirts and people can pick the name they want on the reverse. You might specify:<br><br><b>Enter Preferred Name|Name</b><br><br>
+  On the product pages, visitors would see "Enter Preferred Name", but in order e-mails and on the checkout page they would see the alternative of "Name". The second parameter MUST be separated
+  with a pipe (|) and is optional. If the second parameter isn`t set, "Enter Preferred Name" would be used for all.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Max Characters</div>
+            <div class="panel-body">
+              If a maximum character limit applies, visitors can only enter that amount of characters. For example, you might be selling business pens and diaries where the company name can be no more than 50 chars. Leave blank for no limit. If a limit
+  is set, a counter appears so visitors can see how many characters they have entered.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Additional Cost</div>
+            <div class="panel-body">
+              Is an additional cost incurred for this personalisation? If yes, enter value. No commas. This is added to the product total.<br><br>Leave blank, 0, or 0.00 for no costing.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Personalisation Options (Optional)</div>
+            <div class="panel-body">
+              If the personalisation can only be one of a set of options, list them here. One per line. If this is set, max character limit is ignored. So, for example, you might be selling business
+              pens that can be personalised with a certain colour, but only from selected options. You might enter:<br><br><b>Blue<br>Green<br>Red<br>Yellow</b><br><br>
+              Only these options would be presented to visitors.<br>
+              <br> Note: For bigger textarea, click the crosshair, top right, in the textarea box.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Required Field</div>
+            <div class="panel-body">
+              Is this a required field? If yes, the system will prompt a visitor if this personalisation option is not completed when adding product to cart.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Input Box Type</div>
+            <div class="panel-body">
+              Which box type do you wish to display for this option? An input box is for single line entries, a textarea for multi line.
+              If options are declared this is ignored.<br><br>
+              <b>Example Input Box</b>:<br><br>
+              <input type="text" name="text" value="" class="form-control"><br>
+              <b>Example Textarea</b>:<br><br><textarea name="text" cols="20" rows="5" class="form-control"></textarea>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Enable</div>
+            <div class="panel-body">
+              Enable or disable personalisation option without deleting it.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Manage Personalisation</div>
+            <div class="panel-body">
+             Drag and drop the rows to change the order display preference. Use the <i class="fa fa-pencil fa-fw mc_blue"></i> icon to edit personalisation entry and
+             click the <i class="fa fa-times fa-fw mc_red"></i> icon to delete it. If a personalisation option relates to an existing sale, it cannot be removed.<br><br>
+             Clicking the <i class="fa fa-search fa-fw mc_blue"></i> icon for any personalisation option will load the product page.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Quick Menu</div>
+            <div class="panel-body">
+              To access other product areas, click the <button type="button" class="btn btn-sm btn-info"><i class="fa fa-cog fa-fw"></i></button> button.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row footerArea">
+      </div>
+    </div>
+
+  </div>
+
+  <script>
+    //<![CDATA[
+    jQuery(document).ready(function() {
+      loadTopMenu();
+      loadLeftMenu();
+      loadFooter();
+    });
+    //]]>
+  </script>
+
+  <script src="content/js/bootstrap.js"></script>
+  <script src="content/js/plugins/jquery.metismenu.js"></script>
+  <script src="content/js/plugins/jquery.ibox.js"></script>
+
+</body>
+
+</html>

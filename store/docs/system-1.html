@@ -1,0 +1,893 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>General Settings:  Maian Cart Documentation</title>
+
+  <link href="content/css/bootstrap.css" rel="stylesheet">
+  <link href="content/css/font-awesome/font-awesome.css" rel="stylesheet">
+  <link href="content/css/mc-docs.css" rel="stylesheet">
+  <link href="content/css/jquery.ibox.css" rel="stylesheet">
+
+  <script src="content/js/jquery.js"></script>
+  <script src="content/js/functions.js"></script>
+
+  <link rel="ICON" href="favicon.ico">
+
+</head>
+
+<body>
+
+  <div id="wrapper">
+
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation" style="margin-bottom: 0">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-collapse">
+          <span class="sr-only">Toggle Navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">Documentation</a>
+      </div>
+
+      <div class="navbar-default navbar-static-side" role="navigation">
+        <div class="sidebar-collapse">
+        </div>
+      </div>
+    </nav>
+
+    <div id="page-wrapper">
+      <div class="row">
+        <div class="col-lg-12">
+          <h1 class="page-header">General Settings</h1>
+        </div>
+      </div>
+
+      <div class="row" style="margin-bottom: 10px">
+        <div class="col-lg-12">
+          <ul class="nav nav-tabs">
+            <li class="active"><a href="#s_1" data-toggle="tab"><i class="fa fa-cog fa-fw"></i> General Settings</a></li>
+            <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="fa fa-wrench fa-fw"></i> <span class="hidden-xs">Settings Menu </span><span class="caret"></span></a>
+              <ul class="dropdown-menu dropdown-menu-right center_dropdown" role="menu">
+                <li><a href="#s_15" data-toggle="tab">Account Options</a></li>
+                <li><a href="#s_13" data-toggle="tab">Auto Thumbnail Creation</a></li>
+                <li><a href="#s_3" data-toggle="tab">Date/Time Options</a></li>
+                <li><a href="#s_2" data-toggle="tab">Email Options</a></li>
+                <li><a href="#s_10" data-toggle="tab">General Product/Store Options</a></li>
+                <li><a href="#s_6" data-toggle="tab">ISBN Database API</a></li>
+                <li><a href="#s_7" data-toggle="tab">Maian Cube/Guardian Integration</a></li>
+                <li><a href="#s_4" data-toggle="tab">Maian Affiliate Integration</a></li>
+                <li><a href="#s_8" data-toggle="tab">RSS Options</a></li>
+                <li><a href="#s_12" data-toggle="tab">Search Options</a></li>
+                <li><a href="#s_9" data-toggle="tab">Sitemap</a></li>
+                <li><a href="#s_5" data-toggle="tab">Social Network Settings</a></li>
+                <li><a href="#s_16" data-toggle="tab">Cache Control</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="tab-content">
+        <div class="tab-pane active in" id="s_1">
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="panel panel-default">
+                <div class="panel-heading">Website Name</div>
+                <div class="panel-body">
+                  This is the name of your website or store. Max 250 characters.
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-heading">Web Installation HTTP Path</div>
+                <div class="panel-body">
+                  This is the FULL http path to your store folder with <b>NO</b> trailing slash. Examples:<br><br>
+                  <b>http://www.example.com/store</b> (Installed in 'store' folder)<br>
+                  <b>http://www.example.com</b> (Root installation)<br>
+                  <b>https://www.example.com</b> (Root installation - SSL installed)
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-heading">Server Path to Store Folder</div>
+                <div class="panel-body">
+                  This is the FULL server path to your store folder with <b>NO</b> trailing slash. A server path does <b>NOT</b> begin with http. Examples:<br><br>
+                  <b>/home/server_name/public_html/store</b> (Linux)<br>
+                  <b>C:/store</b> (Windows)<br><br>
+                  If you aren`t sure of this, contact your host OR use the "Auto" option. Alternatively, type the following into a text editor:<br><br>
+                  <div class="alert alert-info">
+                  &lt;?php
+                  echo dirname(__FILE__);
+                  ?&gt;
+                  </div>
+                  Save as a .php file and upload into your store installation folder. Then access in your browser.
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-heading">Enable Search Engine Friendly URLs</div>
+                <div class="panel-body">
+                  Enables search engine friendly urls via htaccess and Apache rewrite rules. NOT supported on all servers, so make sure your server supports .htaccess before enabling. If your server does not support this you may see a 500 internal server error or a 404 page not found.<br><br>
+                  You MUST also rename the "htaccess_COPY.txt' file to '.htaccess'. The system will check this file exists.
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-heading">Default Meta Keywords</div>
+                <div class="panel-body">
+                  Default meta keywords separated by a comma. For search engines and SEO.
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-heading">Default Meta Description</div>
+                <div class="panel-body">
+                  Default meta description. For search engines and SEO.
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-heading">Select Language</div>
+                <div class="panel-body">
+                  Specify system language. More information on the language options <a href="language.html">here.</a>
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-heading">Select Default Theme (Standard)</div>
+                <div class="panel-body">
+                  Set the default theme for standard / personal accounts.
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-heading">Select Default Theme (Trade ONLY)</div>
+                <div class="panel-body">
+                  Set the default theme for trade accounts. This overrides all other theme settings. So, for example, if you have category themes set,
+                  these will be ignored.
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-heading">Enable Entry Log</div>
+                <div class="panel-body">
+                  Enable or disable the entry log. If enabled, logs account / admin staff access entries. More information <a href="tools-6.html">here</a>.
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-heading">Admin Folder Name</div>
+                <div class="panel-body">
+                  For security it is recommended the 'admin' directory be renamed to something unique. If you wish to do this, rename folder manually and enter new folder name here.
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-heading">Convert Microsoft Word&reg; Smart Quotes</div>
+                <div class="panel-body">
+                  Microsoft smart quotes can cause formatting issues and are not valid html. If you are copying from word, you may wish to enable this feature, which attempts to convert smart quotes to standard apostrophes. Note that
+                  this is ignored if the text is UTF-8 detected as smart quotes are not unicode compatible and attempting to remove them can truncate the text. Recommendations are to NEVER copy / paste anything from word.
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-heading">Enable BB Code</div>
+                <div class="panel-body">
+                  BBCode or Bulletin Board Code is a lightweight markup language used to format data. The available tags are usually indicated by square brackets ([]) surrounding a keyword, and are parsed before being translated into a markup language that web browsers understand. Examples:<br><br>[b]Bold Text[b] = <b>Bold Text</b><br>[link=http://www.google.co.uk]Google[/link] = <a href="http://www.google.co.uk">Google</a><br><br>BBCode was devised to provide a safer, easier and more limited way of allowing staff to format their messages.<br><br>
+                  More information <a href="features-6.html">here</a>.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="s_15">
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="panel panel-default">
+                <div class="panel-heading">Visitors Can Create Accounts Manually</div>
+                <div class="panel-body">
+                  If enabled, "Create Account" option appears on store login page and visitors can create accounts regardless of whether they
+                  purchase anything. If disabled, accounts are only created after first sale occurs (unless Guest option is set at checkout).
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-heading">Email Notification to Store Owner if Account Created</div>
+                <div class="panel-body">
+                  If create option is enabled above, do you want the store admin / owners to receive notification?
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-heading">Enable Wish Lists</div>
+                <div class="panel-body">
+                  Do you want to enable wish lists? These are NOT applicable to trade accounts. Note that if you enable wish lists, your store must
+                  be set up to ship to overseas countries as wish list accounts could be located anywhere.
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-heading">Enable Re-Order Option When Viewing Order</div>
+                <div class="panel-body">
+                  Enables buyer to add products from order into basket with one click. Useful for re-ordering. Wish list purchases are not included. The system
+                  will check stock quantities when using this option. If a product is out of stock or has an attribute out of stock, it won`t be shown in the
+                  basket.
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-heading">Enable Option to Close Account</div>
+                <div class="panel-body">
+                  Do you want to have an option for visitor to close account in their account area? This will not remove any sales data from the system.
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-heading">Minimum Password Length</div>
+                <div class="panel-body">
+                  Set minimum password ength
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-heading">Force More Secure Passwords</div>
+                <div class="panel-body">
+                  If this is set, visitor is forced to enter all of the following.<br><br>
+                  At least 1 lower case letter.<br>
+                  At least 1 upper case letter.<br>
+                  At least 1 digit.<br>
+                  At least 1 special character (any none alphanumeric character. eg: []{}#@ etc<br><br>
+                  Setting this option is recommended.
+                </div>
+              </div>
+              <!--
+              <div class="panel panel-default">
+                <div class="panel-heading">Load Theme for Trade Accounts</div>
+                <div class="panel-body">
+                  Theme to load for trade accounts ONLY if applicable. <a href="install-4.html">Theme</a> folders should be created inside the "content" folder and be prefixed "_theme". This
+                  is useful if you wish to have a different interface for trade accounts on login.
+                </div>
+              </div>
+              -->
+              <div class="panel panel-default">
+                <div class="panel-heading">Disable Shipping For Trade Accounts</div>
+                <div class="panel-body">
+                 If enabled, disables all shipping options on checkout for trade accounts. Useful if you prefer to negotiate shipping options after the sale occurs.
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-heading">Force Password Reset for ALL Personal / Trade Accounts</div>
+                <div class="panel-body">
+                If checked ALL personal and trade accounts will have random passwords set. The forgot password option will be required to recover their account.<br><br>
+                If you prefer not to have this option shown, you can hide it via the 'admin/control/defined2.php' file and the following option:<br><br>
+                <b>define('HIDE_FORCE_PASS_RESET', 0);</b>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="s_13">
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="panel panel-default">
+                <div class="panel-heading">Thumbnail Width</div>
+                <div class="panel-body">
+                  Thumbnail creation width. For auto thumbnail creation. If aspect ratio is taken into consideration, creation size may not be exact. Max 9999.<br><br>Actual display sizes can be controlled in the stylesheet. It is
+                  recommended you set the width / height to at least 200 if using the <a href="#" onclick="jQuery('a[href=\'#s_5\']').tab('show');return false">structured data</a> options.
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-heading">Thumbnail Height</div>
+                <div class="panel-body">
+                  Thumbnail creation height. For auto thumbnail creation. If aspect ratio is taken into consideration, creation size may not be exact. Max 9999.<br><br>Actual display sizes can be controlled in the stylesheet. It is
+                  recommended you set the width / height to at least 200 if using the <a href="#" onclick="jQuery('a[href=\'#s_5\']').tab('show');return false">structured data</a> options.
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-heading">Thumbnail Quality (JPG/GIF)</div>
+                <div class="panel-body">
+                  Thumbnail quality in dpi. Max 100.
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-heading">Thumbnail Quality (PNG)</div>
+                <div class="panel-body">
+                  Thumbnail quality. For PNG images its 0 to 9.
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-heading">Maintain Aspect Ratio</div>
+                <div class="panel-body">
+                  When auto creating thumbs, the system can maintain aspect ratio. This means that the images resize according to the original sizes. If aspect ratio isn`t maintained, thumbs are sized to a fixed size and may appear distorted.<br><br>
+                  This is dependent on your images. Try some trial images first to see how they turn out.
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-heading">Rename Pictures</div>
+                <div class="panel-body">
+                  Do you want the system to rename the pictures on upload? Useful if file names contain problem/invalid characters which may render incorrectly in a browser. If yes, specify prefixes for renaming. Max 100 chars for prefixes.
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-heading">Thumbnail Prefix</div>
+                <div class="panel-body">
+                  Set thumbnail prefix if required. eg: tmb_
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-heading">Image Prefix</div>
+                <div class="panel-body">
+                  Set thumbnail prefix if required. eg: img_
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="s_4">
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="panel panel-default">
+                <div class="panel-heading">Full Url to Maian Affiliate Installation</div>
+                <div class="panel-body">
+                  Maian Cart supports commissions via the Maian Affiliate system. Data is pinged from your Maian Cart setup to your
+                  Maian Affiliate setup after a completed payment occurs. You will need to have both Maian Cart and Maian Affiliate installed
+                  on your web server.<br><br>
+                  This value should be the FULL url to your affiliate system index.php file. Example:<br><br>
+                  <b>https://www.example.com/maianaffiliate/index.php</b>
+                </div>
+      				</div>
+      			</div>
+      		</div>
+		
+      		<div class="row">
+            <div class="col-lg-12">
+              <div class="panel panel-default">
+                <div class="panel-heading">Affiliate API Code</div>
+                <div class="panel-body">
+                  Your Maian Affiliate API code. This is required so that your affiliate system can verify the callback is genuine.
+                </div>
+      				</div>
+      			</div>
+      		</div>
+		
+      		<div class="row">
+            <div class="col-lg-12">
+              <div class="panel panel-default">
+                <div class="panel-heading">Full Url to Affiliate Product ID</div>
+                <div class="panel-body">
+                  This is the numeric product ID as shown in your Maian Affiliate control panel on your Manage Products page:<hr>
+                  <span class="badge">1</span> Create a new product in Maian Affiliate for your Maian Cart shop. So, product
+                  name might be Maian Cart Shop and the url will be the url to your Maian Cart setup.<br><br>
+                  <img class="img-responsive screenshot" src="content/images/screenshots/6.png" alt=""><br>
+                  <span class="badge">2</span> Enter product ID in your Maian Cart setup.<br><br>
+                  <img class="img-responsive screenshot" src="content/images/screenshots/7.png" alt=""><br>
+                  <img class="img-responsive screenshot" src="content/images/screenshots/99.png" alt=""><br>
+                  <span class="msw_red">NOTE: Affiliate links will set a cookie on the visitors machine. You should include this in your GDPR notes.</span>
+                </div>
+      				</div>
+      			</div>
+      		</div>
+		
+      		<div class="row">
+            <div class="col-lg-12">
+              <div class="panel panel-default">
+                <div class="panel-heading">Affiliate Url GET Parameter</div>
+                <div class="panel-body">
+                  This is your affiliate code GET parameter. By default this would be 'maff', but it can be changed in Maian Affiliate
+                  in the 'control/userdef.php' file. This must be correct for Maian Cart to recognise the correct code. So, this value
+                  MUST be the same as the value you have set in Maian Affiliate in the 'control/userdef.php' file for the 'AFF_GET_PARAM' constant. If
+                  you never changed anything, this value will always be 'maff'.
+                </div>
+      				</div>
+      			</div>
+      		</div>
+		
+      		<div class="row">
+            <div class="col-lg-12">
+              <div class="panel panel-default">
+                <div class="panel-heading">Commission Percentage (%)</div>
+                <div class="panel-body">
+                  The percentage given to affiliates. This will be for any sale and the total is calculated from the sale total,
+                  which includes shipping / tax etc. Enter value WITHOUT percentage symbol. So, for 50% commission, enter 50.
+                </div>
+      				</div>
+      			</div>
+      		</div>
+		
+      		<div class="row">
+            <div class="col-lg-12">
+              <div class="panel panel-default">
+                <div class="panel-heading">Enable Affiliate Log</div>
+                <div class="panel-body">
+                  Enables or disables log. Useful for debugging the Maian Cart setup. Logs will also be available
+                  in your Maian Affiliate control panel, so if the Maian Cart log says everything is ok, you should check the
+                  affiliate setup logs if you are having issues.
+                </div>
+      				</div>
+      			</div>
+      		</div>
+		
+      		<div class="row">
+            <div class="col-lg-12">
+              <div class="panel panel-default">
+                <div class="panel-heading">Enable Commission System</div>
+                <div class="panel-body">
+                  Enables or disables the commission system in Maian Cart.
+                </div>
+      				</div>
+      			</div>
+      		</div>
+        </div>
+        <div class="tab-pane fade" id="s_3">
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="panel panel-default">
+                <div class="panel-heading">System Date Format</div>
+                <div class="panel-body">
+                  Preferred date format. Any valid PHP date format is ok. More information can be found on the PHP website:<br><br><a href="http://php.net/manual/en/function.date.php" onclick="window.open(this);return false">http://php.net/manual/en/function.date.php</a>
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-heading">MySQL Date Format</div>
+                <div class="panel-body">
+                  Dates are stored in US format by MySQL. YYYY-MM-DD. If you wish to use another format, enter it here. Any valid MySQL date format supported by DATE_FORMAT is fine. More information can be found on the MySQL website:<br><br><a href="http://dev.mysql.com/doc/refman/5.1/en/date-and-time-functions.html#function_date-format" onclick="window.open(this);return false">http://dev.mysql.com/doc/refman/5.1/en/date-and-time-functions.html#function_date-format</a>
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-heading">Javascript Calendar Date Format</div>
+                <div class="panel-body">
+                  When date fields are clicked in a form, a javascript calendar appears. Specify the date format you prefer.
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-heading">Javascript Calendar Week Start Day</div>
+                <div class="panel-body">
+                  Specify first day of week for calendar. UK is Sunday.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="s_2">
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="panel panel-default">
+                <div class="panel-heading">Activate Emails</div>
+                <div class="panel-body">
+                   This activates /de-activates system emails. If you are testing on localhost and you don`t have a mail server, this should be disabled. It should always be enabled on a live environment.
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-heading">Main Email Address</div>
+                <div class="panel-body">
+                  This is your main system email address. This is also used as the reply-to email address unless an alternative is set in the <a href="settings-7.html">Mail Options</a>.
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-heading">Additional Email Addresses</div>
+                <div class="panel-body">
+                  If you wish you can copy emails to other addresses. When an e-mail is sent to the main address, it will also be copied to any addresses specified here. Separate multiple addresses with
+                  a comma. This is optional.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="s_10">
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="panel panel-default">
+                <div class="panel-heading">Products Per Page</div>
+                <div class="panel-body">
+                  How many products do you wish to show per page on category pages?
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-heading">Min Digits for Invoice No</div>
+                <div class="panel-body">
+                  Do you want to pad invoice numbers with zeros? Invoice numbers correspond to database sale ids. The first sale will be 1, but you might want to specify the invoice as 000001. Set to 0 for invoice numbers to have no additional prefixed zeros or specify amount to add.
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-heading">Next Invoice No</div>
+                <div class="panel-body">
+                This will usually be 1 for most stores, but enter custom number if you want invoices to start at a specific number if you are migrating
+                from another system.
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-heading">Sale Comparison Products Limit</div>
+                <div class="panel-body">
+                  This option displays items that have been purchased along with the product being displayed. In other words, "Customers who bought this, also bought that" etc.<br><br>Set to 0 for no display or enter limit for maximum amount of products to display.
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-heading">Enable Hit Counter</div>
+                <div class="panel-body">
+                  Do you wish to enable the hit counter?
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-heading">Most Popular Products</div>
+                <div class="panel-body">
+                  Do you want to display the most popular products? If enabled, this appears in the left menu. Set to 0 to disable or enter amount greater to enable
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-heading">Most Popular Display Preference</div>
+                <div class="panel-body">
+                  How do you want to order most popular products? By sales or by hits. Note that hits doesn`t really give a good indicator of whats popular as it simply orders by page views. Views don`t mean sales.<br><br>If ordering by sales, free products can be excluded via the checkbox.
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-heading">Show Latest Products From Last XX Days / Months / Years</div>
+                <div class="panel-body">
+                  Set your preference for the latest products page.
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-heading">Enable Most Recently Viewed Items</div>
+                <div class="panel-body">
+                  Do you want to display the most recently viewed items for visitors? If enabled, this appears in the left menu. Note that this is session based and clears when the browser is closed.
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-heading">Max Product Desc Characters on Category Pages</div>
+                <div class="panel-body">
+                  This is the amount of the product short description characters you want to display on the category pages. Ideally the short description won`t be too long, but if it is you can restrict the amount of text shown. Set to 0 for no limit.
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-heading">Show Parent Categories on Store Homepage</div>
+                <div class="panel-body">
+                  Do you wish to display your parent categories on your store homepage?
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-heading">Free Product Display Text</div>
+                <div class="panel-body">
+                  Display price preference for free products. If left blank, defaults to 0.00 price display. Or enter alternative text. Applies to category and product pages. Max 10 Characters.
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-heading">Additional Text Below Product Price</div>
+                <div class="panel-body">
+                  Optional additional text to appear beneath product price on product page. You may wish to include a message that prices exclude tax etc. Leave blank for no additional text. Max 100 Characters.
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-heading">Hurry, Last XX Available Display</div>
+                <div class="panel-body">
+                  Displays a message on category listing and product pages to show that the product has limited remaining stock. For example, if set to 2, message
+                  would appear stating "Hurry, last 2 available. Order NOW to avoid disappointment!" etc. Text can be adjusted in the 'content/language/english/version3.0.php' language file. Set to 0 to disable.<br><br>
+                  This does NOT apply to downloadable products, only tangible items. Also, because of space availability, it is also NOT shown in the grid view of the product. Only
+                  product page and category list view.
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-heading">Show Product Counts for Categories</div>
+                <div class="panel-body">
+                  Do you want to show the count of how many products are in each category? Appears next to category link in left menu.
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-heading">Show Product Counts for Brands</div>
+                <div class="panel-body">
+                  Do you want to show the count of how many products are in each brand? Appears next to brand link in left menu.
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-heading">Gift Certificate Link Position in Categories Menu</div>
+                <div class="panel-body">
+                  Appears ONLY if you have at least 1 enabled gift certificate. Position can be at the top of the menu, the end or after a category. Default is at the end.
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-heading">Always Show Brands in Left Menu</div>
+                <div class="panel-body">
+                  Do you want to always show the brands options in the left menu? By default the system only shows this if applicable on category pages, but if you prefer this can always be shown.<br><br>
+                  Brands duplicated across categories will only be shown once. Note that this option would assume that the brands menu option is enabled in the <a href="system-9.html">left box controller</a>.
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-heading">Default View for Products</div>
+                <div class="panel-body">
+                  List or grid view. Can be changed on the category list screens. If account is active and visitor is logged in, state will be remembered for accounts.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="s_6">
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="panel panel-default">
+                <div class="panel-heading">Enter API Key</div>
+                <div class="panel-body">
+                  Do you wish to enable the ISBNDB api service? This can be usful if you are selling books. More info <a href="features-4.html">here</a>.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="s_7">
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="panel panel-default">
+                <div class="panel-heading">What is Maian Cube/Maian Guardian?</div>
+                <div class="panel-body">
+                  Maian Cube is software to auto generate licence files using the ionCube&reg; encoding system. More information <a href="http://www.maiancube.com" onclick="window.open(this);return false">here</a><br><br>
+                  Maian Guardian is software to auto generate licence files using the Source Guardian&reg; encoding system. More information <a href="http://www.maianguardian.com" onclick="window.open(this);return false">here</a><br><br>
+                  You do not need to have both systems. You can use each one separately, or both together, depending on your software setup.
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-heading">Maian Cube Url</div>
+                <div class="panel-body">
+                  Enter full url to your Maian Cube installation index.php file. Example: http://www.example.com/cube/index.php
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-heading">Maian Cube Api Key</div>
+                <div class="panel-body">
+                  Your Maian Cube Api Key as set in your Maian Cube admin area and general settings. This authorises the cart system to send posts to your cube installation.
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-heading">Maian Guardian Url</div>
+                <div class="panel-body">
+                  Enter full url to your Maian Guardian installation index.php file. Example: http://www.example.com/guardian/index.php
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-heading">Maian Guardian Api Key</div>
+                <div class="panel-body">
+                  Your Maian Guardian Api Key as set in your Maian Guardian admin area and general settings. This authorises the cart system to send posts to your guardian installation.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="s_8">
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="panel panel-default">
+                <div class="panel-heading">Enable RSS Feeds</div>
+                <div class="panel-body">
+                  RSS feeds enable visitors to subscribe to product categories, special offers or latest updates. Do you wish to enable rss feeds?
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-heading">RSS Feed Limit</div>
+                <div class="panel-body">
+                  How many products to display in rss feeds?
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-heading">Enable RSS News Scroller</div>
+                <div class="panel-body">
+                  Do you wish to enable the RSS news scroller in the left hand menu in your store? If enabled, shows feed url data. This can also be disabled via the menu box controller.
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-heading">News Feed Url / Limit</div>
+                <div class="panel-body">
+                  If news scroller is enabled, specify full url to RSS feed and limit of data to fetch. A limit of 5 or 10 is recommended.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="s_12">
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="panel panel-default">
+                <div class="panel-heading">How Many Days to Keep Searches</div>
+                <div class="panel-body">
+                  How many days do you want to keep saved searches? If you have a busy site, searches should be cleared regularly. Enter amount in days. 0 to disable.
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-heading">Search Low Stock Limit</div>
+                <div class="panel-body">
+                  If low stock is selected on advanced search, set the max for low stock value. Must be at least 1. This doesn`t apply to downloadable products, which are always
+                  considered to be in stock. Downloadable products will always show in low stock searches unless filtered not to on the advanced search page.
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-heading">Search Slider (Min / Max / Start Values)</div>
+                <div class="panel-body">
+                  For the search slider in the store (on advanced search page only). Values should be integers, not decimal price values. For example 300 would denote 300.00. Min and max are the furthest the slider can increment/decrement. Start values are the values displayed on page load.<br><br>
+                 The slider is activated by clicking and dragging the markers. As the sliders are moved, the prices change.<br><br>
+                 <img class="img-responsive screenshot" src="content/images/screenshots/32.png" alt="">
+            </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-heading">Search Product Tags Only</div>
+                <div class="panel-body">
+                  By default the store search will search the following product fields:<br><br>
+                  Name, Code, Description, Tags<br><br>
+                  You may have a scenario where too many search terms are being found due. This is because each keyword entered is a separate keyword and will be searched for. Example:<br><br>
+                  computers and boxes (would search for any match for "computer", "and" or "boxes")<br><br>
+                  You can provide a more detailed search by only allowing the product tags to be searched. Then in the product tag information, enter only specific keywords for that product.
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-heading">Enable Search Log</div>
+                <div class="panel-body">
+                  Do you wish to enable the search log and log keywords?
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="s_9">
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="panel panel-default">
+                <div class="panel-heading">Enable Sitemap</div>
+                <div class="panel-body">
+                  Do you wish to enable the sitemap? A sitemap is an at a glance view of site links.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="s_5">
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="panel panel-default">
+                <div class="panel-heading">Social Web Links</div>
+                <div class="panel-body">
+                  Enter url for any supported social web links.
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-heading">Twitter Username</div>
+                <div class="panel-body">
+                  Enter twitter username for any twitter related options.
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-heading">Show Latest Tweets</div>
+                <div class="panel-body">
+                  Do you want to show your latest tweets? Shown in left menu.
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-heading">Max Tweets to Show</div>
+                <div class="panel-body">
+                  Max tweets to show if above is enabled.
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-heading">Twitter Consumer key</div>
+                <div class="panel-body">
+                  Your twitter consumer key. Sign up for a <a href="https://dev.twitter.com/" onclick="window.open(this);return false">dev account</a> to get your keys.
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-heading">Twitter Consumer Secret</div>
+                <div class="panel-body">
+                  Your twitter consumer secret key.
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-heading">Twitter Access Token</div>
+                <div class="panel-body">
+                  Your twitter access token.
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-heading">Twitter Access Token Secret:</div>
+                <div class="panel-body">
+                  Your twitter access token secret key.
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-heading">Enable Admin CP Tweet Option</div>
+                <div class="panel-body">
+                  Do you wish to enable the twitter option in the admin control panel to allow posting of tweets from the admin interface?
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-heading">Disqus Short Name</div>
+                <div class="panel-body">
+                  Enter disqus short name if you wish to use the <a href="http://www.disqus.com/" onclick="window.open(this);return false">Disqus</a> system to enable product comments.
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-heading">Category ID</div>
+                <div class="panel-body">
+                  Enter disqus catefory ID if applicable.
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-heading">Structured Data - Facebook Open Graph Meta Tags</div>
+                <div class="panel-body">
+                  Used by the Facebook scraper to show certain data about your website when someone likes or posts a link to your site on their
+                  facebook profile. An example would be someone posts a product link. You would want a product image to appear, not a random image
+                  from your website. Enabling this option will allow that. The Facebook scraper will look for the open graph tags first. It is recommended
+                  this option is enabled.<br><br>
+                  <i class="fa fa-warning fa-fw"></i> <b style="text-decoration:underline">IMPORTANT</b><br><br>
+                  Images MUST be at least 200px x 200px or else Facebook will ignore them. The first time you enter a page url in facebook it may not show
+                  the correct image. You can get around this by entering your page url on the <a href="https://developers.facebook.com/tools/debug" onclick="window.open(this);return false">facebook debug</a> page FIRST to cache the image.
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-heading">Structured Data - Google+ Meta Tags</div>
+                <div class="panel-body">
+                  Enable Google+ meta tags. Similar to above.
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-heading">Structured Data - Enable Twitter Cards</div>
+                <div class="panel-body">
+                  Enable twitter cards. Similar to above.
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-heading">AddThis Social Share Tool - API Code</div>
+                <div class="panel-body">
+                  Adds like buttons to your site on product page as per screenshot below:<br><br>
+                  <img class="img-responsive screenshot" src="content/images/screenshots/33.png" alt=""><br>
+                  Useful for social shares. More info <a href="features-3.html">here</a>.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="s_16">
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="panel panel-default">
+                <div class="panel-heading">Enable Cache</div>
+                <div class="panel-body">
+                  If enabled, certain data is cached to eleviate the load on your database. Repetitive lookups are removed in favour of a simple cache
+                  file load. An example would be the category list, which loads each time the page loads. If the cache is enabled the database lookup
+                  is performed on the first page load only. Subsequent loads would load the cache file.<br><br>
+                  Each theme serves a different cache set as files may be different. Location of cache is 'content/**theme**/cache/'. This folder
+                  must be writeable.
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-heading">Rebuild Cache File If File Older Than</div>
+                <div class="panel-body">
+                  If the cache is enabled, you can elect to rebuild all cache files after a certain amount of time.
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-heading">Clear Cache</div>
+                <div class="panel-body">
+                  Click to clear all cache files from all theme cache folders. Whilst the system will auto delete cache files for certain admin updates, it
+                  is recommended you clear the cache if you have made any admin changes to products, sales or categories.<br><br>
+                  Alternatively, you can remove all .cache files from the 'content/**theme**/cache' folders.
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-heading">Other Cache Settings</div>
+                <div class="panel-body">
+                  These can be changed directly in the cache class file and is for advanced users only. Examples are advanced settings include changing the
+                  cache directory path and also the cache extension.<br><br>
+                  <div class="alert alert-info">
+                   control/classes/class.cache.php
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row footerArea">
+      </div>
+    </div>
+
+  </div>
+
+  <script>
+    //<![CDATA[
+    jQuery(document).ready(function() {
+      loadTopMenu();
+      loadLeftMenu();
+      loadFooter();
+    });
+    //]]>
+  </script>
+
+  <script src="content/js/bootstrap.js"></script>
+  <script src="content/js/plugins/jquery.metismenu.js"></script>
+  <script src="content/js/plugins/jquery.ibox.js"></script>
+
+</body>
+
+</html>

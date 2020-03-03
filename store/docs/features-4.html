@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>ISBN API:  Maian Cart Documentation</title>
+
+  <link href="content/css/bootstrap.css" rel="stylesheet">
+  <link href="content/css/font-awesome/font-awesome.css" rel="stylesheet">
+  <link href="content/css/mc-docs.css" rel="stylesheet">
+  <link href="content/css/jquery.ibox.css" rel="stylesheet">
+
+  <script src="content/js/jquery.js"></script>
+  <script src="content/js/functions.js"></script>
+
+  <link rel="ICON" href="favicon.ico">
+
+</head>
+
+<body>
+
+  <div id="wrapper">
+
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation" style="margin-bottom: 0">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-collapse">
+          <span class="sr-only">Toggle Navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">Documentation</a>
+      </div>
+
+      <div class="navbar-default navbar-static-side" role="navigation">
+        <div class="sidebar-collapse">
+        </div>
+      </div>
+    </nav>
+
+    <div id="page-wrapper">
+      <div class="row">
+        <div class="col-lg-12">
+          <h1 class="page-header">ISBN API</h1>
+        </div>
+      </div>
+
+            <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">What is ISBNDB?</div>
+            <div class="panel-body">
+              ISBNdb.com project is a database of books providing on-line and remote research tools for individuals, book stores, librarians, scientists, etc. Taking data from hundreds of libraries across the world, ISBNdb is a unique tool you won't find anywhere else. At the time of writing this, the ISBNDB database contained over 6,000,000 books.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">ISBNDB API</div>
+            <div class="panel-body">
+              The <a href="https://isbndb.com/" onclick="window.open(this);return false">ISBNDB</a> allows free remote access to its database via its <a href="http://isbndb.com/api/v2/docs" onclick="window.open(this);return false">API</a>. At the time of writing this, the service is restricted to 500 lookups per day. Further lookups can be purchased at reasonable rates. For example, &#036;10.00 would give you 4,000 additional lookups.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Activate in Maian Cart</div>
+            <div class="panel-body">
+              The procedure for enabling this feature in Maian Cart is a simple one. Please follow these instructions:<br><br>
+              <span class="badge">1</span> Sign up for a free account at <a href="http://isbndb.com/account/logincreate" onclick="window.open(this);return false">ISBNDB.com</a>.<br><br>
+              <span class="badge">2</span> Log into your account and access the 'Dev Area'.<br><br>
+              <span class="badge">3</span> Click 'Manage Access Keys'.<br><br>
+              <img class="img-responsive screenshot" src="content/images/screenshots/5.jpg" alt="" title=""><br>
+              <span class="badge">4</span> Click 'Generate a new key'.<br><br>
+              <img class="img-responsive screenshot" src="content/images/screenshots/6.jpg" alt="" title=""><br>
+              <span class="badge">5</span> Enter comment for key reference. Can be anything. Leave 'Daily Use Limit' blank or enter 0. Then click 'Generate new key':<br><br>
+              <img class="img-responsive screenshot" src="content/images/screenshots/7.jpg" alt="" title=""><br>
+              <span class="badge">6</span> Your new key is created. From the left menu click 'Manage Keys' and copy paste the key on the following
+              page in your Maian Cart admin area:<br><br>
+              <div class="alert alert-info">
+              System &gt; General Settings &gt; Settings Menu &gt; ISBN Database API
+              </div>
+              Thats it, you are done.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Maian Cart Usage</div>
+            <div class="panel-body">
+              Once the key is enabled you`ll see a 'ISBN Lookup' link next to the product name box on the 'Catalogue &gt; Add Product' page.<br><br>
+              <img class="img-responsive screenshot" src="content/images/screenshots/4.jpg" alt="" title=""><br>
+              Enter ISBN number in product name box and click link to perform lookup. If available, book title/name and summary (description) will be auto filled in. In some cases, not all data
+              is returned. For many books there is no summary and believe or not no author name. Its trial and error. If the data returned seems broke this is a restriction of the ISBNDB service and NOT
+              a fault in Maian Cart.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Change Title/Author Position</div>
+            <div class="panel-body">
+              By default the returned product name/title will be: {title} - {author}. If you wish to change this edit the following language file:<br><br>
+              <div class="alert alert-info">
+                content/language/english/admin/system/settings.php
+              </div>
+              Edit the following:<br><br>
+              <div class="alert alert-info">
+                &#036;msg_settings220  = '{book} - {author}';
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">API Url</div>
+            <div class="panel-body">
+             If the API url is changed, edit it in the 'admin/control/defined.php' file:<br><br>
+              <div class="alert alert-info">
+                define('ISBN_API_URL', 'http://isbndb.com/api/books.xml?access_key={KEY}&amp;index1=isbn&amp;value1={ISBN}&amp;results=texts');
+              </div>
+              {KEY} should be used where the access key is required and {ISBN} where the book code is required.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row footerArea">
+      </div>
+    </div>
+
+  </div>
+
+  <script>
+    //<![CDATA[
+    jQuery(document).ready(function() {
+      loadTopMenu();
+      loadLeftMenu();
+      loadFooter();
+    });
+    //]]>
+  </script>
+
+  <script src="content/js/bootstrap.js"></script>
+  <script src="content/js/plugins/jquery.metismenu.js"></script>
+  <script src="content/js/plugins/jquery.ibox.js"></script>
+
+</body>
+
+</html>

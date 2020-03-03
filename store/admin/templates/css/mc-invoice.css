@@ -1,0 +1,61 @@
+/*
+  Admin CSS - Invoice
+===================================================*/
+
+.invoicetemplate {
+  margin-top:30px;
+}
+
+.invoicetemplate .panel {
+  border-width: 2px;
+}
+
+.invoicetemplate .panel-heading {
+  color: #777;
+  text-transform:uppercase;
+}
+
+.invoicetemplate .height {
+  min-height: 200px;
+}
+
+.invoicetemplate h2 {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.invoicetemplate .icon {
+  font-size: 47px;
+  color: #5CB85C;
+}
+
+.invoicetemplate .iconbig {
+  font-size: 77px;
+  color: #5CB85C;
+}
+
+.invoicetemplate .table > tbody > tr > .emptyrow {
+  border-top: none;
+}
+
+.invoicetemplate .table > thead > tr > .emptyrow {
+  border-bottom: none;
+}
+
+.invoicetemplate .table > tbody > tr > .highrow {
+  border-top: 1px solid #ddd;
+}
+
+.invoicetemplate .company {
+  min-height: 130px;
+}
+
+.invoicetemplate .infoboxes {
+  min-height: 220px;
+}
+
+.invoicetemplate .ip {
+  text-align:center;
+  padding:20px 0 30px 0;
+  font-style:italic;
+}

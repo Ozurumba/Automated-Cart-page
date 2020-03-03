@@ -1,0 +1,27 @@
+<div id="windowcontent">
+	<div class="panel panel-default">
+		<div class="panel-heading">Stripe - Setup</div>
+		<div class="panel-body">1: Sign up for a Stripe account. It is recommended you create two accounts within your Stripe admin area, one for live processing and one for test.<br>
+    2: Log into your Stripe account and click 'Developers > API Keys' in the left menu to generate your perishable and secret keys.<br>
+    3. Next select 'Developers > Webhooks'. Click to add new endpoint. In the url box enter the callback/endpoint you see below and specify all event types. If there is an option to
+    select an API version, you should choose '2019-05-16' or later.<br>
+    4: Enter your perishable and secret key details in your Maian Cart admin area:<br><br><b>Sales > Payment Methods > Stripe</b>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading">Stripe - Callback/Endpoint</div>
+    <div class="panel-body"> The callback/endpoint for all operations is:<br><br>
+    <b>https://www.example.com/checkout/stripe.php (SSL)</b><br><br>
+    Where 'example.com' is your own domain.
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading">Stripe - Sandbox</div>
+    <div class="panel-body">
+      Stripe has a nice easy to use test system so you can test the system before going live. For a list of test cards, visit the following url:<br><br>
+     <b>https://stripe.com/docs/testing</b><br><br>
+     You will need to use test keys when using the test system. You should click 'View test data' in the left menu OR use your test account and then follow the instructions above. Make sure
+     you have test keys and a test endpoint set up. The test data does NOT post to the live endpoint.
+    </div>
+  </div>
+</div>

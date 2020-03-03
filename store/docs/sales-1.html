@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>View Sales:  Maian Cart Documentation</title>
+
+  <link href="content/css/bootstrap.css" rel="stylesheet">
+  <link href="content/css/font-awesome/font-awesome.css" rel="stylesheet">
+  <link href="content/css/mc-docs.css" rel="stylesheet">
+  <link href="content/css/jquery.ibox.css" rel="stylesheet">
+
+  <script src="content/js/jquery.js"></script>
+  <script src="content/js/functions.js"></script>
+
+  <link rel="ICON" href="favicon.ico">
+
+</head>
+
+<body>
+
+  <div id="wrapper">
+
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation" style="margin-bottom: 0">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-collapse">
+          <span class="sr-only">Toggle Navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">Documentation</a>
+      </div>
+
+      <div class="navbar-default navbar-static-side" role="navigation">
+        <div class="sidebar-collapse">
+        </div>
+      </div>
+    </nav>
+
+    <div id="page-wrapper">
+      <div class="row">
+        <div class="col-lg-12">
+          <h1 class="page-header">View Sales</h1>
+        </div>
+      </div>
+
+            <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Overview</div>
+            <div class="panel-body">
+              Displays a list of sales. Even though this section contains many options, the initial view is minimal and not cluttered for better performance on small devices. Other help pages will
+              be available as you click through the various sale screens. Some options are not shown if they don`t apply. For example, download reset options
+              won`t be available on sales with no downloadable products.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Sale Quick Links</div>
+            <div class="panel-body">
+              On all sale sub screens you`ll see a <button class="btn btn-sm btn-info" type="button"><i class="fa fa-cog fa-fw"></i></button> button. Click this to reveal quick links to other
+              options within the sale.<br><br>
+              <img class="img-responsive screenshot" src="content/images/screenshots/13.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Filtering Options</div>
+            <div class="panel-body">
+              Click the <i class="fa fa-filter fa-fw"></i> icon for drop down filters.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Guest Sale / Account Sale</div>
+            <div class="panel-body">
+            Guest and account sales show different coloured icons next to the buyers name.<br><br>
+            <i class="fa fa-user fa-fw" style="color: #02C03C"></i> - Account / Trade Sale<br><br>
+            <i class="fa fa-user fa-fw" style="color: #789DCA"></i> - Guest Sale
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Sale Action Bar Defaults</div>
+            <div class="panel-body">
+              An action bar appears beneath each sale with the following default options:<br><br>
+              <i class="fa fa-pencil fa-fw"></i> - Edit sale, add products to sale etc<br><br>
+              <i class="fa fa-file-text-o fa-fw"></i> - View invoice (PDF available, see below)<br><br>
+              <i class="fa fa-truck fa-fw"></i> - View shipping / packing slip (only shown if at least one item requires shipping. PDF available, see below)<br><br>
+              <i class="fa fa-history fa-fw"></i> - Update sale status<br><br>
+              <i class="fa fa-long-arrow-down fa-fw"></i> - Other options (see below)
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Sales Action Bar - Other Options - XX Products Ordered - Click to View</div>
+            <div class="panel-body">
+              <img class="img-responsive screenshot" src="content/images/screenshots/10.png" alt=""><br>
+              Clicking this link will show the <a href="sales-9.html">products ordered</a>. On this <a href="sales-9.html">screen</a> you can resend confirmation
+              emails to drop shippers if they are applicable.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Sales Action Bar - Other Options</div>
+            <div class="panel-body">
+              <i class="fa fa-save fa-fw"></i> - Export - Export sale to CSV<br><br>
+              <i class="fa fa-print fa-fw"></i> - Print Personalisation Options - Click to print personalised items. Only shown if there are any personalised items in the store.<br><br>
+              <i class="fa fa-download fa-fw"></i> - Download Management - For <a href="sales-10.html">product downloads</a>. If no downloads are in the order, this will not be shown. On this <a href="sales-10.html">screen</a> you can reset download links.<br><br>
+              <i class="fa fa-tags fa-fw"></i> - Print Shipping Label - Opens new window with shipping address, which can be printed. This is not shown if there are no items to be shipped.<br><br>
+              <i class="fa fa-list-alt fa-fw"></i> - Payment Gateway Parameters - Shows windows with all parameters sent back from payment gateway. Only shown if payment was via payment gateway.<br><br>
+              <i class="fa fa-times fa-fw"></i> - Delete - Delete sale from database. Sales can also be batch deleted, see below.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Invoice PDF / Packing Slip PDF</div>
+            <div class="panel-body">
+              Maian Cart offers PDF print options for both invoices and packing slips if PDF`s are enabled in the <a href="settings-1.html">settings</a>. When you view either, scroll to the bottom
+              of the screen and click the PDF button. Example screenshot as follows:<br><br>
+              <img class="img-responsive screenshot" src="content/images/screenshots/11.png" alt=""><br>
+              PDF template information <a href="language-4.html">here</a><br><br>
+              You can also save an invoice to PDF using a print server, which is standard PC software. There are many excellent free ones about. A few good ones
+              are<br><br>
+              <a href="https://en.pdf24.org/" onclick="window.open(this);return false">PDF24 Creator</a><br>
+              <a href="http://www.dopdf.com/" onclick="window.open(this);return false">doPDF</a><br>
+              <a href="http://thesz.diecru.eu/content/doro.php" onclick="window.open(this);return false">Doro</a><br><br>
+              Install the software, then select the print server from the standard windows print dialog. The benefit here is you can print ANY screen in Maian Cart to PDF. This example screenshot is from Windows 10.<br><br>
+              <img class="img-responsive screenshot" src="content/images/screenshots/12.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Batch Update Sales</div>
+            <div class="panel-body">
+              Use the checkboxes to select which sales apply then click the button to batch update sales. Useful if you want to update
+              several sales at once. More info on the sales update screen <a href="sales-7.html">here</a>.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Delete Sales</div>
+            <div class="panel-body">
+              To batch delete, click the checkboxes to select sales, then click the button to delete.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row footerArea">
+      </div>
+    </div>
+
+  </div>
+
+  <script>
+    //<![CDATA[
+    jQuery(document).ready(function() {
+      loadTopMenu();
+      loadLeftMenu();
+      loadFooter();
+    });
+    //]]>
+  </script>
+
+  <script src="content/js/bootstrap.js"></script>
+  <script src="content/js/plugins/jquery.metismenu.js"></script>
+  <script src="content/js/plugins/jquery.ibox.js"></script>
+
+</body>
+
+</html>

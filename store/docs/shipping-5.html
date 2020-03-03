@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Batch Update Rates:  Maian Cart Documentation</title>
+
+  <link href="content/css/bootstrap.css" rel="stylesheet">
+  <link href="content/css/font-awesome/font-awesome.css" rel="stylesheet">
+  <link href="content/css/mc-docs.css" rel="stylesheet">
+  <link href="content/css/jquery.ibox.css" rel="stylesheet">
+
+  <script src="content/js/jquery.js"></script>
+  <script src="content/js/functions.js"></script>
+
+  <link rel="ICON" href="favicon.ico">
+
+</head>
+
+<body>
+
+  <div id="wrapper">
+
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation" style="margin-bottom: 0">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-collapse">
+          <span class="sr-only">Toggle Navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">Documentation</a>
+      </div>
+
+      <div class="navbar-default navbar-static-side" role="navigation">
+        <div class="sidebar-collapse">
+        </div>
+      </div>
+    </nav>
+
+    <div id="page-wrapper">
+      <div class="row">
+        <div class="col-lg-12">
+          <h1 class="page-header">Batch Update Rates</h1>
+        </div>
+      </div>
+
+            <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Overview</div>
+            <div class="panel-body">
+              Here you can batch update your shipping rates. Adjustments can be applied to all rates or only rates in selected zones. Rate adjustment can be a fixed amount or a percentage. This is useful
+  if you need to quickly batch update your rates due to price increases.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Shipping Rate Adjustment</div>
+            <div class="panel-body">
+              Specify rate adjustment. This can be a set amount or a percentage for increases or decreases OR a fixed amount. Examples:<br><br><b>9.99 or 10% (For Increase or Decrease)<br>9.99 (Fixed)</b><br><br>No currency symbol for price and NO commas.<br><br>Note that for percentage based adjustments, amount entered is ALWAYS a percent. For example, if your percentage based rates are 10% and you enter 5.55, this would mean 5.55% and not 5.55 as a price.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Adjustment Type</div>
+            <div class="panel-body">
+              Please choose:<br><br><b>Increase or Decrease</b> - Takes existing price/rate and increases or decreases price/rate by amount specified.<br><br><b>Fixed</b> - A new fixed price/rate.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Apply to Shipping Rates in Selected Zones</div>
+            <div class="panel-body">
+              Specify which zones to apply this adjustment to. Use the checkboxes to make your selections.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Update Rate Preference</div>
+            <div class="panel-body">
+              Specify which rates to adjust:<br><br><b>Flat Rates</b> - Flat rates for selected zone(s)<br><b>Per Item Rates</b> - Per item rates for selected zone(s)<br><b>Percentage Rates</b> - Percentage based rates for selected zone(s)<br><b>Weight Based Rates</b> - Weight based rates for selected zone(s)<br><b>Tare Weight Rates</b> - Tare weight based rates<br><br>
+  At least 1 option MUST be specified. If none are specified, defaults to weight based ONLY.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Additional Item Adjustment</div>
+            <div class="panel-body">
+              For Per Item rates only. This is the adjustment for the additional items price. Same rules apply as for the shipping rate adjustment. Leave blank to NOT adjust the additional items price.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row footerArea">
+      </div>
+    </div>
+
+  </div>
+
+  <script>
+    //<![CDATA[
+    jQuery(document).ready(function() {
+      loadTopMenu();
+      loadLeftMenu();
+      loadFooter();
+    });
+    //]]>
+  </script>
+
+  <script src="content/js/bootstrap.js"></script>
+  <script src="content/js/plugins/jquery.metismenu.js"></script>
+  <script src="content/js/plugins/jquery.ibox.js"></script>
+
+</body>
+
+</html>

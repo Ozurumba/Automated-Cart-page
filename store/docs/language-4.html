@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>PDF Invoice / Packing Slip Templates:  Maian Cart Documentation</title>
+
+  <link href="content/css/bootstrap.css" rel="stylesheet">
+  <link href="content/css/font-awesome/font-awesome.css" rel="stylesheet">
+  <link href="content/css/mc-docs.css" rel="stylesheet">
+  <link href="content/css/jquery.ibox.css" rel="stylesheet">
+
+  <script src="content/js/jquery.js"></script>
+  <script src="content/js/functions.js"></script>
+
+  <link rel="ICON" href="favicon.ico">
+
+</head>
+
+<body>
+
+  <div id="wrapper">
+
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation" style="margin-bottom: 0">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-collapse">
+          <span class="sr-only">Toggle Navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">Documentation</a>
+      </div>
+
+      <div class="navbar-default navbar-static-side" role="navigation">
+        <div class="sidebar-collapse">
+        </div>
+      </div>
+    </nav>
+
+    <div id="page-wrapper">
+      <div class="row">
+        <div class="col-lg-12">
+          <h1 class="page-header">PDF Invoice / Packing Slip Templates</h1>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Overview</div>
+            <div class="panel-body">
+              Maian Cart utilises the superb PDF library <a href="https://tcpdf.org" onclick="window.open(this);return false">TCPDF</a> written and offered
+              as open source by <a href="https://nicola.asuni.xyz/" onclick="window.open(this);return false">Nicola Asuni</a>. When enabled you have one
+              click options to create / view PDF invoices and packing slips.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">HTML Templates</div>
+            <div class="panel-body">
+              For ease of data mapping, TCPDF uses standard HTML templates. These can contain standard HTML code. Editing these files will require a good
+              knowledge of HTML code. You can set different layouts and colours for personal and trade accounts if you wish.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">PDF HTML Template Locations</div>
+            <div class="panel-body">
+              For Invoice PDFs the location is the same for both frontend and admin as both areas use the same templates.<br><br>
+              <div class="alert alert-info">
+                content/** theme **/html/pdf-invoice/personal/* (Personal/Retail template files)<br>
+                content/** theme **/html/pdf-invoice/trade/* (Trade template files)
+              </div>
+              As packing slips are admin only, the location is different.<br><br>
+              <div class="alert alert-info">
+                admin/templates/windows/pdf/personal/* (Personal/Retail template files)<br>
+                admin/templates/windows/pdf/trade/* (Trade template files)
+              </div>
+              If you are unsure, leave the files as they are.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Inline Styles ONLY</div>
+            <div class="panel-body">
+              You should use inline styles ONLY as the template files do not use CSS. Example to colour a table cell as red with white text:<br><br>
+              <div class="alert alert-info" style="margin-bottom:0">
+                &lt;td style="background:red;color:white"&gt;Example text..&lt;/td&gt;
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Variables</div>
+            <div class="panel-body">
+              Unless you know exactly what you are doing, DO NOT remove any of the system variables between braces. Example:<br><br>
+              <div class="alert alert-info" style="margin-bottom:0">
+                {COMPANY_NAME}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">PDF Config File</div>
+            <div class="panel-body">
+              This is for advanced users ONLY. You can change the global settings of the PDF files in the PDF config file:<br><br>
+              <div class="alert alert-info">
+              control/tcpdf/tcpdf_config.php
+              </div>
+              For example, to change the outer border colour edit the <b>&#036;drawOutsideBorderCfg</b> and <b>&#036;drawOutsideBorderTradeCfg</b> variables respectively using RGB values.<br><br>
+              Other options in this file are global and will affect <b>ALL</b> PDFs.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row footerArea">
+      </div>
+    </div>
+
+  </div>
+
+  <script>
+    //<![CDATA[
+    jQuery(document).ready(function() {
+      loadTopMenu();
+      loadLeftMenu();
+      loadFooter();
+    });
+    //]]>
+  </script>
+
+  <script src="content/js/bootstrap.js"></script>
+  <script src="content/js/plugins/jquery.metismenu.js"></script>
+  <script src="content/js/plugins/jquery.ibox.js"></script>
+
+</body>
+
+</html>

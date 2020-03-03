@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Entry Log:  Maian Cart Documentation</title>
+
+  <link href="content/css/bootstrap.css" rel="stylesheet">
+  <link href="content/css/font-awesome/font-awesome.css" rel="stylesheet">
+  <link href="content/css/mc-docs.css" rel="stylesheet">
+  <link href="content/css/jquery.ibox.css" rel="stylesheet">
+
+  <script src="content/js/jquery.js"></script>
+  <script src="content/js/functions.js"></script>
+
+  <link rel="ICON" href="favicon.ico">
+
+</head>
+
+<body>
+
+  <div id="wrapper">
+
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation" style="margin-bottom: 0">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-collapse">
+          <span class="sr-only">Toggle Navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">Documentation</a>
+      </div>
+
+      <div class="navbar-default navbar-static-side" role="navigation">
+        <div class="sidebar-collapse">
+        </div>
+      </div>
+    </nav>
+
+    <div id="page-wrapper">
+      <div class="row">
+        <div class="col-lg-12">
+          <h1 class="page-header">Entry Log</h1>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Overview</div>
+            <div class="panel-body">
+              Displays log entries from admin staff and accounts. Useful for security. Entry log is enabled/disabled in the settings.<br><br>
+              It is recommended you clear the entry log from time to time.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Top Bar Options</div>
+            <div class="panel-body">
+              <i class="fa fa-filter fa-fw"></i> - Filter by account type or admin<br><br>
+              <i class="fa fa-search fa-fw"></i> - Search entries<br><br>
+              <i class="fa fa-save fa-fw"></i> - Save to CSV. Export mirrors filters / search.<br><br>
+              <i class="fa fa-times fa-fw"></i> - Clear log. If filters / search is set, it will mirror filters. For example, if you searched for 'user', it would
+              only delete entries you see on screen.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Disable Logging of Certain Staff / Accounts</div>
+            <div class="panel-body">
+              Its possible to enable the entry log, but not log entries by certain staff/accounts. For example, a site developer or owner might not want his/her log entries to appear.<br><br>
+              For accounts, you can enable / disable the entry log on the relevant account edit screen. To disable admin staff, open the 'control/defined.php' file in a text editor and look for the following:<br><br>
+              <div class="alert alert-info">
+               define('ENTRY_LOG_SKIP_USERS', '');
+              </div>
+              Enter email addresses separated with a comma. This is not case sensitive. So, for example, to disable logging of the following:<br><br>
+              johndoe@example.com<br>
+              ayumihamasaki@example.com:<br><br>
+              You would enter:<br><br>
+              <div class="alert alert-info">
+              define('ENTRY_LOG_SKIP_USERS', 'johndoe@example.com,ayumihamasaki@example.com');
+              </div>
+              To disable logging for the global admin user as set in the 'admin/control/access.php' file use the following variable:<br><br>
+              GLOBAL_NO<br><br>
+              <div class="alert alert-info">
+              define('ENTRY_LOG_SKIP_USERS', 'GLOBAL_NO,johndoe@example.com,ayumihamasaki@example.com');
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row footerArea">
+      </div>
+    </div>
+
+  </div>
+
+  <script>
+    //<![CDATA[
+    jQuery(document).ready(function() {
+      loadTopMenu();
+      loadLeftMenu();
+      loadFooter();
+    });
+    //]]>
+  </script>
+
+  <script src="content/js/bootstrap.js"></script>
+  <script src="content/js/plugins/jquery.metismenu.js"></script>
+  <script src="content/js/plugins/jquery.ibox.js"></script>
+
+</body>
+
+</html>

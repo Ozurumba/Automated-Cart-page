@@ -1,0 +1,15 @@
+Database Backup
+
+<-{separater}->
+
+Store: {STORE}
+Date Created: {DATE_TIME}
+Store Version: v{VERSION}
+
+File enclosed:
+{FILE}
+
+<-{separater}->
+
+{WEBSITE_NAME}
+{WEBSITE_URL}

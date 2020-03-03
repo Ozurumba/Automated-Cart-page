@@ -1,0 +1,38 @@
+{WEBSITE_NAME} - Download/Gift Cert Order #{INVOICE_NO}
+
+<-{separater}->
+
+Hello {NAME},
+
+Thank you for your order at {WEBSITE_NAME}.
+
+----------------------------------------------------------------
+[B]PRODUCT DOWNLOADS/GIFT CERTIFICATES[/B]
+----------------------------------------------------------------
+
+{PRODUCT_ORDER}
+
+----------------------------------------------------------------
+
+Discount Applied: {DISCOUNTS}
+Order Total: {TOTAL}
+Payment Currency: {CURRENCY}
+
+----------------------------------------------------------------
+
+You elected to pay using the following payment method: {GATEWAY_NAME}
+
+To complete your order, please follow these instructions:
+
+{INSTRUCTIONS}
+
+Once payment is completed, your order will be activated and if applicable, products will be available to download.
+
+Kind regards,
+
+<-{separater}->
+
+{WEBSITE_NAME}
+{WEBSITE_URL}
+
+IP address: {ORDER_IP}

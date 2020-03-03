@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Shipping Zones:  Maian Cart Documentation</title>
+
+  <link href="content/css/bootstrap.css" rel="stylesheet">
+  <link href="content/css/font-awesome/font-awesome.css" rel="stylesheet">
+  <link href="content/css/mc-docs.css" rel="stylesheet">
+  <link href="content/css/jquery.ibox.css" rel="stylesheet">
+
+  <script src="content/js/jquery.js"></script>
+  <script src="content/js/functions.js"></script>
+
+  <link rel="ICON" href="favicon.ico">
+
+</head>
+
+<body>
+
+  <div id="wrapper">
+
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation" style="margin-bottom: 0">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-collapse">
+          <span class="sr-only">Toggle Navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">Documentation</a>
+      </div>
+
+      <div class="navbar-default navbar-static-side" role="navigation">
+        <div class="sidebar-collapse">
+        </div>
+      </div>
+    </nav>
+
+    <div id="page-wrapper">
+      <div class="row">
+        <div class="col-lg-12">
+          <h1 class="page-header">Shipping Zones</h1>
+        </div>
+      </div>
+
+            <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Overview</div>
+            <div class="panel-body">
+              Groups areas or districts in a country into a zone. 'Zone' is just a generic term applied to this page, your country doesn`t specifically need to support zones. For example, for UK
+  zones you may want to include certain counties into one zone and other counties into another, depending on location. If no zones are specified, shipping selectors on checkout page are
+  disabled in favour of a simplified checkout screen with no shipping options.<br><br>
+  If you aren`t bothered about zones, simply create a single zone and call it 'All Areas' for all countries.
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Name of Zone</div>
+            <div class="panel-body">
+              This is the name of your zone. Its not used in the store and just acts as a reference in the admin area.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Specify Countries</div>
+            <div class="panel-body">
+              Which countries does this zone apply to.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Enter Zone Areas/Regions</div>
+            <div class="panel-body">
+              Enter zone areas/regions. One per line. UK example might be Counties:<br><br>Derbyshire<br>Staffordshire<br>West Midlands<br><br><b>OR</b> use batch upload option. If you enter text in the box AND batch upload, the text box is ignored in favour of the upload file.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Or Locate Batch File</div>
+            <div class="panel-body">
+              Batch add entries via a text file. ONE entry per line. If this option is utlised, the text box is ignored, regardless of data.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Tax Rate</div>
+            <div class="panel-body">
+              Does a tax rate apply to this zone? Enter 0 for no tax.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Apply Tax to Shipping</div>
+            <div class="panel-body">
+              If a tax rate is specified, should this rate also be applied to the shipping? If yes, total is total+shipping+rate. If no, total is total+rate+shipping.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">No Shipping at All</div>
+            <div class="panel-body">
+              If shipping to this country is free, enter a tax rate of 0 and specify NO tax on shipping. Give the zone a generic name like 'All Zones'.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Manage Zones</div>
+            <div class="panel-body">
+            Use the links provided to edit or delete zones. Use the <i class="fa fa-filter fa-fw"></i> icon to filter by enabled countries.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row footerArea">
+      </div>
+    </div>
+
+  </div>
+
+  <script>
+    //<![CDATA[
+    jQuery(document).ready(function() {
+      loadTopMenu();
+      loadLeftMenu();
+      loadFooter();
+    });
+    //]]>
+  </script>
+
+  <script src="content/js/bootstrap.js"></script>
+  <script src="content/js/plugins/jquery.metismenu.js"></script>
+  <script src="content/js/plugins/jquery.ibox.js"></script>
+
+</body>
+
+</html>

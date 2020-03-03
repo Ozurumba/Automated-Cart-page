@@ -1,0 +1,27 @@
+Account Closed
+
+<-{separater}->
+
+The following user has closed their account at "{WEBSITE_NAME}".
+
+{NAME}
+{EMAIL}
+
+The following has been deleted for this user:
+
+- All address book information
+- All saved searches and wish list information
+- Account information
+- Entry logs
+
+Note that this does not delete or affect any sales data.
+
+You can disable the ability for users to be able to close accounts in your settings:
+{WEBSITE_URL}/{ADMIN_FOLDER}/
+
+<-{separater}->
+
+{WEBSITE_NAME}
+{WEBSITE_URL}
+
+IP address: {IP}

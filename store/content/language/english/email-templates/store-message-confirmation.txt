@@ -1,0 +1,24 @@
+Message Confirmation
+
+<-{separater}->
+
+Hi {NAME},
+
+Thanks for contacting "{WEBSITE_NAME}".
+
+You submitted the following:
+
+-------------------------------------
+
+{MESSAGE}
+
+-------------------------------------
+
+We`ll get back to you asap.
+
+<-{separater}->
+
+Kind regards,
+
+{WEBSITE_NAME}
+{WEBSITE_URL}

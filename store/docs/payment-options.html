@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Payment Options:  Maian Cart Documentation</title>
+
+  <link href="content/css/bootstrap.css" rel="stylesheet">
+  <link href="content/css/font-awesome/font-awesome.css" rel="stylesheet">
+  <link href="content/css/mc-docs.css" rel="stylesheet">
+  <link href="content/css/jquery.ibox.css" rel="stylesheet">
+
+  <script src="content/js/jquery.js"></script>
+  <script src="content/js/functions.js"></script>
+
+  <link rel="ICON" href="favicon.ico">
+
+</head>
+
+<body>
+
+  <div id="wrapper">
+
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation" style="margin-bottom: 0">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-collapse">
+          <span class="sr-only">Toggle Navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">Documentation</a>
+      </div>
+
+      <div class="navbar-default navbar-static-side" role="navigation">
+        <div class="sidebar-collapse">
+        </div>
+      </div>
+    </nav>
+
+    <div id="page-wrapper">
+      <div class="row">
+        <div class="col-lg-12">
+          <h1 class="page-header">Payment Options</h1>
+        </div>
+      </div>
+
+            <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Payment Options</div>
+            <div class="panel-body">
+              Maian Cart offers a number of payment methods for secure credit card payments. Maian Cart has no server-to-server integrations with the exception of Stripe. This means the buyer will always leave your site to pay via the gateway. With Stripe the buyer never
+              leaves your website.<br><br>
+  Most gateways offer many customisation options for their hosted solutions, some of which are integrated in Maian cart. Having the gateway host the payment page reduces the cost of <a href="http://en.wikipedia.org/wiki/Payment_Card_Industry_Data_Security_Standard" onclick="window.open(this);return false">PCI compliancy</a>, required by many banks.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Integration</div>
+            <div class="panel-body">
+              Unlike many cart systems that require you to download plugins to make payment methods work, Maian Cart has each payment option fully integrated as default. A lot of API plugin code is badly coded and over blown with unecessary data as it incorporates many methods related to different payment routines. Maian Cart has each gateway integrated with minimal code for efficiency.<br><br>
+  Its worth noting that I would like to thank the many gateway developers who kindly answered my integration questions.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">SSL</div>
+            <div class="panel-body">
+              It is highly recommended you install SSL on your server. Most gateways require this to be installed. eg: Paypal. You can obtain free SSL certificates
+              from Let`s Encrypt. DO NOT compromise your store &amp; customer security with an insecure website.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Test Mode (Recommended)</div>
+            <div class="panel-body">
+              It is recommended you enable test mode for any gateway first to make sure the payment routines are working ok.<br><br>
+              Don`t forget to switch to live when your store goes live.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Debugging</div>
+            <div class="panel-body">
+              All operations are logged to a text file, so you can see where a payment might be failing. Enable the logs in admin:<br><br>
+              <b>Store Settings &gt; Global Store Settings &gt; Gateway Response Logging</b><br><br>
+              It is recommended you leave logging enabled for the first few payments to make sure everything is working.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Options</div>
+            <div class="panel-body">
+            In your admin control panel, for each payment option, icons are shown:<br><br>
+            <i class="fa fa-desktop fa-fw"></i> - Link to website (if applicable)<br><br>
+            <i class="fa fa-book fa-fw"></i> - Link to documentation page. Or click gateway logo`s below.<br><br>
+            <i class="fa fa-cog fa-fw"></i> - Payment option / gateway configuration
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Available Payment Options - Gateways</div>
+            <div class="panel-body">
+              The available payment options are shown below. More will be added later. For information and setup instuctions click a logo below.<br><br>
+              <div class="alert alert-warning">
+                <b>NOTE</b>: Payment gateways change. Their APIs get updated, their interfaces change and things may work differently to what is described in
+                these docs. If something has changed or isn`t working correctly, please <a href="support.html">let me know</a>. Thank you.
+              </div>
+              <div class="table-responsive gateways">
+                <table class="table table-striped table-hover">
+                  <tbody>
+                    <tr>
+                      <td><a href="payment-1.html"><img src="content/images/gateways/paypal.png" alt="" title=""></a><span>www.paypal.com</span></td>
+                      <td><a href="payment-2.html"><img src="content/images/gateways/2checkout.png" alt="" title=""></a><span>www.2checkout.com</span></td>
+                      <td><a href="payment-3.html"><img src="content/images/gateways/stripe.png" alt="" title=""></a><span>www.stripe.com/gb</span></td>
+                    </tr>
+                    <tr>
+                      <td><a href="payment-5.html"><img src="content/images/gateways/skrill.png" alt="" title=""></a><span>www.skrill.com</span></td>
+                      <td><a href="payment-7.html"><img src="content/images/gateways/payfast.png" alt="" title=""></a><span>www.payfast.co.za</span></td>
+                      <td><a href="payment-9.html"><img src="content/images/gateways/cardsave.png" alt="" title=""></a><span>www.cardsave.net</span></td>
+                    </tr>
+                    <tr>
+                      <td><a href="payment-10.html"><img src="content/images/gateways/sagepay.png" alt="" title=""></a><span>www.sagepay.com</span></td>
+                      <td><a href="payment-12.html"><img src="content/images/gateways/worldpay.png" alt="" title=""></a><span>www.worldpay.com</span></td>
+                      <td><a href="payment-31.html"><img src="content/images/gateways/paysense.png" alt="" title=""></a><span>www.paymentsense.co.uk</span></td>
+                    </tr>
+                    <tr>
+                      <td><a href="payment-13.html"><img src="content/images/gateways/cardstream.png" alt="" title=""></a><span>www.cardstream.com</span></td>
+                      <td><a href="payment-16.html"><img src="content/images/gateways/authnet.png" alt="" title=""></a><span>www.authorize.net</span></td>
+                      <td><a href="payment-26.html"><img src="content/images/gateways/sectrade.png" alt="" title=""></a><span>www.securetrading.com</span></td>
+                    </tr>
+                    <tr>
+                      <td><a href="payment-17.html"><img src="content/images/gateways/paymate.png" alt="" title=""></a><span>www.paymate.com</span></td>
+                      <td><a href="payment-21.html"><img src="content/images/gateways/icepay.png" alt="" title=""></a><span>www.icepay.com</span></td>
+                      <td><a href="payment-22.html"><img src="content/images/gateways/ccnow.png" alt="" title=""></a><span>www.ccnow.com</span></td>
+                    </tr>
+                    <tr>
+                      <td><a href="payment-23.html"><img src="content/images/gateways/payvector.png" alt="" title=""></a><span>www.payvector.co.uk</span></td>
+                      <td><a href="payment-24.html"><img src="content/images/gateways/paytrail.png" alt="" title=""></a><span>www.paytrail.com</span></td>
+                      <td>&nbsp;</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Other Available Payment/Checkout Options</div>
+            <div class="panel-body">
+              <b>Phone, Bank Transfer, Cash on Delivery &amp; Check/Cheque</b> are also available. This require further interraction with a buyer.<br><br>
+              <b>On Account</b> - This method treats a sale as completed and is ideal for post invoicing accounts. For example, trade.<br><br>
+              More info <a href="payment-6.html">here</a>.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row footerArea">
+      </div>
+    </div>
+
+  </div>
+
+  <script>
+    //<![CDATA[
+    jQuery(document).ready(function() {
+      loadTopMenu();
+      loadLeftMenu();
+      loadFooter();
+    });
+    //]]>
+  </script>
+
+  <script src="content/js/bootstrap.js"></script>
+  <script src="content/js/plugins/jquery.metismenu.js"></script>
+  <script src="content/js/plugins/jquery.ibox.js"></script>
+
+</body>
+
+</html>

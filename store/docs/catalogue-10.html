@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Import Routines:  Maian Cart Documentation</title>
+
+  <link href="content/css/bootstrap.css" rel="stylesheet">
+  <link href="content/css/font-awesome/font-awesome.css" rel="stylesheet">
+  <link href="content/css/mc-docs.css" rel="stylesheet">
+  <link href="content/css/jquery.ibox.css" rel="stylesheet">
+
+  <script src="content/js/jquery.js"></script>
+  <script src="content/js/functions.js"></script>
+
+  <link rel="ICON" href="favicon.ico">
+
+</head>
+
+<body>
+
+  <div id="wrapper">
+
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation" style="margin-bottom: 0">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-collapse">
+          <span class="sr-only">Toggle Navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">Documentation</a>
+      </div>
+
+      <div class="navbar-default navbar-static-side" role="navigation">
+        <div class="sidebar-collapse">
+        </div>
+      </div>
+    </nav>
+
+    <div id="page-wrapper">
+      <div class="row">
+        <div class="col-lg-12">
+          <h1 class="page-header">Import Routines</h1>
+        </div>
+      </div>
+
+            <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Overview</div>
+            <div class="panel-body">
+              Batch import routines are a time saving mechanism that enables you to add multiple products/attributes in a single routine. This is useful if you are migrating from another cart or have a large
+  product inventory. Maian Cart uses standard CSV structure for importing, along with field mapping for easier uploads.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">CSV with Header</div>
+            <div class="panel-body">
+              Files must be standard CSV format. Text files are also fine providing the structure is the same. CSV file <b>MUST</b> have a header row at the top of the file for the field mapping
+  routine. This is a reference for the column names. For example, your product name column might be 'name', 'product' or 'product name' etc. Names are not that important, so long as you know what each
+  column is.<br><br>It doesn`t matter if columns in your CSV are not going to be used by Maian Cart. Nor does it matter what order the columns are in. If you don`t specify a header row, you`ll
+  see previews of the first row, but may not be able to see what it relates to.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Field Mapping</div>
+            <div class="panel-body">
+              After you have uploaded your file you will be presented with field mapping options. This will be a list of your header column names along with the database fields from the cart system. You need to select the correct field in the database with
+  the corresponding column in your CSV. Data will be taken from that row and inserted into the correct field. If there are any fields in your CSV that are not going to be used, simply leave the corresponding
+  field selection blank.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Field Data Types</div>
+            <div class="panel-body">
+              It is important that the field you select matches the data type used by Maian Cart. For example, if you specify a string field for a DATE column this will revert to the default setting for that field. In the
+  case of DATE fields its 0000-00-00. If the data type doesn`t match, the import should still run but you may have to make product edits after to correct some data.<br><br>
+  Data types are as follows:<br><br>
+  [Boolean] = True or false, 0 or 1, Yes or No.<br>
+  [Integer] = Numeric value only. Default 0.<br>
+  [Decimal] = Decimal value or integer. eg: 34.76 or 34 <br>
+  [String] = For text field values.<br>
+  [Date] = Valid US date. Due to restrictions in PHP/MySQL, date must be a US formatted date. If cannot be converted to timestamp will revert to 0000-00-00. Examples: YYYY/MM/DD or YYYY-MM-DD or MM/DD/YYYY or MM-DD-YYYY<br>
+  [Monetary Value] = 0.00 default.<br><br>
+  If your columns don`t match the data type entry, the default will be imposed and you`ll have to re-edit after. Try some small test imports first.
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Product Import Columns</div>
+            <div class="panel-body">
+              Your import file can have the column data in any order as the field mapping routine will map the relevant position to the database. The product import file will map the following
+              database fields:<br><br>
+              Product Name (String)<br>
+              Product Alternative Browser Title (String)<br>
+              Product Short Description (String)<br>
+              Product Full Description (String)<br>
+              Product Meta Keywords (String)<br>
+              Product Meta Description (String)<br>
+              Product Tags (String)<br>
+              Product Rewrite Slug (String)<br>
+              Downloadable Product (Boolean)<br>
+              Local/HTTP/FTP Path to File (String)<br>
+              Product Download Limit (Integer)<br>
+              Product Facebook Video Code (String - Alphanumeric)<br>
+              Product Vimeo Video Code (String - Alphanumeric)<br>
+              Product Stock (Integer)<br>
+              Product Min Purchase Qty (Integer)<br>
+              Product Max Purchase Qty (Integer)<br>
+              Product Low Stock Notify (Integer)<br>
+              Product Hit Counter (Integer)<br>
+              Product Code (String)<br>
+              Product Weight (Decimal)<br>
+              Product Retail Price (Monetary Value)<br>
+              Product Cost Price (Monetary Value)<br>
+              Product Offer Price (Monetary Value)<br>
+              Product Offer Expiry Date (Date)<br>
+              Product Expiry Date (Date)<br>
+              Product Drop Shipper (Integer - Drop shipper ID from admin drop shippers page)<br><br>
+              Not all columns are required in your import file. Ideally a product name and a price should be enough to import the product. Give it a few test runs first. Descriptions of data that should
+              be in the csv relates to the same as the <a href="catalogue-1.html">Add Product</a> info. Use the <i class="fa fa-info-circle fa-fw"></i> link for more information after you have uploaded a file.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Attribute Import Columns</div>
+            <div class="panel-body">
+              Your import file can have the column data in any order as the field mapping routine will map the relevant position to the database. The attribute import file will map the following
+  database fields:<br><br>
+  Attribute Name (String)<br>
+  Attribute Weight (Decimal)<br>
+  Attribute Stock (Integer)<br>
+  Attribute Price (Monetary Value)<br><br>
+  Not all columns are required in your import file. Give it a few test runs first.<br><br>
+  Once you have imported attributes you can go to the relevant product page and batch copy attributes to other products in your store. Use the <i class="fa fa-info-circle fa-fw"></i> link for more information after
+  you hav uploaded a file.
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Select Categories, Brands and Other Options</div>
+            <div class="panel-body">
+              Same options as on the <a href="catalogue-1.html">Add Product</a> page. Use the help tips for further information.
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row footerArea">
+      </div>
+    </div>
+
+  </div>
+
+  <script>
+    //<![CDATA[
+    jQuery(document).ready(function() {
+      loadTopMenu();
+      loadLeftMenu();
+      loadFooter();
+    });
+    //]]>
+  </script>
+
+  <script src="content/js/bootstrap.js"></script>
+  <script src="content/js/plugins/jquery.metismenu.js"></script>
+  <script src="content/js/plugins/jquery.ibox.js"></script>
+
+</body>
+
+</html>

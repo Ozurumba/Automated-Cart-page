@@ -1,0 +1,25 @@
+Account Verification - Please Read
+
+<-{separater}->
+
+Hi {NAME},
+
+You have been sent this email from "{WEBSITE_NAME}".
+
+Either your account required verification and you have requested this email to be resent OR an account has been opened for you and your account requires verification before you can log in.
+
+Note that once your have verified your account, if you cannot remember your password or have not had one assigned, you will need to use the forgot password option to get into your account.
+
+Please click the following to complete registration:
+{WEBSITE_URL}/?ve={CODE}
+
+If you did NOT sign up for an account or request this email, please disregard this email.
+
+<-{separater}->
+
+Kind regards,
+
+{WEBSITE_NAME}
+{WEBSITE_URL}
+
+IP address: {IP}

@@ -1,0 +1,10 @@
+User-agent: *
+Disallow: /cgi-bin/
+Disallow: /admin/
+Disallow: /checkout/
+Disallow: /content/cache/
+Disallow: /control/
+Disallow: /docs/
+Disallow: /install/
+Disallow: /logs/
+Disallow: /product-downloads/

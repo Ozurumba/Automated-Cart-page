@@ -1,0 +1,42 @@
+{WEBSITE_NAME} - Download/Gift Cert Order #{INVOICE_NO}
+
+<-{separater}->
+
+Hello {NAME},
+
+Thank you for your order at {WEBSITE_NAME}.
+
+----------------------------------------------------------------
+[B]PRODUCT DOWNLOADS/GIFT CERTIFICATES[/B]
+----------------------------------------------------------------
+
+{PRODUCT_ORDER}
+
+----------------------------------------------------------------
+
+Discount Applied: {DISCOUNTS}
+Order Total: {TOTAL}
+Payment Currency: {CURRENCY}
+Payment Method: {GATEWAY_NAME}
+
+----------------------------------------------------------------
+
+Your payment via {GATEWAY_NAME} has now been confirmed and your order has been accepted.
+
+To view your order or download products (if applicable), visit the following url:
+{ORDER_URL}
+
+If you have an account with us, you`ll be required to log in to view your order.
+
+If you see any errors in your order, please contact us as soon as possible.
+
+Please quote the above order number with any correspondence.
+
+Kind regards,
+
+<-{separater}->
+
+{WEBSITE_NAME}
+{WEBSITE_URL}
+
+IP address: {ORDER_IP}

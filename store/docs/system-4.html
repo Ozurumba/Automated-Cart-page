@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Manage New Pages: Maian Cart Documentation</title>
+
+  <link href="content/css/bootstrap.css" rel="stylesheet">
+  <link href="content/css/font-awesome/font-awesome.css" rel="stylesheet">
+  <link href="content/css/mc-docs.css" rel="stylesheet">
+  <link href="content/css/jquery.ibox.css" rel="stylesheet">
+
+  <script src="content/js/jquery.js"></script>
+  <script src="content/js/functions.js"></script>
+
+  <link rel="ICON" href="favicon.ico">
+
+</head>
+
+<body>
+
+  <div id="wrapper">
+
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation" style="margin-bottom: 0">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-collapse">
+          <span class="sr-only">Toggle Navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">Documentation</a>
+      </div>
+
+      <div class="navbar-default navbar-static-side" role="navigation">
+        <div class="sidebar-collapse">
+        </div>
+      </div>
+    </nav>
+
+    <div id="page-wrapper">
+      <div class="row">
+        <div class="col-lg-12">
+          <h1 class="page-header">Manage New Pages</h1>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Overview</div>
+            <div class="panel-body">
+              Easily lets you add additional pages to your store. Additional page links appear in the left hand menu. You may also simply specify an external website address.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Creating New Page</div>
+            <div class="panel-body">
+              Fill in the options provided to create your new page. Meta keywords and descriptions are for search engine purposes. The 'Text to Display' is the text that appears on your page. Use <a href="features-6.html">BB Code</a> for formatting, HTML is not allowed.
+              <br>
+              <br> Pages can easily be disabled/enabled via the last option.
+              <br>
+              <br> If you wish to have a simple external link, the value of the 'Text to Display' box would be a url starting http://.
+              <br>
+              <br> Note: For bigger textarea, click the crosshair, top right, in the textarea box.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Load Custom Template File</div>
+            <div class="panel-body">
+              If you prefer, you can load a custom template file. If this option is utilised any data entered in the textarea will not be rendered. This feature can be useful if you want to create your own .php page and add your own PHP code.
+              <br>
+              <br> To add a custom template do the following:
+              <br>
+              <br>
+              <span class="badge">1</span> Create a new file and add it to the 'content/*theme*/customTemplates/' directory. Files <b>MUST</b> have a <b>.tpl.php</b> extension.
+              <br>
+              <br>
+              <span class="badge">2</span> On the 'System &gt; Manage New Pages' page in admin, specify this template at the load template for a new or existing page. This will load instead of the default system template.
+              <br>
+              <br>
+              <span class="badge">3</span> Add any code you need to your new template file.
+              <br>
+              <br> See also the'content/*theme*/customTemplates/readme.md' file.
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">External Link</div>
+            <div class="panel-body">
+              An external link simply points to another web page outside of the store. For this to function, set this to YES and enter a url starting http:// in the text box.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Link Target</div>
+            <div class="panel-body">
+              When an external link is opened, should this open the link in the same window/tab or a new window/tab? Note that some browser settings may cause this to default to a certain option.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Link Placement</div>
+            <div class="panel-body">
+              Links can appear in 3 places. Left Menu, Footer Left or Footer Middle. You can of course edit the templates and place the links anywhere, but this is for advanced users only.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Set as Landing Page</div>
+            <div class="panel-body">
+              Do you want this page to be set as the new landing page? If yes, when a visitor clicks to go to the store homepage, this page displays instead.
+              <br>
+              <br>Only one page can be set as the landing page, so if a previous page was set, this will be unset. Leave as "no" to load default store homepage. You
+              can set different landing pages for standard pages and pages for trade accounts.
+              <br>
+              <br>Ignored if page is set as an external link. Note than landing pages won`t be shown as links in the left hand or footer menu.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Show/Hide Left Column</div>
+            <div class="panel-body">
+              Do you wish to hide the left hand column when this page displays? Note that if you choose to have the link in the left hand menu only and choose to hide the left column, the link will NOT be visible.<br><br>
+              Custom templates can load a custom left menu or use the system menu. See notes in the custom template example files for this option when using custom templates.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Rewrite URL Slug</div>
+            <div class="panel-body">
+              A slug is the part of a URL which identifies a page using human-readable keywords. For example if you have a page called "About Us", your slug may be "about" or "about-us" etc. The system will attempt to create this for you when you enter your page name. The auto suggestion can be de-activated, see the <a href="other-1.html">F.A.Q</a>.
+              <br>
+              <br>ONLY applicable if search engine friendly urls are ON in the settings. Slugs can ONLY contain alphanumeric characters, hyphens and underscores.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Display ONLY for Trade Accounts</div>
+            <div class="panel-body">
+              Only applicable if you have trade accounts. If set, page is only viewable and applicable to trade account logins. Note that landing pages won`t be
+              seen until the trade account is logged in.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Enable Page</div>
+            <div class="panel-body">
+              Enable/Disable page.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Drag and Drop to Order</div>
+            <div class="panel-body">
+              To set the order of the display links, drag and drop the rows after creating pages. A <span style="text-decoration:underline;cursor:move">move</span> icon appears if you hover your cursor over the rows. Simply drag and drop to re-order.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Auto Line Breaks</div>
+            <div class="panel-body">
+              By default carriage returns in the text box will be auto converted to HTML line breaks (&lt;br&gt;). If you prefer not to have this option as default, edit the following file:
+              <br>
+              <br>
+              <div class="alert alert-info">
+                control/defined.php
+              </div>
+              Update the following:
+              <br>
+              <br>
+              <div class="alert alert-info">
+                define('AUTO_PARSE_LINE_BREAKS', 0);
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row footerArea">
+      </div>
+    </div>
+
+  </div>
+
+  <script>
+    //<![CDATA[
+    jQuery(document).ready(function() {
+      loadTopMenu();
+      loadLeftMenu();
+      loadFooter();
+    });
+    //]]>
+  </script>
+
+  <script src="content/js/bootstrap.js"></script>
+  <script src="content/js/plugins/jquery.metismenu.js"></script>
+  <script src="content/js/plugins/jquery.ibox.js"></script>
+
+</body>
+
+</html>

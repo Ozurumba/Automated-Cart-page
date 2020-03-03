@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Shipping Rates:  Maian Cart Documentation</title>
+
+  <link href="content/css/bootstrap.css" rel="stylesheet">
+  <link href="content/css/font-awesome/font-awesome.css" rel="stylesheet">
+  <link href="content/css/mc-docs.css" rel="stylesheet">
+  <link href="content/css/jquery.ibox.css" rel="stylesheet">
+
+  <script src="content/js/jquery.js"></script>
+  <script src="content/js/functions.js"></script>
+
+  <link rel="ICON" href="favicon.ico">
+
+</head>
+
+<body>
+
+  <div id="wrapper">
+
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation" style="margin-bottom: 0">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-collapse">
+          <span class="sr-only">Toggle Navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">Documentation</a>
+      </div>
+
+      <div class="navbar-default navbar-static-side" role="navigation">
+        <div class="sidebar-collapse">
+        </div>
+      </div>
+    </nav>
+
+    <div id="page-wrapper">
+      <div class="row">
+        <div class="col-lg-12">
+          <h1 class="page-header">Shipping Rates</h1>
+        </div>
+      </div>
+
+            <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Overview</div>
+            <div class="panel-body">
+             At the moment the following shipping routines are supported by Maian Cart:<br><br>
+             <b><a href="shipping-8.html">Flat Rates</a></b> - Flat rate shipping charge no matter how many items are in the cart.<br>
+             <b><a href="shipping-11.html">Per Item Rates</a></b> - Allow you to set the shipping cost for the first item and set a charge per item after that.<br>
+             <b><a href="shipping-9.html">Percentage Rates</a></b> - Based on the goods total of tangible items.<br>
+             <b><a href="shipping-12.html">Quantity Rates</a></b> - Based on the quantity of tangible items.<br>
+             <b><a href="shipping-4.html">Weight Rates</a></b> - Based on the weight of tangible items and grouped into weight bands.<br><br>
+             The hierarchy of these can be changed by dragging and dropping the rows. See the following screenshot:<br><br>
+             <img class="img-responsive screenshot" src="content/images/screenshots/31.png" alt=""><br>
+             Note that the order isn`t completed until the 'Update' button is clicked.<br><br>
+             The system will check the availability of shipping rates in the order set. If it finds a match it returns the shipping cost.<br><br>
+             You can have different options for different countries if you wish. For example, if you are UK based, you may prefer a flat rate for the UK, but weight based for the U.S.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Enable / Disable</div>
+            <div class="panel-body">
+            If you want to enable or disable a shipping option, use the checkbox on the relevant row, then click the 'Update' button.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Suggestions?</div>
+            <div class="panel-body">
+              If you have a suggestion for a shipping option please let me know. I can appreciate shipping can be complicated.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row footerArea">
+      </div>
+    </div>
+
+  </div>
+
+  <script>
+    //<![CDATA[
+    jQuery(document).ready(function() {
+      loadTopMenu();
+      loadLeftMenu();
+      loadFooter();
+    });
+    //]]>
+  </script>
+
+  <script src="content/js/bootstrap.js"></script>
+  <script src="content/js/plugins/jquery.metismenu.js"></script>
+  <script src="content/js/plugins/jquery.ibox.js"></script>
+
+</body>
+
+</html>

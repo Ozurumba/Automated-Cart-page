@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Staff Management: Maian Cart Documentation</title>
+
+  <link href="content/css/bootstrap.css" rel="stylesheet">
+  <link href="content/css/font-awesome/font-awesome.css" rel="stylesheet">
+  <link href="content/css/mc-docs.css" rel="stylesheet">
+  <link href="content/css/jquery.ibox.css" rel="stylesheet">
+
+  <script src="content/js/jquery.js"></script>
+  <script src="content/js/functions.js"></script>
+
+  <link rel="ICON" href="favicon.ico">
+
+</head>
+
+<body>
+
+  <div id="wrapper">
+
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation" style="margin-bottom: 0">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-collapse">
+          <span class="sr-only">Toggle Navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">Documentation</a>
+      </div>
+
+      <div class="navbar-default navbar-static-side" role="navigation">
+        <div class="sidebar-collapse">
+        </div>
+      </div>
+    </nav>
+
+    <div id="page-wrapper">
+      <div class="row">
+        <div class="col-lg-12">
+          <h1 class="page-header">Staff Management</h1>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Overview</div>
+            <div class="panel-body">
+              The staff management system enables you to create multiple admin staff to manage your store. This is useful if you have different staff and want to assign different privileges to each.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Administrative User</div>
+            <div class="panel-body">
+              This administrative user is created during install by the person/developer settings up the system. This is a admin username/password that always has access to the system. The admin login credentials are set in the following file:
+              <br><br>
+              <div class="alert alert-info">
+                admin/control/access.php
+              </div>
+              Ideally this is used only to set up the system or to access the system if a store owner has forgot their password. Once you have created staff via the staff management screen, you can do one of the following:
+              <br>
+              <br>
+              <span class="badge">1</span> Comment out the 2 constants in the 'admin/control/access.php' file.
+              <br>
+              <br>
+              <span class="badge">2</span> Remove the 'admin/control/access.php'.
+              <br>
+              <br> To regain access via this admin staff member, replace the deleted file or uncomment out the constants, depending on your preference.
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Username /Password</div>
+            <div class="panel-body">
+              In the admin area, this sets a username and password for a new admin staff member.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Email Address</div>
+            <div class="panel-body">
+              For sale notification emails if enabled. For multiple addresses, comma delimit.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Administrator / Restricted Staff / Restricted Staff Access Pages</div>
+            <div class="panel-body">
+              Administrators have FULL access to the admin area, Restricted staff ONLY to allowed pages as set via the 'Restricted Staff Access Pages' option. Check boxes to allow. At least 1 must be specified for restricted staff. For administrators, the checkboxes have no affect.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Delete Privileges</div>
+            <div class="panel-body">
+              Assigns delete privileges to staff member. This can apply to administrators or restricted staff.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Can Post Tweets (If Enabled)</div>
+            <div class="panel-body">
+              If enabled in <a href="settings-1.html">settings</a>, staff member can post tweets via the "Post Tweet" link on the top menu bar.<br><br>
+              <img class="img-responsive screenshot" src="content/images/screenshots/30.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Enable Staff</div>
+            <div class="panel-body">
+              Enables or disables staff member. Disabled staff cannot access the system.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Enable Sale Notification Emails</div>
+            <div class="panel-body">
+              If enabled, sends sale notification emails to staff member. Useful if you want other staff members to be notified of sales.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Manage Staff</div>
+            <div class="panel-body">
+              Click the <i class="fa fa-pencil fa-fw"></i> edit icon and <i class="fa fa-times fa-fw"></i> delete icons to edit or remove staff member.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row footerArea">
+      </div>
+    </div>
+
+  </div>
+
+  <script>
+    //<![CDATA[
+    jQuery(document).ready(function() {
+      loadTopMenu();
+      loadLeftMenu();
+      loadFooter();
+    });
+    //]]>
+  </script>
+
+  <script src="content/js/bootstrap.js"></script>
+  <script src="content/js/plugins/jquery.metismenu.js"></script>
+  <script src="content/js/plugins/jquery.ibox.js"></script>
+
+</body>
+
+</html>

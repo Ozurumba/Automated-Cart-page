@@ -1,0 +1,27 @@
+{WEBSITE_NAME} - Download/Gift Cert Order #{INVOICE_NO}
+
+<-{separater}->
+
+Hello {RECIPIENT_NAME},
+
+We have some excellent news. An item from your wish list has just been purchased from {WEBSITE_NAME}.
+
+----------------------------------------------------------------
+[B]PRODUCT DOWNLOADS[/B]
+----------------------------------------------------------------
+
+{PRODUCT_ORDER}
+
+----------------------------------------------------------------
+
+Please log in to your account to download your products:
+{ACCOUNT_URL}
+
+If you see any errors in your order, please contact us as soon as possible.
+
+Kind regards,
+
+<-{separater}->
+
+{WEBSITE_NAME}
+{WEBSITE_URL}

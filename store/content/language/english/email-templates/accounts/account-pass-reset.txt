@@ -1,0 +1,21 @@
+Account Password Reset - Please Read
+
+<-{separater}->
+
+Hi {NAME},
+
+Thank you for requesting a password reset at "{WEBSITE_NAME}".
+
+To update your password, please click the following:
+{WEBSITE_URL}/?prt={CODE}
+
+If you did not request a reset or don`t have an account with us, please disregard this email.
+
+<-{separater}->
+
+Kind regards,
+
+{WEBSITE_NAME}
+{WEBSITE_URL}
+
+IP address: {IP}

@@ -1,0 +1,26 @@
+New Trade Account
+
+<-{separater}->
+
+Hi {NAME},
+
+A trade account has been created for you at "{WEBSITE_NAME}".
+
+Your Global Discount is: {DISCOUNT}% on all items.
+
+Min Quantity: {MIN}
+Max Quantity: {MAX}
+
+Your log in details are as follows:
+Email: {EMAIL}
+Pass: {PASS}
+{WEBSITE_URL}
+
+Please log in and update your password as soon as posible.
+
+Any problems, let us know.
+
+<-{separater}->
+
+{WEBSITE_NAME}
+{WEBSITE_URL}

@@ -1,0 +1,28 @@
+"{WEBSITE_NAME}" Product Enquiry - Confirmation
+
+<-{separater}->
+
+Hello {NAME},
+
+Thank you for your recent product enquiry.
+
+Product: {PRODUCT}
+{URL}
+
+Your comments:
+---------------------------------------------
+
+{COMMENTS}
+
+---------------------------------------------
+
+A member of staff will reply as soon as possible.
+
+Kind regards,
+
+<-{separater}->
+
+{WEBSITE_NAME}
+{WEBSITE_URL}
+
+IP address: {IP}

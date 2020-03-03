@@ -1,0 +1,49 @@
+{WEBSITE_NAME} - Pre Payment Order Confirmation
+
+<-{separater}->
+
+An order has been initiated on your website by "{NAME}".
+
+At this point, no payment has been received and this is NOT confirmation the order will be completed.
+
+This order is incomplete and can be seen on the 'Sales > Incomplete Sales' screen in your control panel until payment completes.
+
+
+[B]ITEMS ORDERED[/B]:
+----------------------------------------------------------------
+
+{PRODUCT_ORDER}
+
+----------------------------------------------------------------
+
+Order Total: {TOTAL}
+Trade Sale: {TRADE_SALE}
+
+[B]SHIPPING ADDRESS[/B]
+----------------------------------------------------------------
+
+{SHIPPING_ADDRESS}
+
+Shipping Method: {SHIP_METHOD}
+Tel: {SHIPPING_PHONE}
+
+[B]BILLING ADDRESS[/B]
+----------------------------------------------------------------
+
+{BILLING_ADDRESS}
+
+----------------------------------------------------------------
+
+Payment will be processed by {GATEWAY_NAME} if the buyer completes payment. Further emails will follow if and when this occurs.
+
+You can see a full breakdown of the total calculations in your admin control panel.
+
+To disable this notification, access your control panel and navigate to:
+Store Settings > Global Store Settings > Checkout Options
+
+<-{separater}->
+
+{WEBSITE_NAME}
+{WEBSITE_URL}
+
+IP Address: {ORDER_IP}

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Currency Converter:  Maian Cart Documentation</title>
+
+  <link href="content/css/bootstrap.css" rel="stylesheet">
+  <link href="content/css/font-awesome/font-awesome.css" rel="stylesheet">
+  <link href="content/css/mc-docs.css" rel="stylesheet">
+  <link href="content/css/jquery.ibox.css" rel="stylesheet">
+
+  <script src="content/js/jquery.js"></script>
+  <script src="content/js/functions.js"></script>
+
+  <link rel="ICON" href="favicon.ico">
+
+</head>
+
+<body>
+
+  <div id="wrapper">
+
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation" style="margin-bottom: 0">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-collapse">
+          <span class="sr-only">Toggle Navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">Documentation</a>
+      </div>
+
+      <div class="navbar-default navbar-static-side" role="navigation">
+        <div class="sidebar-collapse">
+        </div>
+      </div>
+    </nav>
+
+    <div id="page-wrapper">
+      <div class="row">
+        <div class="col-lg-12">
+          <h1 class="page-header">Currency Converter</h1>
+        </div>
+      </div>
+
+            <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Overview</div>
+            <div class="panel-body">
+              Maian Cart has a built in currency conversion system. This enables visitors to view prices in their own currencies as well as the default system currency. To access this
+  option in the admin area select 'System &gt; Currency Converter'. Currencies are obtained from <a href="http://fixer.io/" onclick="window.open(this);return false">Fixer.io</a> JSON API (via Central European Bank), which is a free service. As this is a free service, try
+  not to abuse the system with too many API calls.<br><br>
+  Only currencies shown in the admin area are supported by this option. Use the checkboxes provided to enable/disable currencies. If you don`t specify any currencies, the currency conversion drop down on your storefront will not appear.<br><br>
+  Note that clicking the update button in the admin area also updates the currency rates if you check the box. To manually update you would need to click this button from time to time or have the system auto update via a cron job/tab (see below).
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Display Pref / Rate</div>
+            <div class="panel-body">
+              Specify display preference on how the price should display in your store. Use {PRICE} for the pricing position. Examples using 5.00:<br><br>
+              &amp;pound;{PRICE} - (For UK store) = <b>&pound;5.00</b><br>
+              {PRICE}&amp;euro; - (For Euro based store) = <b>5.00&euro;</b><br>
+              &amp;#036;{PRICE}AUD - (For Australian based store) = <b>&#036;5.00AUD</b><br>
+              &amp;#036;{PRICE} - (For US store) = <b>&#036;5.00</b><br><br>
+              <a href="http://www.w3schools.com/html/html_entities.asp" onclick="window.open(this);return false">Character entities</a> (for currency symbols) can be used or just static text, eg: GBP{PRICE}<br><br>
+              <b>DO NOT</b> use literal symbols (&pound;,&#8364;,&#036;) or you may see a ? in your store.<br><br>
+              Rate is equivalent to 1 in your base currency. If manually updating rates can be obtained from <a href="http://www.oanda.com/currency/converter/" onclick="window.open(this);return false">Oanda</a>.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Auto Update via Cron Job/Tab</div>
+            <div class="panel-body">
+              The easiest way to make sure your currencies are up to date with the latest rates is to have the system automatically update them. This is done by using a Cron Tab or Cron Job. This is an
+              automated task performed by your server via the time specified. For the currency conversion a daily update would be recommended. <a href="http://fixer.io/" onclick="window.open(this);return false">Fixer.io</a> updates the currencies each day at 3PM CET.<br><br>
+              You`ll need to set up a cron to run the following file at regular intervals:<br><br>
+              <div class="alert alert-info">
+                control/cron/currency-updater.php
+              </div>
+              Examples of cron tab commands. These may or may not work, you should contact your host if you aren`t sure. Make sure you use the correct paths.<br><br>
+              <div class="alert alert-info">
+                /usr/local/bin/php /home/admin/domains/yourdomain.co.uk/public_html/cart/control/cron/currency-updater.php<br>
+                php q /home/admin/domains/yourdomain.co.uk/public_html/cart/control/cron/currency-updater.php<br>
+                /usr/local/bin/php q /home/admin/domains/yourdomain.co.uk/public_html/cart/control/cron/currency-updater.php<br>
+                C:\Windows\php\php.exe "C:\server\www\cart\control\cron\currency-updater.php" (Windows)
+              </div>
+              If you don`t understand this, contact your host for assistance. Path is almost always the FULL server path to the cron file.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Understanding Cron Tabs/Jobs</div>
+            <div class="panel-body">
+              <a href="http://www.google.co.uk/#hl=en&amp;q=cron+tabs+or+cron+jobs" onclick="window.open(this);return false">Help and Information on Cron Tabs or Cron Jobs</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row footerArea">
+      </div>
+    </div>
+
+  </div>
+
+  <script>
+    //<![CDATA[
+    jQuery(document).ready(function() {
+      loadTopMenu();
+      loadLeftMenu();
+      loadFooter();
+    });
+    //]]>
+  </script>
+
+  <script src="content/js/bootstrap.js"></script>
+  <script src="content/js/plugins/jquery.metismenu.js"></script>
+  <script src="content/js/plugins/jquery.ibox.js"></script>
+
+</body>
+
+</html>

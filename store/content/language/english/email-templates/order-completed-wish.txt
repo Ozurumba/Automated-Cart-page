@@ -1,0 +1,46 @@
+Wish List Order Confirmed - #{INVOICE_NO}
+
+<-{separater}->
+
+Hello {NAME},
+
+Thank you for your wish list order at {WEBSITE_NAME}.
+
+----------------------------------------------------------------
+[B]ITEMS ORDERED[/B]
+----------------------------------------------------------------
+
+{PRODUCT_ORDER}
+
+----------------------------------------------------------------
+
+Discount Applied: {DISCOUNTS}
+Order Total: {TOTAL}
+Payment Currency: {CURRENCY}
+Payment Method: {GATEWAY_NAME}
+
+To view your order, visit the following:
+{ORDER_URL}
+
+---------------------------------------------------------------------
+[B]SHIPPING ADDRESS[/B]
+---------------------------------------------------------------------
+
+{RECIPIENT_NAME}
+
+----------------------------------------------------------------
+
+Your payment via {GATEWAY_NAME} has now been confirmed and your order has been accepted.
+
+Email notification has been sent to the above wish list recipient regarding this purchase.
+
+Further updates for this purchase will be sent to the wish list recipient.
+
+Kind regards,
+
+<-{separater}->
+
+{WEBSITE_NAME}
+{WEBSITE_URL}
+
+IP address: {ORDER_IP}

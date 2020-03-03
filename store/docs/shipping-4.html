@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Shipping - Weight Rates:  Maian Cart Documentation</title>
+
+  <link href="content/css/bootstrap.css" rel="stylesheet">
+  <link href="content/css/font-awesome/font-awesome.css" rel="stylesheet">
+  <link href="content/css/mc-docs.css" rel="stylesheet">
+  <link href="content/css/jquery.ibox.css" rel="stylesheet">
+
+  <script src="content/js/jquery.js"></script>
+  <script src="content/js/functions.js"></script>
+
+  <link rel="ICON" href="favicon.ico">
+
+</head>
+
+<body>
+
+  <div id="wrapper">
+
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation" style="margin-bottom: 0">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-collapse">
+          <span class="sr-only">Toggle Navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">Documentation</a>
+      </div>
+
+      <div class="navbar-default navbar-static-side" role="navigation">
+        <div class="sidebar-collapse">
+        </div>
+      </div>
+    </nav>
+
+    <div id="page-wrapper">
+      <div class="row">
+        <div class="col-lg-12">
+          <h1 class="page-header">Shipping - Weight Rates</h1>
+        </div>
+      </div>
+
+            <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Overview</div>
+            <div class="panel-body">
+              Weight based shipping rates are the rates you offer for products in a certain weight band for a certain service. This can be any kind of weight band, but must match your product weight. For example, if your products are in grammes, use a gram range. eg: 0 to 1000. Weight isn`t shown in the cart
+  or on the checkout page.<br><br>
+  Weight based shipping rates are not required.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Weight From / Weight To</div>
+            <div class="panel-body">
+              Weight range. First rate should start 0. To specify only a single rate, enter a high amount for the 'from' field. This can be any kind of weight band, but must match your product weight. For example, if your products are in grammes, use a gramme range. eg: 0 to 1000. If pounds and ounces you might start 0 to 5.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Shipping Cost</div>
+            <div class="panel-body">
+              Shipping cost for this rate.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Apply to Service</div>
+            <div class="panel-body">
+              Which service(s) does this rate apply to? Use the checkboxes to batch add rates to multiple services if in add mode. If in edit mode, use select option.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Batch Adding Rates via CSV</div>
+            <div class="panel-body">
+              Use the locate CSV option to batch add rates. To batch add, csv must be a comma delimited list in the following format:<br><br>
+  Weight from, Weight to, Shipping Cost (no commas, etc, 9.99)<br><br><b>Example</b>:<br><br>
+  0, 10000, 1.99<br>
+  100001, 500000, 5.99<br><br>
+  For batch operation, file and checkbox selection of applicable services is required.
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Manage Rates</div>
+            <div class="panel-body">
+              Use the links provided to edit or delete rates. Use the <i class="fa fa-filter fa-fw"></i> icon to filter by service.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row footerArea">
+      </div>
+    </div>
+
+  </div>
+
+  <script>
+    //<![CDATA[
+    jQuery(document).ready(function() {
+      loadTopMenu();
+      loadLeftMenu();
+      loadFooter();
+    });
+    //]]>
+  </script>
+
+  <script src="content/js/bootstrap.js"></script>
+  <script src="content/js/plugins/jquery.metismenu.js"></script>
+  <script src="content/js/plugins/jquery.ibox.js"></script>
+
+</body>
+
+</html>

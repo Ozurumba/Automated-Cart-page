@@ -1,0 +1,36 @@
+Order Pending - Please Read
+
+<-{separater}->
+
+Hello {NAME},
+
+Thank you for placing an order at {WEBSITE_NAME}.
+
+[B]PRODUCTS ORDERED[/B]
+--------------------------------------------
+
+{PRODUCT_ORDER}
+
+Your order status is currently 'Pending'. The reason for this given by {GATEWAY_NAME} is as follows:
+
+"{REASON}"
+
+If no reason has been sent by the gateway, please contact us.
+
+If you paid by echeck, these payments can take a few days to clear, so please be patient. Details of your clearance date can be found in your {GATEWAY_NAME} account area:
+{GATEWAY_URL}
+
+Once your payment has been accepted and processed, a confirmation email will follow.
+
+If you need to contact us about your order, reply to this email.
+
+Thank you for your order,
+
+Kind regards,
+
+<-{separater}->
+
+{WEBSITE_NAME}
+{WEBSITE_URL}
+
+IP address: {ORDER_IP}

@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Global Store Settings:  Maian Cart Documentation</title>
+
+  <link href="content/css/bootstrap.css" rel="stylesheet">
+  <link href="content/css/font-awesome/font-awesome.css" rel="stylesheet">
+  <link href="content/css/mc-docs.css" rel="stylesheet">
+  <link href="content/css/jquery.ibox.css" rel="stylesheet">
+
+  <script src="content/js/jquery.js"></script>
+  <script src="content/js/functions.js"></script>
+
+  <link rel="ICON" href="favicon.ico">
+
+</head>
+
+<body>
+
+  <div id="wrapper">
+
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation" style="margin-bottom: 0">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-collapse">
+          <span class="sr-only">Toggle Navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">Documentation</a>
+      </div>
+
+      <div class="navbar-default navbar-static-side" role="navigation">
+        <div class="sidebar-collapse">
+        </div>
+      </div>
+    </nav>
+
+    <div id="page-wrapper">
+      <div class="row">
+        <div class="col-lg-12">
+          <h1 class="page-header">Global Store Settings</h1>
+        </div>
+      </div>
+
+      <div class="row" style="margin-bottom:10px">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="margin-bottom:10px">
+          <ul class="nav nav-tabs">
+            <li class="active"><a href="#s_1" data-toggle="tab"><i class="fa fa-globe fa-fw"></i> Global Discount</a></li>
+            <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="fa fa-cog fa-fw"></i> <span class="hidden-xs">Other Options </span><span class="caret"></span></a>
+              <ul class="dropdown-menu dropdown-menu-right center_dropdown" role="menu">
+                <li><a href="#s_2" data-toggle="tab">Processing / Currency</a></li>
+                <li><a href="#s_3" data-toggle="tab">Shipping / Stock</a></li>
+                <li><a href="#s_4" data-toggle="tab">Downloads &amp; Restrictions</a></li>
+                <li><a href="#s_5" data-toggle="tab">Checkout Options</a></li>
+                <li><a href="#s_6" data-toggle="tab">Insurance Settings</a></li>
+                <li><a href="#s_7" data-toggle="tab">Gateway Response Logging</a></li>
+                <li><a href="#s_8" data-toggle="tab">Free Pickup Shipping Option</a></li>
+                <li><a href="#s_9" data-toggle="tab">PDF Invoice Settings</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="tab-content">
+            <div class="tab-pane active in" id="s_1">
+              <div class="panel panel-default">
+                <div class="panel-heading">Global Percentage Discount (excluding trade accounts) (%)</div>
+                <div class="panel-body">
+                  Do you want to apply a global product discount? If specified, this would add a discount rate to every product excluding special offer products. Attributes are not affected. Discount is applied on checkout page.<br><br>This is NOT used in conjunction with any other offers, so discount coupons are ignored during the offer period. This is also
+                  not applicable to trade accounts as trade accounts have their own global discount.
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-heading">Global Percentage Discount Expiry</div>
+                <div class="panel-body">
+                  If you have enabled a global discount and want it to expire, click box to specify date. On this date global discount is reset. Leave blank to continue promotion.
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-heading">Clear Special Offers</div>
+                <div class="panel-body">
+                  Global discounts do not apply to special offers. So that the global discount applies to all, do you wish to clear all current special offers?
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="s_2">
+              <div class="panel panel-default">
+                <div class="panel-heading">Processing Currency</div>
+                <div class="panel-body">
+                  This is your processing currency and determines what currency your prices are displayed in and what currency you process in.<br><br><b>Important: This currency should be supported by ALL payment systems you have enabled.</b><br><br>Check the payment system websites or view the docs to see which currencies are supported for each option.
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-heading">Payment Mode</div>
+                <div class="panel-body">
+                  Which mode do you want to enable? "Test" is for testing ONLY and will not take live payments from your bank. This is also known as sandbox testing. This should be the default until you are sure your store is working. <br><br><b>Important: For certain gateways you MUST enable test/live mode via your account area</b>.
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-heading">Currency Display Preference</div>
+                <div class="panel-body">
+                  Specify display preference on how the price should display in your store. Use {PRICE} for the pricing position. Examples:<br><br>
+                  &amp;pound;{PRICE} - (For UK store, display example: &pound;9.99)
+                  <br>{PRICE}&amp;euro; - (For Euro based store, display example: 9.99&euro;)
+                  <br>&amp;#036;{PRICE}AUD - (For Australian based store, display example: &#036;9.99AUD)
+                  <br>&amp;#036;{PRICE} - (For US store, display example: &#036;9.99)<br><br>
+                  &amp;pound; = &pound;<br>&amp;euro; = &#8364;<br>
+                  &amp;#036; = &#036;<br><br>
+                  <a href="http://www.w3schools.com/html/html_entities.asp" onclick="window.open(this);return false">Character entities</a> (as shown above) should be used or just static text, eg: GBP{PRICE}<br><br>
+                  <b>DO NOT</b> use literal symbols (&pound;,&#8364;,$) or you may see a ? in your store inside a triangle, which indicates unicode problems.
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-heading">Default Shipping Country</div>
+                <div class="panel-body">
+                  If enabled, the default shipping country loads first when viewing shipping options for shopping basket.
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-heading">Process Pending Payments as Completed</div>
+                <div class="panel-body">
+                  Depending on the payment method used by the buyer, the payment status may be returned by the payment server as "Pending".
+                  This means that the payment has NOT yet been completed and the money is NOT in your account. An example would be a Paypal eCheck.<br><br>
+                  If this happens, do you still want to process the sale as "Completed"? This is NOT recommended if you are selling downloadable items as the buyer could get the product and cancel their order.<br><br>
+                  Note that not all gateways return this status.
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-heading">Enable SSL</div>
+                <div class="panel-body">
+                  Do you wish to enable SSL? Enable this ONLY if you have a <a href="https://en.wikipedia.org/wiki/Transport_Layer_Security" onclick="window.open(this);return false">SSL certificate</a> installed on your server.<br><br>This prevents return urls from displaying an insecure connection error to visitors.<br><br>
+                  It is highly recommended you install SSL for your store. SSL is very cheap these days and should not be ignored!
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="s_3">
+              <div class="panel panel-default">
+                <div class="panel-heading">Out of Stock Product Handling</div>
+                <div class="panel-body">
+                  How do want to handle "Out of Stock" display if product are all out of stock? Disable All totally disables items from cart. If shown in category, they are shown as "Out of Stock" unless the product page is enabled.
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-heading">Show Stock Amount for Attributes</div>
+                <div class="panel-body">
+                  Do you want to show stock levels for attributes? If yes, below rules apply for threshold values without displaying alternative text. This saves on space.
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-heading">Free Shipping Threshold</div>
+                <div class="panel-body">
+                  Do you want to offer free shipping if the cart total hits a certain limit? This is the total before any tax or other discounts are applied. Set as 0.00 to disable.
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-heading">Allow Free Shipping Threshold Only For Buyers In</div>
+                <div class="panel-body">
+                  If free shipping threshold is set, specify the countries this applies to. Blank defaults to all.
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-heading">Product Stock Threshold</div>
+                <div class="panel-body">
+                  Show exactly how many products are in stock for availability. For example if you set this as 30, stock levels above this would simply state "In Stock" (or alternative text if set for product). Less than or equal to the threshold would say "30 in Stock" etc.<br><br>Set to 0 to always show stock count. Alternative product text overwrites this.
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="s_4">
+              <div class="panel panel-default">
+                <div class="panel-heading">Download Folder Name</div>
+                <div class="panel-body">
+                  Specify base folder name for product downloads. This should exist outside of your web root to prevent being accessed by download managers. If you are using the download manager, this folder must also be writeable.<br><br>If you are not selling downloadable products, this can be ignored or left blank.
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-heading">Server Path to Download Folder</div>
+                <div class="panel-body">
+                  Specify the server path to the download folder left. This is a SERVER path and NOT a http url. Path must NOT include the download folder name and have NO trailing slash.<br><br>Example. Lets say your "Download Folder Name" is "downloads" located at:<br><br><b>/home/server_name/downloads</b><br><br>The path you would set here is:<br><br><b>/home/server_name</b><br><br>If you are not selling downloadable products, this can be ignored or left blank.
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-heading">Free Download Checkout Restriction</div>
+                <div class="panel-body">
+                  If you have free downloads in your system, do you want to force the purchase of paid products before someone can checkout with free products in their basket? For example, lets say Joe has
+                  added 5 free downloads to his basket. Should he also have x amount of paid products in his basket too before checkout? If no restrictions are set, Joe can check out and get his free products. This
+                  can be a useful marketing tool for you to offer free items, but only if someone has purchased something. An example might be the sale of DVDs with free poster offers.<br><br>Enter number of products or set as 0 for no restrictions.
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-heading">Reduce Stock on Downloadable Items</div>
+                <div class="panel-body">
+                  Do you want the system to reduce the stock on downloadable items? If no, stock is not reduced and the low stock notification will be ignored if set.
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-heading">Free Downloads Alternative Redirect</div>
+                <div class="panel-body">
+                  For free download ONLY orders, do you want to direct buyer to alternative page? Useful for marketing purposes where you may not wish the buyer to be directed to his/her downloads. Download page link would still be sent via email.<br><br>Should be full url starting http.<br><br><b>NOTE</b>: If this is enabled, buyer is NOT directed to his/her downloads via the normal cart routines. Download page is ONLY accessible via the link in the email sent. If this email is
+                  blocked by spam filters, buyer will NOT receive the download link. Your alternative redirect page should explain this to help the buyer.
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-heading">Restrict Access to Downloads by IP Address</div>
+                <div class="panel-body">
+                  Do you wish to restrict access to product downloads by IP address? This can help prevent page sharing when someone buys a downloadable product and help prevent high bandwidth from sharing. IP addresses can be managed via the 'Download Management' screen for any sale containing downloads. This is accessed by clicking the
+                  <i class="fa fa-long-arrow-down fa-fw"></i> icon for any sale to expand additional options. See screenshot:<br><br>
+                  <img class="img-responsive screenshot" src="content/images/screenshots/36.png" alt=""><br>
+                  On the 'Download Management screen click the globe icon top right to add addresses, this will show a textarea. Comma delimit IP addresses. Note that the globe is not shown if this option isn`t enabled.<br><br>
+                  <img class="img-responsive screenshot" src="content/images/screenshots/35.png" alt=""><br>
+                  Comma delimit addresses. Or leave blank to disable for a sale.<br><br>
+                  Note that this may cause issues for people who don`t have fixed IP addresses or buy from work, but download at home, where the IP is different.<br><br>
+                  On an intial sale, only the purchase IP address will have access to the downloads.
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-heading">Log Restricted Access Events</div>
+                <div class="panel-body">
+                  Do you want to log restricted access events? Requires gateways logs folder to be writeable. Gateway logging isn`t required to be enabled for this to work, but the gateway folder must
+                  exist and be writeable.
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-heading">Auto Lock Downloads After X Restricted Access Events</div>
+                <div class="panel-body">
+                  Do you want to auto lock the download page after X amount of restricted access events occur? Set to 0 to disable. Check the email box to also receive an email when the auto lock has occurred.
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-heading">Allow Globally for Specified IPs</div>
+                <div class="panel-body">
+                  IP addresses entered here are always allowed to view ALL download pages (unless locked) and are free from IP restrictions. Enter multiple separated with a comma or leave blank.
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="s_5">
+              <div class="panel panel-default">
+                <div class="panel-heading">Auto Clear Incomplete Sale Data After X Days (excludes payments marked as Pending by gateway)</div>
+                <div class="panel-body">
+                  Do you wish to auto clear incomplete sale data from the system? This is data where a buyer doesn`t complete payment (Refer to the "<a href="sales-15.html">Incomplete Sales</a>" section for further info). In days. Set to 0 to disable auto clear and clear manually.
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-heading">Receive Order Information Before Payment Occurs</div>
+                <div class="panel-body">
+                  Use this feature if you want to receive notification of a sale before payment has been initialised. Note that this is just a pre-sale notification, further
+                  emails will follow when the sale completes. If used, enter notification email addresses separated with a comma.<br><br>
+                  <b>Note</b>: When you receive pre-sale email notification, this <b>doesn`t mean a sale will occur</b>. Buyer may change their mind at checkout.
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-heading">Does Gift Coupon Amount Affect Tax Calculation</div>
+                <div class="panel-body">
+                  If yes, tax is adjusted after the coupon deduction has occurred. If no, tax is based on sub total before the deduction occurs.
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-heading">Min Checkout Amount</div>
+                <div class="panel-body">
+                  If set, goods total must be greater than or equal to min checkout amount before buyer can complete checkout procedure. Leave blank for no restriction. This applies to
+                  personal and guest checkout ONLY. For trade, set individual min checkout amount on <a href="account-1.html">trade screens</a> if applicable.
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-heading">Enable Terms &amp; Conditions</div>
+                <div class="panel-body">
+                  If enabled, appears on final checkout screen and must be selected before the visitor can complete checkout.
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-heading">Terms &amp; Conditions Text</div>
+                <div class="panel-body">
+                  If enabled, specify your terms and conditions text. BBCode can be used for formatting. More information <a href="features-6.html">here</a>.
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-heading">Enable Checkout System</div>
+                <div class="panel-body">
+                  Do you wish to enable the checkout system? If yes, all checkout functions work as standard. If no, checkout link, basket and add to cart items are not available. Useful if you want to showcase your products, but not actually sell online.
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="s_6">
+              <div class="panel panel-default">
+                <div class="panel-heading">Enable Insurance Option</div>
+                <div class="panel-body">
+                  Do you wish to offer buyers an insurance option at checkout? Ideal if you are shipping fragile goods. Note that no tax is applied to the insurance charge.
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-heading">Insurance Calculation Preference</div>
+                <div class="panel-body">
+                  If yes, how do you want to calculate the insurance charge? This can be a fixed amount or a percentage of the goods total, shipping cost or cart total. If specifying percentage, no percentage symbol required in box. eg: 9.99 or 20<br><br>If required option is specified, this is automatically added to the total. If optional, buyer can choose to add insurance.<br><br><b>Fixed Amount (Optional)</b><br>- Fixed amount regardless of basket totals with option for visitor to remove insurance.<br><br><b>% of Cart Total (Optional)</b><br>- Percentage of basket/cart total, including any discounts with option for visitor to remove insurance.<br><br><b>% of Shipping Cost (Optional)</b><br>- Percentage of shipping total, including any discounts with option for visitor to remove insurance.<br><br><b>% of Goods Total (Optional)</b><br>- Percentage of products total, including any discounts with option for visitor to remove insurance.<br><br><b>Fixed Amount (Required)</b><br>- Fixed amount regardless of basket totals. Insurance required as addtional payment and cannot be removed my visitor.<br><br><b>% of Cart Total (Required)</b><br>- Percentage of basket/cart total, including any discounts. Insurance required as addtional payment and cannot be removed my visitor.<br><br><b>% of Shipping Cost (Required)</b><br>- Percentage of shipping total, including any discounts. Insurance required as addtional payment and cannot be removed my visitor.<br><br><b>% of Goods Total (Required)</b><br>- Percentage of products total, including any discounts. Insurance required as addtional payment and cannot be removed my visitor.
+               </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-heading">If Optional, Apply by Default</div>
+                <div class="panel-body">
+                  If insurance is optional, do you want it to be applied to the cart totals by default? If no, visitor has to add the insurance manually.
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-heading">Include Only on Products Where Price Greater than or Equal to</div>
+                <div class="panel-body">
+                  If the insurance applies to the goods total, do you want to only apply the insurance if a products price is greater than or equal to a certain amount?<br><br>If left 0.00, insurance applies to all.
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-heading">Information About Insurance (Optional)</div>
+                <div class="panel-body">
+                  Enter insurance information to let visitors know more about this option if its applicable. Use BB Code for formatting if enabled, HTML is not allowed. More information <a href="features-6.html">here</a>.
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="s_7">
+              <div class="panel panel-default">
+                <div class="panel-heading">Log Responses</div>
+                <div class="panel-body">
+                  Do you wish to log payment system responses? This can be useful for debugging problems. Log folder directory must be writeable.
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-heading">Log Folder Name</div>
+                <div class="panel-body">
+                  Enter name for log folder. Rename manually in store root. If the log folder doesn`t exist, the system will attempt to create it.
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="s_8">
+              <div class="panel panel-default">
+                <div class="panel-heading">Enable Free Pickup Shipping Option</div>
+                <div class="panel-body">
+                  Do you want to enable free pickup/collection as a delivery option? There is no charge for this in the cart. This only appears if at least one shipping option exists. If no shipping options exist, free shipping is shown with no other options.
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-heading">Allow Free Pickup Only For Buyers In</div>
+                <div class="panel-body">
+                  Do you only wish to enable the pickup option if the buyer is in a certain country? Bearing in mind, a buyer may want to order from abroad and pickup when he/she returns home.
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="s_9">
+              <div class="panel panel-default">
+                <div class="panel-heading">Enable PDFs</div>
+                <div class="panel-body">
+                  Do you want to enable PDFs? If yes, buyers can save PDF invoices and support staff can download PDF invoices and packing slips. Batch printing
+                  is aso available for admin. Maian Cart utilises the excellent open source project <a href="http://www.tcpdf.org/" onclick="window.open(this);return false">TCPDF</a>.<br><br>
+                  PDF template information <a href="language-4.html">here</a>.
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-heading">Text Direction</div>
+                <div class="panel-body">
+                  Based on your language preference.
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-heading">Main Display Font</div>
+                <div class="panel-body">
+                  Font display preference. If your PDF may contain foreign characters you should choose 'Dejavusans', which is a unicode font.
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-heading">Encoding</div>
+                <div class="panel-body">
+                  Encoding. UTF-8 will be fine in most cases.
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-heading">Company Name (PDF Only)</div>
+                <div class="panel-body">
+                  Company name which appears on PDFs.
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-heading">Company Address (PDF Only)</div>
+                <div class="panel-body">
+                  Company address which appears on PDFs.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row footerArea">
+      </div>
+    </div>
+
+  </div>
+
+  <script>
+    //<![CDATA[
+    jQuery(document).ready(function() {
+      loadTopMenu();
+      loadLeftMenu();
+      loadFooter();
+    });
+    //]]>
+  </script>
+
+  <script src="content/js/bootstrap.js"></script>
+  <script src="content/js/plugins/jquery.metismenu.js"></script>
+  <script src="content/js/plugins/jquery.ibox.js"></script>
+
+</body>
+
+</html>

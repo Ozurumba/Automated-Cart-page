@@ -1,0 +1,25 @@
+   <script>
+   //<![CDATA[
+   jQuery(document).ready(function () {
+     setTimeout(function() {
+       jQuery('div[class="mc_ticker_marquee"]').show();
+       jQuery('.mc_ticker_marquee').marquee({
+         allowCss3Support : true,
+         delayBeforeStart : 1000,
+         duration         : 20000,
+         direction        : 'left',
+         duplicated       : true,
+         pauseOnHover     : true
+       });
+       // If banners exist and ticker is active, apply additional class to shift news down..
+       if (jQuery('div[class="mc_banner_slider"]')) {
+         if (jQuery('div[class="mc_banner_slider"]').html()) {
+           jQuery('.newstickerwrapper').addClass('newsmargintop');
+         } else {
+           jQuery('.newstickerwrapper').removeClass('newsmargintop');
+         }
+       }
+     }, 350);
+  });
+  //]]>
+  </script>

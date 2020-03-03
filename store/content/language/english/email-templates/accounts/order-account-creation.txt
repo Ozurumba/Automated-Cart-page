@@ -1,0 +1,26 @@
+New Account Active - Please Read
+
+<-{separater}->
+
+Hi {NAME},
+
+Thank you for requesting an account to be created on checkout at "{WEBSITE_NAME}".
+
+Your new account is now active.
+
+We would suggest you change your password as soon as possible to something you can remember.
+
+Your login details are:
+Email: {EMAIL}
+Password: {PASS}
+
+If you did NOT ask for this account to be created, please let us know.
+
+<-{separater}->
+
+Kind regards,
+
+{WEBSITE_NAME}
+{WEBSITE_URL}
+
+IP address: {IP}

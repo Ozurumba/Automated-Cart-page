@@ -1,0 +1,30 @@
+Database Backup
+
+<-{separater}->
+
+Hi {NAME},
+
+Your order #{ORDER} from "{WEBSITE_NAME}" has now been updated:
+
+-------------------------------------------------------------------
+Order Status: {STATUS}
+-------------------------------------------------------------------
+
+{COMMENTS}
+
+-------------------------------------------------------------------
+
+PRODUCT DOWNLOADS:
+Your order contains product downloads. Please log into your account to download them:
+{D_URL}
+
+-------------------------------------------------------------------
+
+Note that product downloads are only available once payment has been received and your order is completed.
+
+Kind regards,
+
+<-{separater}->
+
+{WEBSITE_NAME}
+{WEBSITE_URL}

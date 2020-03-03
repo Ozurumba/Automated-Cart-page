@@ -1,0 +1,39 @@
+Gift Certificate
+
+<-{separater}->
+
+Hello {TO_NAME},
+
+{FROM_NAME} has purchased a gift certificate for you from "{WEBSITE_NAME}".
+
+If {FROM_NAME} included a custom message for you, it is shown below:
+
+-------------------------------------------------------------
+
+{CUSTOM_MESSAGE}
+
+-------------------------------------------------------------
+
+The full redeemable value is: [B]{CURRENCY}{VALUE}[/B]
+
+Enter the following code at checkout:
+[B]{GIFT_CODE}[/B]
+
+You may redeem all or part of the certificate value at any time. Once the full value has been redeemed it will expire.
+
+If you don`t plan on using this gift certificate immediately, you should keep this email (or gift code) in a safe place for later reference.
+
+Note that gift certificates have no monetary value and cannot be exchanged for cash.
+
+If you have any problems redeeming your certificate, please contact "{WEBSITE_NAME}".
+
+Hope you like this gift.
+
+------------------------------------------------------------
+
+Kind regards,
+
+<-{separater}->
+
+{WEBSITE_NAME}
+{WEBSITE_URL}

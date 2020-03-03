@@ -1,0 +1,113 @@
+/*
+  Admin Base CSS
+===================================================*/
+
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td{margin:0;padding:0;}table{border-collapse:collapse;border-spacing:0;}fieldset,img{border:0;}address,caption,dfn,th,var{font-style:normal;font-weight:normal;}li{list-style:none;}caption,th{text-align:left;}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal;}
+
+@font-face {
+  font-family: 'Muli';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Muli'), url(../fonts/muli.woff2) format('woff2'), url(../fonts/muli.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'Muli';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Muli Italic'), local('Muli-Italic'), url(../fonts/muli-italic.woff2) format('woff2'), url(../fonts/muli-italic.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'Muli';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Muli Bold'), local('Muli-Bold'), url(../fonts/muli-bold700.woff2) format('woff2'), url(../fonts/muli-bold700.woff) format('woff');
+}
+
+body {
+  font-family: "Muli", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #444;
+  background: #fcfcfc url(../images/pg-bg.png) fixed;
+}
+
+a {
+  color: #008097;
+}
+
+.clear {
+  display:none;
+}
+
+img {
+  border:0;
+}
+
+.btn-primary {
+  background: #008097;
+  border: 1px solid #008097;
+}
+
+.label-primary {
+  background: #008097;
+}
+
+.mc-red {
+  color:red;
+}
+
+.mc-green {
+  color:green;
+}
+
+del {
+  color:red;
+}
+
+#mscontainer .panel {
+  border-width: 2px;
+}
+
+.panel-heading {
+  color: #555 !important;
+  text-transform: uppercase;
+}
+
+.nav-tabs li a {
+  border-width: 2px !important;
+}
+
+.nav .open a {
+  border-color: #ddd !important;
+}
+
+.mc_cursor_pointer {
+  cursor:pointer;
+}
+
+.mobilebreakpoint {
+  display: inline;
+}
+
+.bbButtons {
+  margin-bottom: 5px;
+}
+
+.panel {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+.table tbody tr td:last-child {
+  text-align: right;
+}
+
+#content .alert {
+  border: 0;
+  border-top: 3px solid #ddd;
+  border-bottom: 3px solid #ddd;
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  font-size: 15px;
+}

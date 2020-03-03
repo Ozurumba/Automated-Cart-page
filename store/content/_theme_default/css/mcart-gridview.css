@@ -1,0 +1,85 @@
+.layout_gridview .wrapper {
+  padding-right: 2px !important;
+  padding-left: 2px !important;
+}
+
+.layout_gridview .panel-body {
+  height: 350px !important;
+}
+
+.layout_gridview .panel-footer {
+  height: 125px !important;
+}
+
+.layout_gridview .panel-footer .outofstock {
+  margin-top:10px;
+  display: block;
+}
+
+.layout_gridview .pright .title {
+  max-height:70px;
+  font-weight: bold;
+  overflow: hidden;
+}
+
+.layout_gridview .pright .mp3preview {
+  margin-top:10px;
+  padding:5px;
+}
+
+.layout_gridview {
+  padding-left: 13px !important;
+  padding-right: 13px !important;
+}
+
+.layout_gridview .pleft, .layout_gridview .pright,.layout_gridview .panel-footer {
+  text-align: center !important;
+}
+
+.layout_gridview .pleft .other_product_pictures {
+  margin-top:10px;
+  padding: 5px;
+  border: 1px solid #eee;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  height: 55px;
+  white-space: nowrap;
+  overflow-y: auto;
+  overflow-x: scroll;
+}
+
+.layout_gridview .panel-footer .price {
+  font-size: 18px;
+}
+
+.layout_gridview .panel-footer .price del {
+  font-size: 12px;
+}
+
+.layout_gridview .panel-footer .pull-right {
+  float: none !important;
+}
+
+.layout_gridview .panel-footer .btn {
+  margin-right:10px;
+}
+
+.layout_gridview .panel-footer .btn:last-child {
+  margin-right: 0;
+}
+
+.layout_gridview .panel-footer .btn span,.layout_gridview .panel-footer .alert-danger {
+  display: none !important;
+}
+
+.layout_gridview .pright {
+  border: 0 !important;
+}
+
+.layout_gridview .pleft img {
+  height: 100px;
+}
+
+.layout_gridview .no_add_images span i:nth-child(2) {
+  color: #ff9999;
+}

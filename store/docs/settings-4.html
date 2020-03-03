@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Store Banners:  Maian Cart Documentation</title>
+
+  <link href="content/css/bootstrap.css" rel="stylesheet">
+  <link href="content/css/font-awesome/font-awesome.css" rel="stylesheet">
+  <link href="content/css/mc-docs.css" rel="stylesheet">
+  <link href="content/css/jquery.ibox.css" rel="stylesheet">
+
+  <script src="content/js/jquery.js"></script>
+  <script src="content/js/functions.js"></script>
+
+  <link rel="ICON" href="favicon.ico">
+
+</head>
+
+<body>
+
+  <div id="wrapper">
+
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation" style="margin-bottom: 0">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-collapse">
+          <span class="sr-only">Toggle Navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">Documentation</a>
+      </div>
+
+      <div class="navbar-default navbar-static-side" role="navigation">
+        <div class="sidebar-collapse">
+        </div>
+      </div>
+    </nav>
+
+    <div id="page-wrapper">
+      <div class="row">
+        <div class="col-lg-12">
+          <h1 class="page-header">Store Banners</h1>
+        </div>
+      </div>
+
+            <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Store Banners</div>
+            <div class="panel-body">
+              A useful promotional feature is the store banner rotator. You can add as many banners as you like to the system and each banner can have an optional url to link to an internal or external site link and be category specific. This can be useful if you are running different promotions during the year. Banners can also be easily enabled/disabled after being added.<br><br>
+              NOTE: Due to screen limitations and to save space, banners are NOT shown on mobile devices.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Banner Caption</div>
+            <div class="panel-body">
+              Banner caption appears below the image. Leave blank for no caption.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Banner Url</div>
+            <div class="panel-body">
+              Url is optional. If specified, banner is clickable. This can be an internal or external site url. Examples:<br><br><b>http://www.example.com</b> (External to another site)<br><br><b>?pd=4</b> (Internal to store product page)<br><br><b>?c=9</b> (Internal to store category page)<br><br><b>http://www.example.com/cart/?pd=4</b> (Also internal to store product page)
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Banner Image</div>
+            <div class="panel-body">
+              Locate an image file on your hard drive. Images should be a valid image format like jpg,jpeg,png,gif.<br><br>
+              Image will display full screen width, so bear this in mind. An optimal size for banner images for full screen is around 2000px 550px. Images should be optimised for the web and not for example, uploaded directly from a digital source (eg: camera or phone) as
+              the file size will be too big. This impacts on bandwidth and load time.<br><br>
+              If you wish to NOT rename banners or change the banner prefix, edit the 'admin/control/defined.php' file.<br><br>
+              <b>define('BANNER_PREFIX', 'customprefix_');<br>
+              define('RENAME_BANNERS', 0);</b>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Banner Categories</div>
+            <div class="panel-body">
+              If categories are specified, banner image will load only when a category is being viewed or when a product is being viewed. If none category specific, loads on all pages.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Display on Store Main Page Only</div>
+            <div class="panel-body">
+              If set, banner displays on store main page only and no other screens.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Display Between Dates</div>
+            <div class="panel-body">
+              Use this option if you only want the banner image to display between certain dates.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Display for Trade Accounts ONLY</div>
+            <div class="panel-body">
+              If set, displays only for trade account logins.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Enable Banner</div>
+            <div class="panel-body">
+              Do you wish to enable or disable this banner?
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Store Banner Image Slider Options</div>
+            <div class="panel-body">
+              The Maian Cart banner rotator is powered by <a href="http://slippry.com" onclick="window.open(this);return false">Slippry</a> a simple image slider written by Lukas Jakob Hafner &amp; Thomas Hurd.  To change the settings, edit the following file:<br><br>
+              <b>content/*theme*/html/js/banner-slider.htm</b>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Banner Ordering</div>
+            <div class="panel-body">
+              To change the order the banners appear, hover your cursor over the banner rows until you see a <acronym title="Crosshair" style="cursor:move">crosshair</acronym>. Click and drag to re-order.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row footerArea">
+      </div>
+    </div>
+
+  </div>
+
+  <script>
+    //<![CDATA[
+    jQuery(document).ready(function() {
+      loadTopMenu();
+      loadLeftMenu();
+      loadFooter();
+    });
+    //]]>
+  </script>
+
+  <script src="content/js/bootstrap.js"></script>
+  <script src="content/js/plugins/jquery.metismenu.js"></script>
+  <script src="content/js/plugins/jquery.ibox.js"></script>
+
+</body>
+
+</html>

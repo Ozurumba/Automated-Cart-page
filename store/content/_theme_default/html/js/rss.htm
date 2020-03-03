@@ -1,0 +1,20 @@
+    <script>
+    //<![CDATA[
+    jQuery(document).ready(function () {
+      setTimeout(function() {
+        jQuery('#rss_scroller').rssfeed('{url}',{
+          header     : false,
+          date       : false,
+          snippet    : true,
+          linktarget : '_new',
+          media      : false,
+          limit      : {limit}
+        },
+        function(e) {
+          jQuery('#rss_scroller').removeClass('rss_spinner');
+          jQuery(e).find('div.rssBody').vTicker();
+        });
+      }, 1500);
+    });
+    //]]>
+    </script>

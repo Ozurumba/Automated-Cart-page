@@ -1,0 +1,18 @@
+CLEANTALK BLOCK CONFIRMATION
+
+<-{separater}->
+
+The following was blocked by the CleanTalk API:
+
+{IP}
+{NAME}
+{EMAIL}
+{COMMENTS}
+
+For more details view the CleanTalk log (if enabled) or log into your CleanTalk account area:
+https://cleantalk.org/
+
+<-{separater}->
+
+{WEBSITE_NAME}
+{WEBSITE_URL}

@@ -1,0 +1,51 @@
+{WEBSITE_NAME} - Order #{INVOICE_NO}
+
+<-{separater}->
+
+An order has been placed and processed on your website by "{NAME}":
+
+----------------------------------------------------------------
+[B]ITEMS ORDERED[/B]
+----------------------------------------------------------------
+
+{PRODUCT_ORDER}
+
+----------------------------------------------------------------
+
+Discount Applied: {DISCOUNTS}
+Order Total: {TOTAL}
+Payment Currency: {CURRENCY}
+Payment Method: {GATEWAY_NAME}
+Trade Sale: {TRADE_SALE}
+
+For a breakdown of the total calculation, please view the sale in your admin CP:
+{WEBSITE_URL}/{ADMIN_FOLDER}/?loadOrder={ORDER_ID}
+
+----------------------------------------------------------------
+[B]SHIPPING ADDRESS[/B]
+----------------------------------------------------------------
+
+{SHIPPING_ADDRESS}
+
+Shipping Method: {SHIP_METHOD}
+Tel: {SHIPPING_PHONE}
+
+----------------------------------------------------------------
+[B]BILLING ADDRESS[/B]
+----------------------------------------------------------------
+
+{BILLING_ADDRESS}
+
+----------------------------------------------------------------
+
+Payment was processed via {GATEWAY_NAME} and this order has now been completed.
+
+To view this order, log into your administration area:
+{WEBSITE_URL}/{ADMIN_FOLDER}/?loadOrder={ORDER_ID}
+
+<-{separater}->
+
+{WEBSITE_NAME}
+{WEBSITE_URL}
+
+IP Address: {ORDER_IP}

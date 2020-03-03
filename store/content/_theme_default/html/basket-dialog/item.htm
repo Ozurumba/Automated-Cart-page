@@ -1,0 +1,30 @@
+        <div class="panel panel-default" id="mb-{type}-{id}-{code}">
+          <div class="panel-body">
+            <div class="table-responsive">
+              <table class="table">
+              <tbody>
+                <tr>
+                  <td rowspan="2" class="img hidden-xs"><img src="{image}" alt=""></td>
+                  <td class="product"><a class="link" href="{product_url}">{product}</a></td>
+                  <td class="cost">{price}</td>
+                </tr>
+                {extras}
+              </tbody>
+              </table>
+              {wish_list_item}
+            </div>
+          </div>
+          <div class="panel-footer">
+            <div class="table-responsive">
+              <table class="table">
+              <tbody>
+                <tr>
+                  <td>{qty_text}: <b>{qty}</b></td>
+                  <td id="td-{type}-{id}-{code}"><a class="trash" href="#" onclick="mc_removeBasketItem('{type}-{id}-{code}');return false"><i class="fa fa-trash-o fa-fw fa-lg" title="{delete}"></i></a></td>
+                  <td>{total}</td>
+                </tr>
+              </tbody>
+              </table>
+            </div>
+          </div>
+        </div>

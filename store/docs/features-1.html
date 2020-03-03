@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>elFinder File Manager:  Maian Cart Documentation</title>
+
+  <link href="content/css/bootstrap.css" rel="stylesheet">
+  <link href="content/css/font-awesome/font-awesome.css" rel="stylesheet">
+  <link href="content/css/mc-docs.css" rel="stylesheet">
+  <link href="content/css/jquery.ibox.css" rel="stylesheet">
+
+  <script src="content/js/jquery.js"></script>
+  <script src="content/js/functions.js"></script>
+
+  <link rel="ICON" href="favicon.ico">
+
+</head>
+
+<body>
+
+  <div id="wrapper">
+
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation" style="margin-bottom: 0">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-collapse">
+          <span class="sr-only">Toggle Navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">Documentation</a>
+      </div>
+
+      <div class="navbar-default navbar-static-side" role="navigation">
+        <div class="sidebar-collapse">
+        </div>
+      </div>
+    </nav>
+
+    <div id="page-wrapper">
+      <div class="row">
+        <div class="col-lg-12">
+          <h1 class="page-header">elFinder File Manager</h1>
+        </div>
+      </div>
+
+            <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">elFinder File Manager</div>
+            <div class="panel-body">
+              Maian Cart utilises the excellent <a href="http://elfinder.org/" onclick="window.open(this);return false">elFinder File Manager</a>, created by Studio 42. This enables you to manage downloadable products via a simple, yet effective file/download manager.
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Restrictions in Maian Cart</div>
+            <div class="panel-body">
+              Because product downloads are recommended to be outside of the web root, previews and downloads of files from the download manager interface are not available. It will also only work if
+  your server has PHP 5 support with json_encode enabled. Errors will appear if you don`t.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Styling elFinder</div>
+            <div class="panel-body">
+              All files that relate to the appearance/styling of elFinder are located in the following:<br><br>
+    <div class="alert alert-info" style="margin-bottom:0">admin/templates/css/elfinder/</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">elFinder Language Options</div>
+            <div class="panel-body">
+              The language of the file manager is not controlled via the PHP language files. Instead its hard coded in the javascript files. English is default, but other available languages are located in:<br><br>
+              <div class="alert alert-info">
+                admin/templates/js/i18n/
+              </div>
+              To change to your own locale, first check which languages are available. You then need to udpdate the following in the 'admin/control/defined.php' file.<br><br>
+              <div class="alert alert-info">
+                define('ELF_LOCALE', 'en');
+              </div>
+              Insert the 2 character language code ONLY. See the notes for an example.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Usage</div>
+            <div class="panel-body">
+              elFinder usage is detailed <a href="catalogue-12.html">here</a>.
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row footerArea">
+      </div>
+    </div>
+
+  </div>
+
+  <script>
+    //<![CDATA[
+    jQuery(document).ready(function() {
+      loadTopMenu();
+      loadLeftMenu();
+      loadFooter();
+    });
+    //]]>
+  </script>
+
+  <script src="content/js/bootstrap.js"></script>
+  <script src="content/js/plugins/jquery.metismenu.js"></script>
+  <script src="content/js/plugins/jquery.ibox.js"></script>
+
+</body>
+
+</html>

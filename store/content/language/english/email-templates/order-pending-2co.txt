@@ -1,0 +1,24 @@
+Order Pending - Please Read
+
+<-{separater}->
+
+Hello {NAME},
+
+Thank you for placing an order at {WEBSITE_NAME}.
+
+Your order is currently awaiting review by the 2Checkout fraud team. This process can take up to 6hrs depending on your timezone, so please be patient. At the moment no further action is required from you.
+
+Once your payment has been accepted and processed, another email will follow from us.
+
+If you need to contact us about your order, reply to this email.
+
+Thank you for your order,
+
+Kind regards,
+
+<-{separater}->
+
+{WEBSITE_NAME}
+{WEBSITE_URL}
+
+IP address: {ORDER_IP}

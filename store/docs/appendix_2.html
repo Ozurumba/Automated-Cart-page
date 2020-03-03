@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>v3.6 Appendix:  Maian Cart Documentation</title>
+
+  <link href="content/css/bootstrap.css" rel="stylesheet">
+  <link href="content/css/font-awesome/font-awesome.css" rel="stylesheet">
+  <link href="content/css/mc-docs.css" rel="stylesheet">
+  <link href="content/css/jquery.ibox.css" rel="stylesheet">
+
+  <script src="content/js/jquery.js"></script>
+  <script src="content/js/functions.js"></script>
+
+  <link rel="ICON" href="favicon.ico">
+
+</head>
+
+<body>
+
+  <div id="wrapper">
+
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation" style="margin-bottom: 0">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-collapse">
+          <span class="sr-only">Toggle Navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">Documentation</a>
+      </div>
+
+      <div class="navbar-default navbar-static-side" role="navigation">
+        <div class="sidebar-collapse">
+        </div>
+      </div>
+    </nav>
+
+    <div id="page-wrapper">
+      <div class="row">
+        <div class="col-lg-12">
+          <h1 class="page-header">v3.6 Appendix</h1>
+        </div>
+      </div>
+
+            <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Overview</div>
+            <div class="panel-body">
+             Please read carefully. v3.6 updated the Stripe API library and moved pagination HTML to the template folders. The changes are shown
+             below and will affect your installation if you don`t use the patch option to update the system templates.<br><br>
+             This updated applies to v3.4 or v3.5 of Maian Cart ONLY. Previous versions did not support Stripe.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading"><i class="fa fa-warning fa-fw"></i> Pagination HTML Moved to Templates</div>
+            <div class="panel-body">
+             If they don`t exist, copy the following to your installation:<br><br>
+             admin/templates/html/pagination/*<br>
+             content/**theme**/html/pagination/*<br><br>
+             * denotes ALL files.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading"><i class="fa fa-warning fa-fw"></i> Stripe API v3.0 Support</div>
+            <div class="panel-body">
+             <span class="badge">1</span> Open the 'content/**theme**/footer.tpl.php' file.<br><br>
+             After:<br><br>
+             &lt;script src="<?php echo $this->BASE_PATH . '/' . $this->THEME_FOLDER; ?>/js/mc-functions.js">&lt;/script&gt;<br><br>
+             Add:<br><br>
+             &lt;?php<br>
+             if (&#036;this->STRIPE_EN == 'yes') {<br>
+             ?><br>
+             &lt;script src="https://js.stripe.com/v3"&gt;&lt;/script&gt;<br>
+             &lt;?php<br>
+             }<br>
+             ?><br><br>
+             <span class="badge">2</span> Replace the following file:<br><br>
+             <b>content/**theme/gateway-api/stripe.php</b>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading"><i class="fa fa-warning fa-fw"></i> Stripe Callback Now Required</div>
+            <div class="panel-body">
+             Note that the Stripe callback MUST be set up as detailed in the <a href="payment-3.html">Stripe gateway settings</a>. This is
+             required for the v3.0 API to function correctly.
+            </div>
+          </div>
+        </div>
+      </div>
+      <a href="info3.html"><i class="fa fa-arrow-left fa-fw"></i> Return to Appendix List</a>
+      <div class="row footerArea">
+      </div>
+    </div>
+
+  </div>
+
+  <script>
+    //<![CDATA[
+    jQuery(document).ready(function() {
+      loadTopMenu();
+      loadLeftMenu();
+      loadFooter();
+    });
+    //]]>
+  </script>
+
+  <script src="content/js/bootstrap.js"></script>
+  <script src="content/js/plugins/jquery.metismenu.js"></script>
+  <script src="content/js/plugins/jquery.ibox.js"></script>
+
+</body>
+
+</html>

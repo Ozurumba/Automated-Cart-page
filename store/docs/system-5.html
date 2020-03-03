@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Latest News Ticker:  Maian Cart Documentation</title>
+
+  <link href="content/css/bootstrap.css" rel="stylesheet">
+  <link href="content/css/font-awesome/font-awesome.css" rel="stylesheet">
+  <link href="content/css/mc-docs.css" rel="stylesheet">
+  <link href="content/css/jquery.ibox.css" rel="stylesheet">
+
+  <script src="content/js/jquery.js"></script>
+  <script src="content/js/functions.js"></script>
+
+  <link rel="ICON" href="favicon.ico">
+
+</head>
+
+<body>
+
+  <div id="wrapper">
+
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation" style="margin-bottom: 0">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-collapse">
+          <span class="sr-only">Toggle Navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">Documentation</a>
+      </div>
+
+      <div class="navbar-default navbar-static-side" role="navigation">
+        <div class="sidebar-collapse">
+        </div>
+      </div>
+    </nav>
+
+    <div id="page-wrapper">
+      <div class="row">
+        <div class="col-lg-12">
+          <h1 class="page-header">Latest News Ticker</h1>
+        </div>
+      </div>
+
+            <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Latest News Ticker</div>
+            <div class="panel-body">
+              Maian Cart utilises the excellent <a href="https://github.com/aamirafridi/jQuery.Marquee" onclick="window.open(this);return false">jQuery marquee</a> plugin created by Aamir Afridi.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Add New Ticker</div>
+            <div class="panel-body">
+              Enter news text. HTML may be used here if required, but be careful as some HTML may break the ticker. Hyperlinks only are recommended as follows:<br><br><b>Check out our store bargains &lt;a href="http://www.example.com/cart"&gt;here&lt;/a&gt;</b><br><br>
+  In this example, 'here' would hyperlink to 'http://www.example.com/cart'. You can use full, relative or external links.
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Enable Ticker</div>
+            <div class="panel-body">
+              Do you wish to enable this news ticker text? Yes or No.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Ticker Page Load</div>
+            <div class="panel-body">
+              By default the ticker only loads on the homepage. If you wish to load it on all pages, edit the following in the 'control/defined.php' file:<br><br>
+              <div class="alert alert-info">
+               define('NEWS_TICKER_DISPLAY_PREF', 1);
+               </div>
+               Change to 0 to load on all pages.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Drag and Drop to Order</div>
+            <div class="panel-body">
+              To set the order that the ticker messages display, drag and drop the rows after creating news tickers. A <span style="text-decoration:underline;cursor:move">move</span> icon appears if you hover your cursor over the rows. Simply drag and drop to re-order.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row footerArea">
+      </div>
+    </div>
+
+  </div>
+
+  <script>
+    //<![CDATA[
+    jQuery(document).ready(function() {
+      loadTopMenu();
+      loadLeftMenu();
+      loadFooter();
+    });
+    //]]>
+  </script>
+
+  <script src="content/js/bootstrap.js"></script>
+  <script src="content/js/plugins/jquery.metismenu.js"></script>
+  <script src="content/js/plugins/jquery.ibox.js"></script>
+
+</body>
+
+</html>

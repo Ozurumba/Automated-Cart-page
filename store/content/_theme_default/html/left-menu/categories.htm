@@ -1,0 +1,14 @@
+   <div class="panel panel-default leftpanelcategory">
+     <div class="panel-heading" role="tab" id="heading{id}">
+       <h4 class="panel-title">
+         <a{collapsed}role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse{id}" aria-expanded="{expanded}" onclick="mc_Panel('{id}')" aria-controls="collapse{id}">
+           <img src="{base}/{folder}/{icon}" alt=""> {text} {count}
+         </a>
+       </h4>
+     </div>
+     <div id="collapse{id}" class="panel-collapse collapse{in}" role="tabpanel" aria-labelledby="heading{id}">
+       <div class="panel-body leftpanelchildren">
+         {children}
+       </div>
+     </div>
+   </div>

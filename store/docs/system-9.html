@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Left Box Controller: Maian Cart Documentation</title>
+
+  <link href="content/css/bootstrap.css" rel="stylesheet">
+  <link href="content/css/font-awesome/font-awesome.css" rel="stylesheet">
+  <link href="content/css/mc-docs.css" rel="stylesheet">
+  <link href="content/css/jquery.ibox.css" rel="stylesheet">
+
+  <script src="content/js/jquery.js"></script>
+  <script src="content/js/functions.js"></script>
+
+  <link rel="ICON" href="favicon.ico">
+
+</head>
+
+<body>
+
+  <div id="wrapper">
+
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation" style="margin-bottom: 0">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-collapse">
+          <span class="sr-only">Toggle Navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">Documentation</a>
+      </div>
+
+      <div class="navbar-default navbar-static-side" role="navigation">
+        <div class="sidebar-collapse">
+        </div>
+      </div>
+    </nav>
+
+    <div id="page-wrapper">
+      <div class="row">
+        <div class="col-lg-12">
+          <h1 class="page-header">Left Box Controller</h1>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Overview</div>
+            <div class="panel-body">
+              Here you can easily control the behaviour of the boxes in the left hand menu. Not all the boxes will be shown as some depend on certain
+              pages and other features being enabled.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Add Custom Boxes</div>
+            <div class="panel-body">
+              You can create unlimited additional menu boxes and these load from custom templates. Your custom template can contain any PHP / HTML code.<br><br>
+              To create a new custom template, files MUST be prefixed with 'box-' and be added to the following directory:<br><br>
+              <b>content/**theme/customTemplates/</b><br><br>
+              See the 'box-example.tpl.php' as an example. Once you have added custom templates use the <i class="fa fa-plus fa-fw"></i> icon to load box
+              options. Select a box to add it to the list.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Box Heading</div>
+            <div class="panel-body">
+              This is the box heading title. You can add text directly in the custom template and ignore this if you wish. For system boxes, if you leave the heading
+              blank they will revert to system defaults. If you don`t set a heading title for a custom box it will not display. Once changed, click the 'Update Box Options' button to update
+              to finalise the changes.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Active</div>
+            <div class="panel-body">
+              Shows a green flag if enabled and a inverted flag if disabled. Click the flag to enable / disable box. For this option ONLY, you don`t need to
+              click the 'Update Box Options' button to finalise the changes.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Order</div>
+            <div class="panel-body">
+              Order the boxes to display in the order you prefer. Use the buttons to move boxes up and down, then click the 'Update Box Options' button to
+              finalise the changes.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Remove</div>
+            <div class="panel-body">
+              This is only shown if the admin user has delete privileges. The delete / remove option is only for custom boxes. System boxes can be disabled,
+              but not removed. Once you have click the remove icon click the 'Update Box Options' button to finalise the change.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row footerArea">
+      </div>
+    </div>
+
+  </div>
+
+  <script>
+    //<![CDATA[
+    jQuery(document).ready(function() {
+      loadTopMenu();
+      loadLeftMenu();
+      loadFooter();
+    });
+    //]]>
+  </script>
+
+  <script src="content/js/bootstrap.js"></script>
+  <script src="content/js/plugins/jquery.metismenu.js"></script>
+  <script src="content/js/plugins/jquery.ibox.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,36 @@
+Wish List Order Confirmed - #{INVOICE_NO}
+
+<-{separater}->
+
+Hello {RECIPIENT_NAME},
+
+We have some excellent news. An item from your wish list has just been purchased.
+
+----------------------------------------------------------------
+[B]ITEMS RECEIVED[/B]
+----------------------------------------------------------------
+
+{PRODUCT_ORDER}
+
+----------------------------------------------------------------
+
+If any products require shipping they will be delivered to the following address:
+
+{SHIPPING_ADDRESS}
+
+Shipping Method: {SHIP_METHOD}
+Tel: {SHIPPING_PHONE}
+
+----------------------------------------------------------------
+
+If this order contains any downloadable products, log into your account to download:
+{ACCOUNT_URL}
+
+If you see any errors in your order, please contact us as soon as possible.
+
+Kind regards,
+
+<-{separater}->
+
+{WEBSITE_NAME}
+{WEBSITE_URL}

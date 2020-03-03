@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Drop Shipping:  Maian Cart Documentation</title>
+
+  <link href="content/css/bootstrap.css" rel="stylesheet">
+  <link href="content/css/font-awesome/font-awesome.css" rel="stylesheet">
+  <link href="content/css/mc-docs.css" rel="stylesheet">
+  <link href="content/css/jquery.ibox.css" rel="stylesheet">
+
+  <script src="content/js/jquery.js"></script>
+  <script src="content/js/functions.js"></script>
+
+  <link rel="ICON" href="favicon.ico">
+
+</head>
+
+<body>
+
+  <div id="wrapper">
+
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation" style="margin-bottom: 0">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-collapse">
+          <span class="sr-only">Toggle Navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">Documentation</a>
+      </div>
+
+      <div class="navbar-default navbar-static-side" role="navigation">
+        <div class="sidebar-collapse">
+        </div>
+      </div>
+    </nav>
+
+    <div id="page-wrapper">
+      <div class="row">
+        <div class="col-lg-12">
+          <h1 class="page-header">Drop Shipping</h1>
+        </div>
+      </div>
+
+            <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Overview</div>
+            <div class="panel-body">
+            Dropshipping is a retail fulfillment method where a store doesn't keep the products it sells in stock. Instead, when a store sells a product, it purchases the item from a third party and has it shipped directly to the customer. As a result, the merchant never sees or handles the product.<br><br>
+            The biggest difference between dropshipping and the standard retail model is that the selling merchant doesn't stock or own any inventory. Instead, the merchant purchases inventory as needed from a third party (usually a wholesaler or manufacturer) to fulfill orders.<br><br>
+            Maian Cart has a basic drop shipping system that sends notification to drop shippers to ship products. Notifications are ONLY
+            sent when a payment is confirmed as completed. So, for example, if a none payment gateway method is used (Phone / Cheque / Bank Transfer / COD), the
+            drop shipping system is ignored. In this case you should manually trigger the drop shipping emails via the <a href="sales-9.html">sale product screen</a>.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Add Drop Shipper</div>
+            <div class="panel-body">
+            Enter name and email addresses for drop shipper. Comma delimit multiple emails.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Only Send Drop Ship Notification for Following Payment Statuses</div>
+            <div class="panel-body">
+            Will ONLY send email notification if the sale item has a certain payment status. No selections = ALL.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Only Send Drop Ship Notification for Following Payment Methods</div>
+            <div class="panel-body">
+            Will ONLY send email notification if the sale item has a certain payment method. No selections = ALL.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">If Order Contains Drop Ship Products From This Drop Shipper Set Status To</div>
+            <div class="panel-body">
+            Updates sale status if at least one product in sale has been drop shipped to this drop shipper.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Manage Drop Shippers</div>
+            <div class="panel-body">
+            Use the links provided to edit or delete drop shippers.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Email Template Override</div>
+            <div class="panel-body">
+            By default the email template for all drop shippers is:<br><br>
+            <b>content/language/*country language*/email-templates/drop-shipping-confirmation.txt</b><br><br>
+            If you need to add specific info in the email for a drop shipper you can create an override template. Instructions as follows:<br><br>
+            You need to create a new template for drop shipper ID 1:<br><br>
+            <span class="badge">1</span> Create a new file with ID appended. Use same vars in email as original.<br><br>
+            <span class="badge">2</span> Save file "drop-shipping-confirmation-1.txt" in same folder.<br><br>
+            Done, now file "drop-shipping-confirmation-1.txt" will be used.
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row footerArea">
+      </div>
+    </div>
+
+  </div>
+
+  <script>
+    //<![CDATA[
+    jQuery(document).ready(function() {
+      loadTopMenu();
+      loadLeftMenu();
+      loadFooter();
+    });
+    //]]>
+  </script>
+
+  <script src="content/js/bootstrap.js"></script>
+  <script src="content/js/plugins/jquery.metismenu.js"></script>
+  <script src="content/js/plugins/jquery.ibox.js"></script>
+
+</body>
+
+</html>

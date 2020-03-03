@@ -1,0 +1,34 @@
+{WEBSITE_NAME} - Free Order - #{INVOICE_NO}
+
+<-{separater}->
+
+Hello {NAME},
+
+Thank you for your FREE order at {WEBSITE_NAME}.
+
+----------------------------------------------------------------
+[B]FREE ITEMS[/B]
+----------------------------------------------------------------
+
+{PRODUCT_ORDER}
+
+----------------------------------------------------------------
+
+If your payment has been accepted or if you have an account, you can view your order via the following:
+{ORDER_URL}
+
+Thanks for downloading some of our free products, we hope you like them.
+
+To view your order and download any products, please visit:
+{ORDER_URL}
+
+If you have an account with us, you`ll be required to log in to view your order.
+
+Kind regards,
+
+<-{separater}->
+
+{WEBSITE_NAME}
+{WEBSITE_URL}
+
+IP address: {ORDER_IP}

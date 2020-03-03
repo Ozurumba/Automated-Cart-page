@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Download Manager:  Maian Cart Documentation</title>
+
+  <link href="content/css/bootstrap.css" rel="stylesheet">
+  <link href="content/css/font-awesome/font-awesome.css" rel="stylesheet">
+  <link href="content/css/mc-docs.css" rel="stylesheet">
+  <link href="content/css/jquery.ibox.css" rel="stylesheet">
+
+  <script src="content/js/jquery.js"></script>
+  <script src="content/js/functions.js"></script>
+
+  <link rel="ICON" href="favicon.ico">
+
+</head>
+
+<body>
+
+  <div id="wrapper">
+
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation" style="margin-bottom: 0">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-collapse">
+          <span class="sr-only">Toggle Navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">Documentation</a>
+      </div>
+
+      <div class="navbar-default navbar-static-side" role="navigation">
+        <div class="sidebar-collapse">
+        </div>
+      </div>
+    </nav>
+
+    <div id="page-wrapper">
+      <div class="row">
+        <div class="col-lg-12">
+          <h1 class="page-header">Download Manager</h1>
+        </div>
+      </div>
+
+            <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Overview</div>
+            <div class="panel-body">
+              The download manager enables you to easily manage your downloadable products via a javascript file manager powered by
+              <a href="http://elfinder.org/" onclick="window.open(this);return false">elFinder</a>. This is experimental in Maian Cart, so if you find the download manager not suitable or you can`t get it to work, use an FTP client such
+              as <a href="http://filezilla-project.org/" onclick="window.open(this);return false">FileZilla</a> or <a href="http://winscp.net" onclick="window.open(this);return false">WinSCP</a>.<br><br>
+              Downloads should be stored outside of your web root for security. This means NOT accessible in a browser. The file manager may
+              not be fully compatible with files outside the root, so in this case, use FTP as mentioned above.<br><br>
+              A few basic operations are shown below.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Locale</div>
+            <div class="panel-body">
+              English is the default language for the file manager. To change locale, update 2 letter code in the 'admin/control/defined.php' file.<br><br>
+              <div class="alert alert-info">
+                define('ELF_LOCALE', 'en');
+              </div>
+              File must exist in the 'admin/templates/js/i18n' directory.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Files &amp; Folders</div>
+            <div class="panel-body">
+              <img class="img-responsive screenshot" src="content/images/elfinder/1.png" alt="">
+              <br><b>NOTE: It is highly recommended and good practice that files and folder names do NOT contain spaces or invalid characters. Use hyphens (-), underscores (_) or
+              alphanumeric characters (a-z,0-9) to be safe.</b>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Toggle Icon/List View</div>
+            <div class="panel-body">
+              <img class="img-responsive screenshot" src="content/images/elfinder/2.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Hover Cursor for Description</div>
+            <div class="panel-body">
+              <img class="img-responsive screenshot" src="content/images/elfinder/3.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Create New Folder</div>
+            <div class="panel-body">
+              <img class="img-responsive screenshot" src="content/images/elfinder/4.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Upload/Add Files</div>
+            <div class="panel-body">
+              <img class="img-responsive screenshot" src="content/images/elfinder/5.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Rename File</div>
+            <div class="panel-body">
+              <img class="img-responsive screenshot" src="content/images/elfinder/6.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Drag and Drop Files</div>
+            <div class="panel-body">
+              <img class="img-responsive screenshot" src="content/images/elfinder/7.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Delete Files/Folders - Right click or button</div>
+            <div class="panel-body">
+              <img class="img-responsive screenshot" src="content/images/elfinder/8.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Right Click Options - various functions</div>
+            <div class="panel-body">
+              <img class="img-responsive screenshot" src="content/images/elfinder/9.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row footerArea">
+      </div>
+    </div>
+
+  </div>
+
+  <script>
+    //<![CDATA[
+    jQuery(document).ready(function() {
+      loadTopMenu();
+      loadLeftMenu();
+      loadFooter();
+    });
+    //]]>
+  </script>
+
+  <script src="content/js/bootstrap.js"></script>
+  <script src="content/js/plugins/jquery.metismenu.js"></script>
+  <script src="content/js/plugins/jquery.ibox.js"></script>
+
+</body>
+
+</html>

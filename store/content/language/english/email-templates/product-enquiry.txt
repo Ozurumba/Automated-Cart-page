@@ -1,0 +1,21 @@
+Product Enquiry
+
+<-{separater}->
+
+Name: {NAME}
+Email: {EMAIL}
+
+Product: {PRODUCT}
+{URL}
+
+Comments:
+---------------------------------------------
+
+{COMMENTS}
+
+<-{separater}->
+
+{WEBSITE_NAME}
+{WEBSITE_URL}
+
+IP address: {IP}

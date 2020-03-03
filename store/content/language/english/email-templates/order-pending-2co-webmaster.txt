@@ -1,0 +1,36 @@
+Order Pending - Please Read
+
+<-{separater}->
+
+Hello,
+
+An order has been processed in your cart, but its payment status is 'Pending'. This is due to the 2Checkout fraud review process which can take up to 6hrs depending on your timezone.
+
+Current 2Checkout status is as follows:
+
+------------------------------------------------
+[B]Fraud Status[/B]: {FRAUD_STATUS}
+[B]Invoice Status[/B]: {INV_STATUS}
+------------------------------------------------
+
+The buyer has been contacted with details about this delay.
+
+No further action is required from you or the buyer at this moment in time.
+
+To review the details of this transaction, log in to your 2Checkout account:
+http://www.2checkout.com
+
+Once the payment is successfully processed further emails will follow.
+
+In the meantime, this sale should be viewable in your admin area under 'Incomplete Sales'.
+
+Once the payment gateway has verified the sale, it will be visible in the normal sales list.
+
+Kind regards,
+
+<-{separater}->
+
+{WEBSITE_NAME}
+{WEBSITE_URL}
+
+IP Address: {ORDER_IP}

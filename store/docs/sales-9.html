@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Products Ordered:  Maian Cart Documentation</title>
+
+  <link href="content/css/bootstrap.css" rel="stylesheet">
+  <link href="content/css/font-awesome/font-awesome.css" rel="stylesheet">
+  <link href="content/css/mc-docs.css" rel="stylesheet">
+  <link href="content/css/jquery.ibox.css" rel="stylesheet">
+
+  <script src="content/js/jquery.js"></script>
+  <script src="content/js/functions.js"></script>
+
+  <link rel="ICON" href="favicon.ico">
+
+</head>
+
+<body>
+
+  <div id="wrapper">
+
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation" style="margin-bottom: 0">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-collapse">
+          <span class="sr-only">Toggle Navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">Documentation</a>
+      </div>
+
+      <div class="navbar-default navbar-static-side" role="navigation">
+        <div class="sidebar-collapse">
+        </div>
+      </div>
+    </nav>
+
+    <div id="page-wrapper">
+      <div class="row">
+        <div class="col-lg-12">
+          <h1 class="page-header">Products Ordered</h1>
+        </div>
+      </div>
+
+            <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Overview</div>
+            <div class="panel-body">
+              This screen offers a quick glance of the products in the sale. From this screen you can resend emails to drop
+              shippers if applicable.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Product Qty Bar</div>
+            <div class="panel-body">
+              Clicking the <i class="fa fa-long-arrow-down fa-fw"></i> icon may show one or more of the following:<br><br>
+              <i class="fa fa-pencil fa-fw"></i> - Edit Product - If shown, click to load product edit screen (<a href="catalogue-1.html">tangible</a> or <a href="catalogue-17.html">gift</a>).<br><br>
+              <i class="fa fa-gift fa-fw"></i> - Gift Certificate Management - If shown, click to load <a href="sales-13.html">gift certificate management</a> screen.<br><br>
+              <i class="fa fa-download fa-fw"></i> - Download Management - If shown, click to load <a href="sales-10.html">download management</a> screen.<br><br>
+              <i class="fa fa-truck fa-fw"></i> - XXX (Drop Shipping Supplier). If shown, click to load <a href="dropship.html">drop shipper edit</a> screen.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Resend Email to Drop Shippers</div>
+            <div class="panel-body">
+            Only available if at least 1 product is applicable for a drop ship supplier. Check the boxes shown and then click the
+            "Resend Shipping Confirmation to Drop Shipping Supplier(s)" button at the bottom of the page. Email will be resent the same as when an order is completed. This option is useful
+            if an email wasn`t sent when the order completed OR you prefer to send manually.<br><br>
+            <img class="img-responsive screenshot" src="content/images/screenshots/14.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">APIs</div>
+            <div class="panel-body">
+            If you are utilising <a href="http://www.maiancube.com/" onclick="window.open(this);return false">Maian Cube</a> and / or <a href="http://www.maianguardian.com/" onclick="window.open(this);return false">Maian Guardian</a>, an APIs option will also be shown. This enables you to send relevant product sales
+            items manually to your cube and/or guardian installations. If checkboxes are present due to drop shippers, you don`t need to check the boxes to
+            send to the APIs. Simply, select the API, confirm and then send. Only relevant <a href="catalogue-1.html">products</a> will be sent.<br><br>
+            <img class="img-responsive screenshot" src="content/images/screenshots/94.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row footerArea">
+      </div>
+    </div>
+
+  </div>
+
+  <script>
+    //<![CDATA[
+    jQuery(document).ready(function() {
+      loadTopMenu();
+      loadLeftMenu();
+      loadFooter();
+    });
+    //]]>
+  </script>
+
+  <script src="content/js/bootstrap.js"></script>
+  <script src="content/js/plugins/jquery.metismenu.js"></script>
+  <script src="content/js/plugins/jquery.ibox.js"></script>
+
+</body>
+
+</html>

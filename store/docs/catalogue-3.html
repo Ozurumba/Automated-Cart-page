@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Categories:  Maian Cart Documentation</title>
+
+  <link href="content/css/bootstrap.css" rel="stylesheet">
+  <link href="content/css/font-awesome/font-awesome.css" rel="stylesheet">
+  <link href="content/css/mc-docs.css" rel="stylesheet">
+  <link href="content/css/jquery.ibox.css" rel="stylesheet">
+
+  <script src="content/js/jquery.js"></script>
+  <script src="content/js/functions.js"></script>
+
+  <link rel="ICON" href="favicon.ico">
+
+</head>
+
+<body>
+
+  <div id="wrapper">
+
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation" style="margin-bottom: 0">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-collapse">
+          <span class="sr-only">Toggle Navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">Documentation</a>
+      </div>
+
+      <div class="navbar-default navbar-static-side" role="navigation">
+        <div class="sidebar-collapse">
+        </div>
+      </div>
+    </nav>
+
+    <div id="page-wrapper">
+      <div class="row">
+        <div class="col-lg-12">
+          <h1 class="page-header">Categories</h1>
+        </div>
+      </div>
+
+            <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Categories</div>
+            <div class="panel-body">
+              Before you can add any products into the system you need to add some categories. Maian Cart supports 3 category levels. Parents, children &amp; infants. Optional comments can be specified for categories, as well as
+              meta keywords and descriptions. You can also specify an alternative browser title text if you prefer.<br><br>
+              If a category is disabled, this will also disable any product in that category from display. This can be useful if you want to add all your products into a category before enabling that
+              category, or you only want to enable products in that category at specific times of the year.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Browser Title Text</div>
+            <div class="panel-body">
+              If you prefer different text to appear in the browser title bar than the category name, enter alternative text. Use the copy option to copy category name if required. This is optional. If left blank, category name appears in browser title bar.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Rewrite URL Slug</div>
+            <div class="panel-body">
+              A slug is the part of a URL which identifies a page using human-readable keywords. For example if you have a category called "Electronic and Other Stuff", your slug may be "electronic" or "electronic-stuff" etc. The system will attempt to create this for you when you enter your category name. The auto suggestion can be de-activated, see the <a href="other-1.html">F.A.Q</a>.<br><br>ONLY applicable if search engine friendly urls are ON in the settings. Slugs can ONLY contain alphanumeric characters, hyphens and underscores.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Category Description</div>
+            <div class="panel-body">
+              The description appears at the top of any relevant category page. This might be brief details about the products in this category. Leave blank for no description. Use <a href="features-6.html">BB Code</a> for formatting, HTML is not allowed.<br>
+              <br> Note: For bigger textarea, click the crosshair, top right, in the textarea box.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Example Structure</div>
+            <div class="panel-body">
+              <b>MOVIES FOR SALE</b> (Parent with 9 children &amp; no infants)<br>
+              &nbsp;&nbsp;Action &amp; Adventure<br>
+              &nbsp;&nbsp;Animation<br>
+              &nbsp;&nbsp;Comedy<br>
+              &nbsp;&nbsp;Crime &amp; Thriller<br>
+              &nbsp;&nbsp;Horror<br>
+              &nbsp;&nbsp;Science Fiction<br>
+              &nbsp;&nbsp;Sport<br>
+              &nbsp;&nbsp;War<br>
+              &nbsp;&nbsp;Westerns<br>
+              &nbsp;&nbsp;World Cinema<br><br><b>COMPUTERS</b> (Parent with 2 children &amp; 3 infants)<br>
+              &nbsp;&nbsp;Netbooks<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;Asus<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;Dell<br>
+              &nbsp;&nbsp;Laptops<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;Acer<br>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Category Image Icon (Optional)</div>
+            <div class="panel-body">
+              Category icons can be uploaded if you wish. If you have enabled to show the homepage categories, it is recommended you add a custom logo
+              as this will also be used as the graphic for homepage categories. See the following two screenshots. <br><br>
+              <b>Used as menu category icons</b>:<br><br>
+              <img class="img-responsive screenshot" src="content/images/screenshots/1.png" alt=""><br>
+              <b>Used as homepage category graphics</b>:<br><br>
+              <img class="img-responsive screenshot" src="content/images/screenshots/91.png" alt="">
+              <br>Optimal size is greater than 200px wide. But not too large.<br><br>
+              Note that if the gift certificate category is enabled, image should exist in 'content/products/' folder and be either:<br><br>
+              default_gift_icon.png OR<br>
+              default_gift_icon.jpg
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Enable Disqus Comments</div>
+            <div class="panel-body">
+              Maian Cart uses the Disqus comments system. More info <a href="features-15.html">here</a>.
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Show Related Categories</div>
+            <div class="panel-body">
+              Do you wish to show related categories? If yes, related categories will appear in the left menu.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Free Shipping</div>
+            <div class="panel-body">
+              Determines whether free shipping applies to all products in category by default. If enabled, no shipping rules are applied to products category.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Category Visibility</div>
+            <div class="panel-body">
+              <b>This feature is experimental. If you encounter issues, please let me know!</b><br><br>
+              Ideal if you want to have certain categories only visible on login. Useful for trade or account only categories.<br><br>
+              <b>Guests</b> = Visible by default to any visitor<br>
+              <b>Personal Accounts</b> = Visible ONLY when someone with a personal account is logged in.<br>
+              <b>Trade Accounts</b> = Visible ONLY when someone with a trade account is logged in.<br><br>
+              If the guests box is checked, categories are visible to all regardless of other boxes. This is the default if no boxes are checked.<br><br>
+              If a parent category has different permissions, it may affect the visibility of categories beneath it. For example, if a parent
+              category is set to 'trade' only and the children are also set to guests, the children are hidden because of the parents permissions, however the
+              children would be visible if a url was entered manually in the browser.<br><br>
+              It`s also worth considering adding products to multiple categories. If you have products in mixed permission categories it can cause display issues.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Category Theme</div>
+            <div class="panel-body">
+              Theme to load for this category if applicable. <a href="install-4.html">Theme</a> folders should be created inside the "content" folder and be prefixed "_theme".
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Enable Category</div>
+            <div class="panel-body">
+              Enables or disables category
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Edit / Delete / ReOrder</div>
+            <div class="panel-body">
+              Use the icons provided to edit or delete a category. Deleting a parent will delete all categories beneath it. Categories cannot be deleted if they are
+              attached to products. To reOrder use the drop down menus.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row footerArea">
+      </div>
+    </div>
+
+  </div>
+
+  <script>
+    //<![CDATA[
+    jQuery(document).ready(function() {
+      loadTopMenu();
+      loadLeftMenu();
+      loadFooter();
+    });
+    //]]>
+  </script>
+
+  <script src="content/js/bootstrap.js"></script>
+  <script src="content/js/plugins/jquery.metismenu.js"></script>
+  <script src="content/js/plugins/jquery.ibox.js"></script>
+
+</body>
+
+</html>

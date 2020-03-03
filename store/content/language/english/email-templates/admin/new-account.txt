@@ -1,0 +1,21 @@
+New Account
+
+<-{separater}->
+
+Hi {NAME},
+
+An account has been created for you at "{WEBSITE_NAME}".
+
+Your log in details are as follows:
+Email: {EMAIL}
+Pass: {PASS}
+{WEBSITE_URL}
+
+Please log in and update your password as soon as posible.
+
+Any problems, let us know.
+
+<-{separater}->
+
+{WEBSITE_NAME}
+{WEBSITE_URL}

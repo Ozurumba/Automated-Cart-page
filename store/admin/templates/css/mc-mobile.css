@@ -1,0 +1,115 @@
+/*
+  Admin CSS - Mobile / Small Screens ONLY
+===================================================*/
+
+@media only screen and (max-width: 991px) {
+  .msheader .msheaderright a i {
+    font-size: 18px;
+  }
+  .formFieldWrapper {
+    overflow-y:auto;
+  }
+  .attrSaleBoxes .table tr td:first-child {
+    width: 60%;
+    padding:0 10px 10px 0;
+  }
+  .attrSaleBoxes .table tr td:nth-child(2) {
+    width: 40%;
+    padding:0;
+  }
+  .quicklinktext {
+    display:block;
+    margin-top:10px;
+    margin-left:0;
+  }
+  .userPageListArea {
+    max-height: none !important;
+    overflow: visible !important;
+  }
+  .mobilebreakpoint {
+    display: block;
+    margin-top: 10px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .msheader .msheaderright {
+    margin-top: 0;
+  }
+  .formFieldWrapper {
+    overflow-y:auto;
+  }
+  .quicklinktext {
+    display:block;
+    margin-top:10px;
+    margin-left:0;
+  }
+  .userPageListArea {
+    max-height: none !important;
+    overflow: visible !important;
+  }
+  .mobilebreakpoint {
+    display: block;
+    margin-top: 10px;
+  }
+  .dropdown {
+    float:right !important;
+  }
+}
+
+@media only screen and (max-width: 370px) {
+  .msheader .msheaderright {
+    margin-top: 0;
+  }
+  .formFieldWrapper {
+    overflow-y:auto;
+  }
+  .quicklinktext {
+    display:block;
+    margin-top:10px;
+    margin-left:0;
+  }
+  .userPageListArea {
+    max-height: none !important;
+    overflow: visible !important;
+  }
+  .mobilebreakpoint {
+    display: block;
+    margin-top: 10px;
+  }
+  .dropdown {
+    float:right !important;
+  }
+}
+
+@media only screen and (max-width:480px) {
+  footer {
+    font-size: 11px !important;
+  }
+  .formFieldWrapper {
+    overflow-y:auto;
+  }
+  .quicklinktext {
+    display:block;
+    margin-top:10px;
+    margin-left:0;
+  }
+  .userPageListArea {
+    max-height: none !important;
+    overflow: visible !important;
+  }
+  .mobilebreakpoint {
+    display: block;
+    margin-top: 10px;
+  }
+  .dropdown {
+    float:right !important;
+  }
+}
+
+@media only screen and (max-width:326px) {
+  .verysmalladjustment {
+    right: auto !important;
+    left: 0 !important;
+  }
+}

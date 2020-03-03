@@ -1,0 +1,12 @@
+Product Expiry Notification
+
+<-{separater}->
+
+You are receiving this email because one or more products have reached their expiry date and have been updated. Details below:
+
+{PRODUCTS}
+
+<-{separater}->
+
+{WEBSITE_NAME}
+{WEBSITE_URL}

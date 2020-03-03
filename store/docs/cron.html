@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Product Ops Cron Job: Maian Cart Documentation</title>
+
+    <link href="content/css/bootstrap.css" rel="stylesheet">
+    <link href="content/css/font-awesome/font-awesome.css" rel="stylesheet">
+	<link href="content/css/mc-docs.css" rel="stylesheet">
+
+	<script src="content/js/jquery.js"></script>
+	<script src="content/js/functions.js"></script>
+
+	<link rel="ICON" href="favicon.ico">
+
+</head>
+
+<body>
+
+<div id="wrapper">
+
+        <nav class="navbar navbar-default navbar-fixed-top" role="navigation" style="margin-bottom: 0">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-collapse">
+                    <span class="sr-only">Toggle Navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">Documentation</a>
+            </div>
+
+			<div class="navbar-default navbar-static-side" role="navigation">
+                <div class="sidebar-collapse">
+				</div>
+            </div>
+		</nav>
+
+        <div id="page-wrapper">
+                        <div class="row">
+                <div class="col-lg-12">
+                    <h1 class="page-header">Product Ops Cron Job</h1>
+                </div>
+            </div>
+
+			<div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">Overview</div>
+
+      <div class="panel-body">
+      It is required that the following file be set to run as a cron job, 2 or 3 times a day as it performs various product / sale operations.<br><br>
+      <b>control/cron/product-ops.php</b><br><br>
+      It is run as a cron job so it doesn`t impact the store loading time. If you don`t understand cron jobs, contact your host.
+      </div>
+					</div>
+				</div>
+			</div>
+
+      <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">Cron Job Example Commands</div>
+
+      <div class="panel-body">
+      Examples of cron tab commands. These may or may not work, you should contact your host if you aren`t sure. Make sure you use the correct paths.<br><br>
+              <div class="alert alert-info">
+                /usr/local/bin/php /home/admin/domains/yourdomain.co.uk/public_html/cart/control/cron/product-ops.php<br>
+                php q /home/admin/domains/yourdomain.co.uk/public_html/cart/control/cron/product-ops.php<br>
+                /usr/local/bin/php q /home/admin/domains/yourdomain.co.uk/public_html/cart/control/cron/product-ops.php<br>
+                C:\Windows\php\php.exe "C:\server\www\cart\control\cron\product-ops.php" (Windows)
+              </div>
+              If you don`t understand this, contact your host for assistance. Path is almost always the FULL server path to the cron file.
+      </div>
+					</div>
+				</div>
+			</div>
+
+     <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Understanding Cron Tabs/Jobs</div>
+            <div class="panel-body">
+              <a href="http://www.google.co.uk/#hl=en&amp;q=cron+tabs+or+cron+jobs" onclick="window.open(this);return false">Help and Information on Cron Tabs or Cron Jobs</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+			<div class="row footerArea">
+			</div>
+        </div>
+
+</div>
+
+<script>
+//<![CDATA[
+jQuery(document).ready(function() {
+  loadTopMenu();
+  loadLeftMenu();
+  loadFooter();
+});
+//]]>
+</script>
+
+<script src="content/js/bootstrap.js"></script>
+<script src="content/js/plugins/jquery.metismenu.js"></script>
+<script src="content/js/plugins/jquery.ibox.js"></script>
+
+</body>
+</html>

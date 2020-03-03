@@ -1,0 +1,31 @@
+        <div class="panel panel-default" id="bsk-{cart_slot_id}">
+          <div class="panel-body">
+            <div class="table-responsive cartitem">
+              <table class="table">
+              <tbody>
+                <tr>
+                  <td rowspan="2" class="img hidden-xs"><img class="img-responsive" src="{image}" alt="{item}" title="{item}"></td>
+                  <td class="product"><a href="{url}">{code}{item}</a></td>
+                  <td class="cost">{price}</td>
+                </tr>
+                {extras}
+              </tbody>
+              </table>
+              {wish_list_item}
+            </div>
+            <hr>
+            {additional_text}
+            <div class="row cartitemfooter">
+              <div class="col-lg-4 col-md-4 col-sm-4">
+                <div class="btn-group" role="group"><button class="btn btn-info btn-sm hidden-xs" type="button">{qty_text}:</button> <button class="btn btn-default btn-sm" id="qty-{cart_slot_id}">{qty}</button> <button class="btn btn-default btn-sm" type="button" onclick="mc_qty('{cart_slot_id}','plus')"><i class="fa fa-plus"></i></button> <button class="btn btn-default btn-sm" type="button" onclick="mc_qty('{cart_slot_id}','minus')"><i class="fa fa-minus"></i></button></div>
+              </div>
+              <div class="col-lg-4 col-md-4 col-sm-4" id="td-{cart_slot_id}">
+                <a href="#" onclick="mc_deleteBasketItem('{cart_slot_id}');return false"><i class="fa fa-trash-o fa-fw fa-lg mc-red"></i></a>
+              </div>
+              <div class="col-lg-4 col-md-4 col-sm-4">
+                {total}
+              </div>
+            </div>
+          </div>
+          <input type="hidden" name="box-{cart_slot_id}" id="box-{cart_slot_id}" value="{qty}">
+        </div>

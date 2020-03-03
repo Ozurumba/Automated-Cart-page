@@ -1,0 +1,24 @@
+New Account Created
+
+<-{separater}->
+
+The following account is now active:
+
+{NAME}
+{EMAIL}
+{IP}
+
+You can disable this notification in your administration settings:
+
+System > General Settings > Settings Menu > Accounts
+
+To edit this account, log into your administration area:
+
+{WEBSITE_URL}/{ADMIN_FOLDER}
+
+<-{separater}->
+
+{WEBSITE_NAME}
+{WEBSITE_URL}
+
+IP address: {IP}

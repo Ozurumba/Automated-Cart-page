@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>v3.0 Appendix:  Maian Cart Documentation</title>
+
+  <link href="content/css/bootstrap.css" rel="stylesheet">
+  <link href="content/css/font-awesome/font-awesome.css" rel="stylesheet">
+  <link href="content/css/mc-docs.css" rel="stylesheet">
+  <link href="content/css/jquery.ibox.css" rel="stylesheet">
+
+  <script src="content/js/jquery.js"></script>
+  <script src="content/js/functions.js"></script>
+
+  <link rel="ICON" href="favicon.ico">
+
+</head>
+
+<body>
+
+  <div id="wrapper">
+
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation" style="margin-bottom: 0">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-collapse">
+          <span class="sr-only">Toggle Navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">Documentation</a>
+      </div>
+
+      <div class="navbar-default navbar-static-side" role="navigation">
+        <div class="sidebar-collapse">
+        </div>
+      </div>
+    </nav>
+
+    <div id="page-wrapper">
+      <div class="row">
+        <div class="col-lg-12">
+          <h1 class="page-header">v3.0 Appendix</h1>
+        </div>
+      </div>
+
+            <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Overview</div>
+            <div class="panel-body">
+             Please read carefully. This details important changes for v3.0. This will affect existing stores if you attempt an upgrade from a previous version.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading"><i class="fa fa-warning fa-fw"></i> New Responsive Template System</div>
+            <div class="panel-body">
+             v3.0 introduces a brand new responsive template system for better performance on small devices. This supercedes all previous layouts. Any previous
+             layouts / themes will be obsolete and should not be used.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading"><i class="fa fa-warning fa-fw"></i> Custom Mods / Changes</div>
+            <div class="panel-body">
+             Any custom changes or modifications done will be lost on upgrade.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading"><i class="fa fa-warning fa-fw"></i> Rewrite Rules / Search Engine Friendly Urls</div>
+            <div class="panel-body">
+             These have changed slightly in v3.0, so some older links may throw a 404.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading"><i class="fa fa-warning fa-fw"></i> Logo Upload</div>
+            <div class="panel-body">
+             The option to upload a custom store logo has been removed. If you want custom graphics, edit the template structure and add your logo via HTML.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading"><i class="fa fa-warning fa-fw"></i> AddThis Social Plugin</div>
+            <div class="panel-body">
+             The code for this has changed and it will need updating.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading"><i class="fa fa-warning fa-fw"></i> Product Videos</div>
+            <div class="panel-body">
+             Any product video links will be reset. Product videos must be hosted on YouTube, Vimeo or Daily Motion and the relevant code added on the product page.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading"><i class="fa fa-warning fa-fw"></i> HTML5 Audio</div>
+            <div class="panel-body">
+             If a browser doesn`t support HTML5, MP3 previews won`t be available. Only HTML5 &lt;audio&gt; tags are supported.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading"><i class="fa fa-warning fa-fw"></i> Newsletter</div>
+            <div class="panel-body">
+             The existing newsletter table and system will be dropped so back up the data if you need it. The newsletter system is now tied to accounts.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading"><i class="fa fa-warning fa-fw"></i> Account System</div>
+            <div class="panel-body">
+             v3.0 introduces a brand new account system. All previous sale data will be ported to accounts on upgrade. To gain access to their account, a user
+             must use the password reset option. If enabled, an option to close accounts (for anyone not wanting an account) is provided. If accounts are
+             removed, it doesn`t affect previous sale data.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading"><i class="fa fa-warning fa-fw"></i> MySQL Functions Deprecated</div>
+            <div class="panel-body">
+             The PHP mysql functions are deprecated. Maian Cart now uses the mysqli (enhanced) functions. Your server should have this enabled. Moving to the new
+             connection will not affect existing data.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading"><i class="fa fa-warning fa-fw"></i> Category Icons</div>
+            <div class="panel-body">
+             Will need updating to suit the responsive system.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading"><i class="fa fa-warning fa-fw"></i> Payment Gateway Changes</div>
+            <div class="panel-body">
+             The following payment gateways are no longer supported:<br><br>
+             <b>Google Checkout, Nochex, Liqpay, Paypoint</b><br><br>
+             Due to gateway name / api changes, the callbacks have changed for the following:<br><br>
+             <b>Suomen Verkkomaksut is now PayTrail<br>
+             Iridium Corporation is now Payvector<br>
+             Moneybookers is now Skrill.
+             </b><br><br>
+             Refer to the docs for the latest callback urls.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading"><i class="fa fa-warning fa-fw"></i> Payment Gateway - Custom Gateways</div>
+            <div class="panel-body">
+             If you have added a custom gateway, ensure that the class file name now starts class. Example:<br><br>
+             class.new.php
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading"><i class="fa fa-warning fa-fw"></i> Entry Log</div>
+            <div class="panel-body">
+             The entry log will be dropped and recreated. Backup data if you need it.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading"><i class="fa fa-warning fa-fw"></i> Cron Jobs</div>
+            <div class="panel-body">
+             The cron jobs are in a new location. They are now in the 'control/cron/' folder. Update existing jobs to use new path.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading"><i class="fa fa-warning fa-fw"></i> Zip Downloads</div>
+            <div class="panel-body">
+             For product downloads, the option to consolidate files into single zip has been removed. This may be added back in a later version.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading"><i class="fa fa-warning fa-fw"></i> ionCube Removal</div>
+            <div class="panel-body">
+             The ioncube system has been removed in v3.0. If you upgrade you will need to re-download your licence again from the <a href="https://www.maiangateway.com/" onclick="window.open(this);return false">licence centre</a> and re-apply it.
+            </div>
+          </div>
+        </div>
+      </div>
+      <a href="info3.html"><i class="fa fa-arrow-left fa-fw"></i> Return to Appendix List</a>
+      <div class="row footerArea">
+      </div>
+    </div>
+
+  </div>
+
+  <script>
+    //<![CDATA[
+    jQuery(document).ready(function() {
+      loadTopMenu();
+      loadLeftMenu();
+      loadFooter();
+    });
+    //]]>
+  </script>
+
+  <script src="content/js/bootstrap.js"></script>
+  <script src="content/js/plugins/jquery.metismenu.js"></script>
+  <script src="content/js/plugins/jquery.ibox.js"></script>
+
+</body>
+
+</html>

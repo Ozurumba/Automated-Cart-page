@@ -1,0 +1,18 @@
+Newsletter Update
+
+<-{separater}->
+
+Hello {NAME},
+
+This is to confirm that you have unsubscribed from our newsletter.
+
+You will receive no further mailings from us.
+
+If you wish to resubscribe, please do so via your account area and your profile screen, thank you.
+
+Kind regards,
+
+<-{separater}->
+
+{WEBSITE_NAME}
+{WEBSITE_URL}

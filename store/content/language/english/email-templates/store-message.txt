@@ -1,0 +1,12 @@
+STORE MESSAGE
+
+<-{separater}->
+
+{NAME}
+{EMAIL}
+
+{MESSAGE}
+
+<-{separater}->
+
+IP address: {IP}

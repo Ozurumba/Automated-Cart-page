@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Discount Coupons:  Maian Cart Documentation</title>
+
+  <link href="content/css/bootstrap.css" rel="stylesheet">
+  <link href="content/css/font-awesome/font-awesome.css" rel="stylesheet">
+  <link href="content/css/mc-docs.css" rel="stylesheet">
+  <link href="content/css/jquery.ibox.css" rel="stylesheet">
+
+  <script src="content/js/jquery.js"></script>
+  <script src="content/js/functions.js"></script>
+
+  <link rel="ICON" href="favicon.ico">
+
+</head>
+
+<body>
+
+  <div id="wrapper">
+
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation" style="margin-bottom: 0">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-collapse">
+          <span class="sr-only">Toggle Navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">Documentation</a>
+      </div>
+
+      <div class="navbar-default navbar-static-side" role="navigation">
+        <div class="sidebar-collapse">
+        </div>
+      </div>
+    </nav>
+
+    <div id="page-wrapper">
+      <div class="row">
+        <div class="col-lg-12">
+          <h1 class="page-header">Discount Coupons</h1>
+        </div>
+      </div>
+
+            <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Overview</div>
+            <div class="panel-body">
+              Enables you to add promotional discount coupons to the system. This enables visitors to get discounts on products. Can be a useful marketing option.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Campaign Name</div>
+            <div class="panel-body">
+              This is the name of your new campaign to group coupons into. Can be anything.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Usage Amount</div>
+            <div class="panel-body">
+              Enter usage amount if coupon can only be used a set amount of times. 0 = unlimited.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Expiry Date</div>
+            <div class="panel-body">
+              Enter expiry date if coupon is to expire on a certain date. Leave blank for no expiry. If usage amount and expiry is set, coupon expires when either reaches their limit first.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Min Spend Amount</div>
+            <div class="panel-body">
+              This is the amount a customer must spend before they can apply a coupon code from this campaign.<br><br><b>NOTE: This does not apply if the Free Shipping or No Tax discounts are utilised</b>.<br><br>Discount applies to total only, not shipping rate. Example:<br><br><b>9.99</b><br><br>Set to 0 for no minimum amount. It is recommended you set a minimum spend amount.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Discount Code</div>
+            <div class="panel-body">
+              Code number for coupon. This is the code a visitor enters on the checkout page to get discount. Alphanumeric ONLY is recommended.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Discount</div>
+            <div class="panel-body">
+              This can be any of the following:<br><br><b>2.99</b> - (Fixed amount discount off cost of goods)<br><b>5%</b> - (Percentage discount off cost of goods)<br><b>freeshipping</b> - (Offers Free Shipping ONLY on ALL orders - Min spend amount not applicable)<br><b>notax</b> - (Offers No Tax Payment ONLY on ALL orders - Min spend amount not applicable)<br><br>
+  Fixed &amp; percentage discounts apply to sub total only, not shipping or tax. If free shipping is already in place, free shipping coupons are ignored. If no tax cost is already
+  in place, free tax coupons are ignored. <br><br>
+  A value must be entered in this field.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Free Shipping with Min Threshold</div>
+            <div class="panel-body">
+              If you need an option to allow free shipping if a min spend amount is reached, look at 'General Settings' &gt; 'Global Store Settings' &gt; 'Free Shipping Threshold'
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Restrict to Products in Categories</div>
+            <div class="panel-body">
+              If discount is a percentage or fixed discount, do you want to restrict discount coupon to only apply to products in specific categories?<br><br>If set, discount will only apply if products in basket meet the category restriction.<br><br>This has <b>NO</b> affect on free shipping or tax coupons.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Enable / Disable Coupons</div>
+            <div class="panel-body">
+              Easily disables or enables a campaign without the need to delete it.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Manage Discount Coupons</div>
+            <div class="panel-body">
+              Click the edit or delete icons to edit or delete coupons and the <i class="fa fa-bar-chart fa-fw"></i> icon
+              to view overview of discount coupon.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row footerArea">
+      </div>
+    </div>
+
+  </div>
+
+  <script>
+    //<![CDATA[
+    jQuery(document).ready(function() {
+      loadTopMenu();
+      loadLeftMenu();
+      loadFooter();
+    });
+    //]]>
+  </script>
+
+  <script src="content/js/bootstrap.js"></script>
+  <script src="content/js/plugins/jquery.metismenu.js"></script>
+  <script src="content/js/plugins/jquery.ibox.js"></script>
+
+</body>
+
+</html>

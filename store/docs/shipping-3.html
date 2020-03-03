@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Shipping Services:  Maian Cart Documentation</title>
+
+  <link href="content/css/bootstrap.css" rel="stylesheet">
+  <link href="content/css/font-awesome/font-awesome.css" rel="stylesheet">
+  <link href="content/css/mc-docs.css" rel="stylesheet">
+  <link href="content/css/jquery.ibox.css" rel="stylesheet">
+
+  <script src="content/js/jquery.js"></script>
+  <script src="content/js/functions.js"></script>
+
+  <link rel="ICON" href="favicon.ico">
+
+</head>
+
+<body>
+
+  <div id="wrapper">
+
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation" style="margin-bottom: 0">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-collapse">
+          <span class="sr-only">Toggle Navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">Documentation</a>
+      </div>
+
+      <div class="navbar-default navbar-static-side" role="navigation">
+        <div class="sidebar-collapse">
+        </div>
+      </div>
+    </nav>
+
+    <div id="page-wrapper">
+      <div class="row">
+        <div class="col-lg-12">
+          <h1 class="page-header">Shipping Services</h1>
+        </div>
+      </div>
+
+            <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Overview</div>
+            <div class="panel-body">
+              Weight based shipping services are services offered in any particular zone. For example, if you are a UK seller you might have services such as 'First Class Royal Mail', 'Second Class Royal Mail', 'Standard Parcels' etc. For each service, enter the estimated delivery time and whether this option requires a signature.<br><br>
+  Weight based shipping services are not required.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Service Name</div>
+            <div class="panel-body">
+              Enter new service name. UK examples:<br><br>First Class Royal Mail<br>Second Class Royal Mail<br>Standard Parcels<br>International Signed For<br>City Link Parcel Courier
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Estimated Delivery</div>
+            <div class="panel-body">
+              This is the estimated delivery time. Examples:<br><br>1 Day<br>3 Days<br>Next Day Delivery
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Signature Required</div>
+            <div class="panel-body">
+              Specify whether a signature is required on delivery for this service. If you aren`t sure, check with your mail provider.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Enable COD</div>
+            <div class="panel-body">
+              If you have the Cash on Delivery (COD) option enabled as a payment method, can it be selected if this service is selected?
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Apply to Zone</div>
+            <div class="panel-body">
+              Specify the zone(s) this services applies to. Use the checkboxes to batch add service to multiple zones if in add mode. If in edit mode, use select option.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Batch Adding Services via CSV</div>
+            <div class="panel-body">
+              Use the locate CSV option to batch add services. To batch add, csv must be a comma delimited list in the following format:<br><br>
+  Service Name, Estimated Delivery, Signature Required (yes or no ONLY), Enable COD (yes or no ONLY)<br><br><b>Example</b>:<br><br>
+  Service1, 3 Days, yes, no<br>
+  Service2, 4 Days, no, yes<br><br>
+  For batch operation, file and checkbox selection of applicable zones is required.
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Manage Shipping Services</div>
+            <div class="panel-body">
+            Use the links provided to edit or delete services. Use the <i class="fa fa-filter fa-fw"></i> icon to filter by zone.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row footerArea">
+      </div>
+    </div>
+
+  </div>
+
+  <script>
+    //<![CDATA[
+    jQuery(document).ready(function() {
+      loadTopMenu();
+      loadLeftMenu();
+      loadFooter();
+    });
+    //]]>
+  </script>
+
+  <script src="content/js/bootstrap.js"></script>
+  <script src="content/js/plugins/jquery.metismenu.js"></script>
+  <script src="content/js/plugins/jquery.ibox.js"></script>
+
+</body>
+
+</html>

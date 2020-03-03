@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Add Sale:  Maian Cart Documentation</title>
+
+  <link href="content/css/bootstrap.css" rel="stylesheet">
+  <link href="content/css/font-awesome/font-awesome.css" rel="stylesheet">
+  <link href="content/css/mc-docs.css" rel="stylesheet">
+  <link href="content/css/jquery.ibox.css" rel="stylesheet">
+
+  <script src="content/js/jquery.js"></script>
+  <script src="content/js/functions.js"></script>
+
+  <link rel="ICON" href="favicon.ico">
+
+</head>
+
+<body>
+
+  <div id="wrapper">
+
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation" style="margin-bottom: 0">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-collapse">
+          <span class="sr-only">Toggle Navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">Documentation</a>
+      </div>
+
+      <div class="navbar-default navbar-static-side" role="navigation">
+        <div class="sidebar-collapse">
+        </div>
+      </div>
+    </nav>
+
+    <div id="page-wrapper">
+      <div class="row">
+        <div class="col-lg-12">
+          <h1 class="page-header">Add Sale</h1>
+        </div>
+      </div>
+
+            <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Overview</div>
+            <div class="panel-body">
+              Here you can manually add a sale to the database. This is useful if for example, you take an order by phone and want to add it to the system.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Add Products to Sale</div>
+            <div class="panel-body">
+              Use the tabs provided to add products to the sale. Click the "Add Products to Sale" link for each to locate the add screens to select products. Once you
+              are on those screens click the help link again for more info on those pages. Once the add page has reloaded, specify the product quantity for each product.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Product Attributes</div>
+            <div class="panel-body">
+            When the add page is reload, an "Add Attribute" link will be shown to load attributes if required. Clicking the link will at first show a drop down
+            menu of available attributes.<br><br>
+            <img class="img-responsive screenshot" src="content/images/screenshots/24.png" alt=""><br>
+            Select an option to reload. If additional cost is applicable it will be shown. You can enter a custom value if you wish.<br><br>
+            <img class="img-responsive screenshot" src="content/images/screenshots/25.png" alt=""><br>
+            Click the <i class="fa fa-times fa-fw"></i> icon in price box to clear the attribute.<br><br>
+            Once you have added the attributes, click the <i class="fa fa-calculator fa-fw"></i> icon to refresh the prices. A running total of attributes cost will be shown in the right
+            menu beneath the cost of the product multiplied by the quantity.<br><br>
+            <img class="img-responsive screenshot" src="content/images/screenshots/26.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Personalisation</div>
+            <div class="panel-body">
+            When the add page is reload, if personalisation is available, boxes will be shown for you to enter the information. If additional cost is applicable it will be shown. You can enter a custom value if you wish.<br><br>
+            <img class="img-responsive screenshot" src="content/images/screenshots/27.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Payment/Shipping Overview</div>
+            <div class="panel-body">
+             Select or enter the information relevant to this sale. When you select shipping selectors from the drop down menu the totals will auto appear in the boxes.
+             Note that a minus symbol indicates a deduction field, like a discount and a plus symbol indicates an addition. Use the "Recalculate Totals" option to total
+             up everything before continuing. This is located via a refresh icon in the grand total box.<br><br>
+             <img class="img-responsive screenshot" src="content/images/screenshots/23.png" alt=""><br>
+             Make sure you have clicked the <i class="fa fa-calculator fa-fw"></i> icon first to update the product prices. This is mainly related
+             to attributes and personalisation. See note above.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Account</div>
+            <div class="panel-body">
+            Enter name and email for buyer. When you start typing in the name or email field suggestions will be shown for existing accounts. Select an account to load
+            or enter new details.<br><br>
+            <b>If An Account Doesn`t Exist, Create It</b> - Check box to create account if it doesn`t exist.<br>
+            <b>Send Email Notification For Account Creation</b> - If account is being created, check box to send email notification to buyer.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Billing &amp; Shipping Address</div>
+            <div class="panel-body">
+            Enter billing and shipping address. Use the <i class="fa fa-copy fa-fw"></i> icon to copy field data from billing to shipping and vice versa. If you have
+            selected an existing account via the auto complete, the address fields are auto filled in.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Sale Options</div>
+            <div class="panel-body">
+            <b>IP Address(es) (Separate with comma)</b> - Enter IP address of buyer if known. Auto completed by system if blank when buyer accesses order page.<br>
+            <b>Purchase Date</b> - Enter purchase date<br>
+            <b>Purchase Time (HH:MM:SS)</b> - Enter purchase time. Format MUST be HH:MM:SS<br>
+            <b>Purchase/Payment ID</b> - If applicable, enter purchase or payment ID<br>
+            <b>Invoice No</b> - Use the <i class="fa fa-refresh fa-fw"></i> icon to calculate next invoice number or enter manually. Note that next invoice will continue
+            from the number entered.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Sale Notes</div>
+            <div class="panel-body">
+            For backend admin notes, not seen by buyer. <br>
+            <br> Note: For bigger textarea, click the crosshair, top right, in the textarea box.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Edit Status &amp; Notes</div>
+            <div class="panel-body">
+            Do you want to write order status? It is recommended you write statuses to keep track of order operations, but it is optional. <br>
+            <br> Note: For bigger textarea, click the crosshair, top right, in the textarea box.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Clear &amp; Reload</div>
+            <div class="panel-body">
+            Clears all data and reloads page with blanks. Only click if you want to cancel and start again.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row footerArea">
+      </div>
+    </div>
+
+  </div>
+
+  <script>
+    //<![CDATA[
+    jQuery(document).ready(function() {
+      loadTopMenu();
+      loadLeftMenu();
+      loadFooter();
+    });
+    //]]>
+  </script>
+
+  <script src="content/js/bootstrap.js"></script>
+  <script src="content/js/plugins/jquery.metismenu.js"></script>
+  <script src="content/js/plugins/jquery.ibox.js"></script>
+
+</body>
+
+</html>

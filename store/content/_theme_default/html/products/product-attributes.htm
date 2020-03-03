@@ -1,0 +1,5 @@
+      <label>{name}:</label>
+      <select class="form-control" id="attr_group_{id}" name="attr[]" onchange="mc_clearReqFlag('attr_group_{id}')" {multiple}>
+       {attributes}
+      </select>
+      <input type="hidden" name="reqAttr[{id}]" value="{isRequired}">

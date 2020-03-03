@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Product - Manage Pictures:  Maian Cart Documentation</title>
+
+  <link href="content/css/bootstrap.css" rel="stylesheet">
+  <link href="content/css/font-awesome/font-awesome.css" rel="stylesheet">
+  <link href="content/css/mc-docs.css" rel="stylesheet">
+  <link href="content/css/jquery.ibox.css" rel="stylesheet">
+
+  <script src="content/js/jquery.js"></script>
+  <script src="content/js/functions.js"></script>
+
+  <link rel="ICON" href="favicon.ico">
+
+</head>
+
+<body>
+
+  <div id="wrapper">
+
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation" style="margin-bottom: 0">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-collapse">
+          <span class="sr-only">Toggle Navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">Documentation</a>
+      </div>
+
+      <div class="navbar-default navbar-static-side" role="navigation">
+        <div class="sidebar-collapse">
+        </div>
+      </div>
+    </nav>
+
+    <div id="page-wrapper">
+      <div class="row">
+        <div class="col-lg-12">
+          <h1 class="page-header">Product - Manage Pictures</h1>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Overview</div>
+            <div class="panel-body">
+              Here you can add product pictures. Pictures can be uploaded directly to your server or linked to from another location, eg: dropbox
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Standard Pictures</div>
+            <div class="panel-body">
+              Local image uploaded directly to your server. Use the <button type="button" class="btn btn-primary btn-xs"><i class="fa fa-plus fa-fw"></i></button> and <button type="button" class="btn btn-success btn-xs"><i class="fa fa-minus fa-fw"></i></button> buttons
+              to add more upload fields.<br><br>Supported local image formats: <b>JPG / JPEG / PNG / GIF</b><br><br>
+              <div class="alert alert-warning">IMPORTANT! Make sure your images are optimised for the web. Uploading large files will impact on your store load time. 800 x 640 @ 90 dpi with file size no more than 150KB is recommended for best performance A number of free image resizing utilities exist, so search on Google.</div>
+              In the store front, the picture full size previews are controlled by <a href="http://github.com/brutaldesign/swipebox" onclick="window.open(this);return false">SwipeBox</a>.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Save Images to Folders</div>
+            <div class="panel-body">
+              Use the option provided to create new picture folders if required. Click the <button type="button" class="btn btn-default"><i class="fa fa-folder fa-fw"></i></button> button to add new folders. Use the dropdown menu to select the
+              destination folder for the images. When entering name, only the following characters are allowed:<br><br>
+              <div class="alert alert-info">0 to 9, A to Z, - &amp; _<br>(Letters, numbers, hyphens and underscores)</div>
+              Folders added must be removed manually.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Remote Images</div>
+            <div class="panel-body">
+              Can be batch added. The CSV expects three columns. NO header column should be sent. Columns are:<br><br>
+              Image = Full http(s) path to remote image.<br>
+              Thumb = Full http(s) path to remote thumb if applicable. Blank column if no thumb.<br>
+              Display = yes or no to determine main display image. If not specified first image will be main display image. Example:<br><br>
+              <div class="alert alert-info">
+              http://www.example.com/image1.jpg,http://www.example.com/tmb1.jpg,no<br>
+              http://www.example.com/image2.jpg,http://www.example.com/tmb2.jpg,yes<br>
+              http://www.example.com/image3.jpg,http://www.example.com/tmb3.jpg,no
+              </div>
+              If you are utilising SSL, your images MUST be loaded via https:<br><br>
+              <div class="alert alert-info">
+              https://www.example.com/image1.jpg,https://www.example.com/tmb1.jpg,no<br>
+              https://www.example.com/image2.jpg,https://www.example.com/tmb2.jpg,yes<br>
+              https://www.example.com/image3.jpg,https://www.example.com/tmb3.jpg,no
+              </div>
+              <div class="alert alert-warning">IMPORTANT! Make sure hotlink protection isn`t enabled for the remote location. If you have hotlink protection enabled, you`ll need to add your store IP as an allowed IP. If
+              you don`t whitelist you store your remote images may not load properly.</div>
+              Cloud storage sites such as Google Drive and Dropbox can be useful for remote images.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Manage Pictures</div>
+            <div class="panel-body">
+              Use the <i class="fa fa-filter fa-fw mc_blue"></i> option to filter local / remote images and use the checkboxes to set the main display image. Click
+              the <i class="fa fa-times fa-fw mc_red"></i> to delete an image.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">SEO Title / Alt Tags</div>
+            <div class="panel-body">
+              Use the boxes provided to set alternative text for the image title and / or alt tags.<br><br>
+              &lt;img src="#" title="[TITLE]" alt="[ALT]"&gt;<br><br>
+              For better SEO (Search Engine Optimisation). If you don`t
+              understand this, leave the boxes blank.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Quick Menu</div>
+            <div class="panel-body">
+              To access other product areas, click the <button type="button" class="btn btn-sm btn-info"><i class="fa fa-cog fa-fw"></i></button> button.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row footerArea">
+      </div>
+    </div>
+
+  </div>
+
+  <script>
+    //<![CDATA[
+    jQuery(document).ready(function() {
+      loadTopMenu();
+      loadLeftMenu();
+      loadFooter();
+    });
+    //]]>
+  </script>
+
+  <script src="content/js/bootstrap.js"></script>
+  <script src="content/js/plugins/jquery.metismenu.js"></script>
+  <script src="content/js/plugins/jquery.ibox.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Cardstream:  Maian Cart Documentation</title>
+
+  <link href="content/css/bootstrap.css" rel="stylesheet">
+  <link href="content/css/font-awesome/font-awesome.css" rel="stylesheet">
+  <link href="content/css/mc-docs.css" rel="stylesheet">
+  <link href="content/css/jquery.ibox.css" rel="stylesheet">
+
+  <script src="content/js/jquery.js"></script>
+  <script src="content/js/functions.js"></script>
+
+  <link rel="ICON" href="favicon.ico">
+
+</head>
+
+<body>
+
+  <div id="wrapper">
+
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation" style="margin-bottom: 0">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-collapse">
+          <span class="sr-only">Toggle Navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">Documentation</a>
+      </div>
+
+      <div class="navbar-default navbar-static-side" role="navigation">
+        <div class="sidebar-collapse">
+        </div>
+      </div>
+    </nav>
+
+    <div id="page-wrapper">
+      <div class="row">
+        <div class="col-lg-12">
+          <h1 class="page-header">Cardstream</h1>
+        </div>
+      </div>
+
+            <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Gateway Setup</div>
+            <div class="panel-body">
+              More info @ <a href="http://www.cardstream.com" onclick="window.open(this);return false">www.cardstream.com</a><br><br>
+              For details on how to set up Cardstream, click <a onclick="mc_Window(this.href,500,700,'');return false" href="gateways/setup-cardstream.html">here</a>.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Merchant ID</div>
+            <div class="panel-body">
+              Your Cardstream merchant ID.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Pre Share Key</div>
+            <div class="panel-body">
+              Your Cardstream pre share key.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Information About this Payment Method</div>
+            <div class="panel-body">
+              This is presented to visitors if they click for more info on the gateway on the checkout page. Optional.<br><br>
+  Use <a href="features-6.html">BB Code</a> for formatting, HTML is not allowed.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Order Status Preferences</div>
+            <div class="panel-body">
+              Specify which order statuses to set for callback operations. Leave as default if you aren`t sure. "Pending" statuses restrict download access for none gateway methods and should
+  be used until payment is cleared.<br><br>Setting preferred order statuses can be useful for filtering with other admin operations.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Alternative Redirect Url (Optional)</div>
+            <div class="panel-body">
+              Alternative redirect url is the page a visitor will be directed to after a successful transaction.<br><br>You should <b>NOT</b> use this option if you sell downloadable items as visitors will not be able to download their products immediately after purchase.<br><br>Enter full url starting http://<br><br>
+  If you need to do further operations on your redirect page based on the sale, the following query string params may be used and passed to your new page:<br><br>
+  {id} = Sale ID in Database<br>
+  {code} = Sale Buy Code in Database.<br><br>Example:<br><br>
+  http://www.example.com/new-redirect.php?id={id}&amp;code={code}
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Live Payment URL</div>
+            <div class="panel-body">
+              Live payment url. At the time of these docs it is:<br><br><b>https://gateway.cardstream.com/hosted/</b><br><br>
+  This should not be changed unless altered by the gateway.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Test/Sandbox Payment URL</div>
+            <div class="panel-body">
+              Sandbox or test payment url. In many cases, this is the same as the live payment url. At the time of these docs it is:<br><br><b>https://gateway.cardstream.com/hosted/</b><br><br>
+  This should not be changed unless altered by the gateway
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Payment Method Availability</div>
+            <div class="panel-body">
+              Choose when this payment method is available. Useful if you only want certain methods shown for certain checkout types. If none are selected, defaults to all.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Enable Cardstream</div>
+            <div class="panel-body">
+              Enable / disable this gateway as a payment option.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row footerArea">
+      </div>
+    </div>
+
+  </div>
+
+  <script>
+    //<![CDATA[
+    jQuery(document).ready(function() {
+      loadTopMenu();
+      loadLeftMenu();
+      loadFooter();
+    });
+    //]]>
+  </script>
+
+  <script src="content/js/bootstrap.js"></script>
+  <script src="content/js/plugins/jquery.metismenu.js"></script>
+  <script src="content/js/plugins/jquery.ibox.js"></script>
+
+</body>
+
+</html>

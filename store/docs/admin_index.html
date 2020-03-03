@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Admin Homepage: Maian Cart Documentation</title>
+
+    <link href="content/css/bootstrap.css" rel="stylesheet">
+    <link href="content/css/font-awesome/font-awesome.css" rel="stylesheet">
+	<link href="content/css/mc-docs.css" rel="stylesheet">
+
+	<script src="content/js/jquery.js"></script>
+	<script src="content/js/functions.js"></script>
+
+	<link rel="ICON" href="favicon.ico">
+
+</head>
+
+<body>
+
+<div id="wrapper">
+
+        <nav class="navbar navbar-default navbar-fixed-top" role="navigation" style="margin-bottom: 0">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-collapse">
+                    <span class="sr-only">Toggle Navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">Documentation</a>
+            </div>
+
+			<div class="navbar-default navbar-static-side" role="navigation">
+                <div class="sidebar-collapse">
+				</div>
+            </div>
+		</nav>
+
+        <div id="page-wrapper">
+                        <div class="row">
+                <div class="col-lg-12">
+                    <h1 class="page-header">Admin Homepage</h1>
+                </div>
+            </div>
+
+			<div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">Overview</div>
+      <div class="panel-body">
+      The admin homepage / dashboard is the initial screen you`ll see after login.
+      </div>
+					</div>
+				</div>
+			</div>
+
+      <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">Sales, Account, Products Tiles</div>
+
+      <div class="panel-body">
+      These 3 boxes / tiles are at the top of the screen. If you wish to disable these, edit the 'admin/control/defined2.php' file and the following:<br><br>
+      <b>define('ADMIN_HOMESCREEN_TILES', 1);</b><br><br>
+      Click the <i class="fa fa-plus fa-fw"></i> and <i class="fa fa-arrow-right fa-fw"></i> icons to add item or view current items. Note that the account
+      option shows the standard account count/list option ONLY, it does not include trade accounts. If you prefer to show the trade accounts instead edit
+      the following in the 'admin/control/defined2.php' file. Refer to notes in file.<br><br>
+      <b>define('ACC_TILE_PREF', 'personal');</b>
+      </div>
+					</div>
+				</div>
+			</div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Graph</div>
+              <div class="panel-body">
+                The graph shows sales overview for tangible, downloadable and gift cert sales (if applicable). The default is 'This Week', but this can be updated
+                via the <i class="fa fa-calendar fa-fw"></i> icon. Click this to show drop down of options as show below:<br><br>
+                <img class="img-responsive screenshot" src="content/images/screenshots/34.png" alt=""><br>
+                If you wish to change the initial default, edit the following in the 'admin/control/defined.php' file:<br><br>
+                <b>define('ADMIN_HOME_DEFAULT_SALES_VIEW', 'week');</b><br><br>
+                Value must be any shown in the examples.
+              </div>
+					</div>
+				</div>
+			</div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Search</div>
+              <div class="panel-body">
+                Use the search box to quickly locate sale, account, staff or product.
+              </div>
+					</div>
+				</div>
+			</div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Version Check</div>
+              <div class="panel-body">
+                Only shown to the main admin / global staff member. Click to check if your store is up to date with the latest version of Maian Cart. If you don`t
+                wish to have this visible, edit the following in the 'admin/control/defined.php' file.<br><br>
+                <b>define('DISPLAY_SOFTWARE_VERSION_CHECK', 1);</b><br><br>
+             NOTE: The version check option sends ONLY the version number and script ID to the Maian Script World servers for version comparison. No user
+             identifiable information or information relating to your setup is sent.
+              </div>
+					</div>
+				</div>
+			</div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Sales Totals</div>
+              <div class="panel-body">
+                Overview of sub total, total and tax. Works in conjunction with the graph, so if you change the range for the graph the totals are
+                also updated.
+              </div>
+					</div>
+				</div>
+			</div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Pending Sales / Awaiting Despatch</div>
+              <div class="panel-body">
+                Shows all pending sales. If you don`t want to show this edit the following in the 'admin/control/defined.php' file:<br><br>
+                <b>define('SHOW_PENDING_SALES_ON_MAIN_PAGE', 1);</b>
+                <b></b>
+              </div>
+					</div>
+				</div>
+			</div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Last XX Completed Sales</div>
+              <div class="panel-body">
+                Shows latest sales with a limit set, default on install is 10. If you don`t want to show this or want to change the limit edit the following in the 'admin/control/defined.php' file:<br><br>
+                <b>define('SHOW_COMPLETED_SALES_ON_MAIN_PAGE', 10);</b>
+              </div>
+					</div>
+				</div>
+			</div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Other Statuses</div>
+              <div class="panel-body">
+                Other statuses can be shown. To do this visit the <a href="catalogue-7.html">order statuses</a> page and set the 'Display on Admin Dashboard' option
+                to yes for any status you want to show on the admin dashboard.
+              </div>
+					</div>
+				</div>
+			</div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Quick Links</div>
+            <div class="panel-body">
+              If enabled, will appear as an additional menu option below sales totals. See screenshot below:<br><br>
+              <img class="img-responsive screenshot" src="content/images/screenshots/38.png" alt=""><br>
+              To enable / edit the quick links, edit the following file:<br><br>
+              <b>admin/templates/system/main-quick-links.php</b><br><br>
+              To enable, follow the instructions in the file. This is for advanced users only.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row footerArea">
+			</div>
+        </div>
+
+</div>
+
+<script>
+//<![CDATA[
+jQuery(document).ready(function() {
+  loadTopMenu();
+  loadLeftMenu();
+  loadFooter();
+});
+//]]>
+</script>
+
+<script src="content/js/bootstrap.js"></script>
+<script src="content/js/plugins/jquery.metismenu.js"></script>
+<script src="content/js/plugins/jquery.ibox.js"></script>
+
+</body>
+</html>

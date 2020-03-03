@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Incomplete Sales:  Maian Cart Documentation</title>
+
+  <link href="content/css/bootstrap.css" rel="stylesheet">
+  <link href="content/css/font-awesome/font-awesome.css" rel="stylesheet">
+  <link href="content/css/mc-docs.css" rel="stylesheet">
+  <link href="content/css/jquery.ibox.css" rel="stylesheet">
+
+  <script src="content/js/jquery.js"></script>
+  <script src="content/js/functions.js"></script>
+
+  <link rel="ICON" href="favicon.ico">
+
+</head>
+
+<body>
+
+  <div id="wrapper">
+
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation" style="margin-bottom: 0">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-collapse">
+          <span class="sr-only">Toggle Navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">Documentation</a>
+      </div>
+
+      <div class="navbar-default navbar-static-side" role="navigation">
+        <div class="sidebar-collapse">
+        </div>
+      </div>
+    </nav>
+
+    <div id="page-wrapper">
+      <div class="row">
+        <div class="col-lg-12">
+          <h1 class="page-header">Incomplete Sales</h1>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Overview</div>
+            <div class="panel-body">
+              Incomplete sales are sales that have not been updated by the system from a gateway callback. This could be because:<br><br>
+              <span class="badge">1</span> Someone completes the checkout information, but does not complete payment (This may result in rubbish address info if the buyer had no intention of paying).<br><br>
+              <span class="badge">2</span> A payment is completed but the callback fails from a gateway. Many gateways will retry automatically, but sometimes you may need to update the sale manually.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Filters</div>
+            <div class="panel-body">
+            Click the <i class="fa fa-filter fa-fw"></i> icon to show sales filters.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Auto Clear</div>
+            <div class="panel-body">
+              Incomplete sales data is auto cleared by the system as set in your <a href="settings-1.html">global store settings</a> (Global Store Settings > Other Options > Checkout Options). You can disable this and clear manually if you wish.<br><br><b>Important</b>: It is recommended you set a new status for an incomplete sale if you wish to make changes later. This will move it to the live sales area. If you don`t and auto
+              clear is set it will disappear. If you see "Waiting for gateway response, do not update" below a sale, the edit icon is hidden as it is recommended you wait to see if the gateway updates the sale. Sales marked like this will be ignored by the auto clear.<br><br>
+              <img class="img-responsive screenshot" src="content/images/screenshots/19.png" alt=""><br>
+              If nothing is happening and you prefer to edit manually, click the text to load the edit screen.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Sale Status</div>
+            <div class="panel-body">
+              Incomplete sales have no status intially. If an incomplete sale is edited or updated and the status is changed, it becomes live and disappears from the incomplete sales screen. Edit a sale
+              by clicking the <i class="fa fa-pencil fa-fw"></i> icon.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row footerArea">
+      </div>
+    </div>
+
+  </div>
+
+  <script>
+    //<![CDATA[
+    jQuery(document).ready(function() {
+      loadTopMenu();
+      loadLeftMenu();
+      loadFooter();
+    });
+    //]]>
+  </script>
+
+  <script src="content/js/bootstrap.js"></script>
+  <script src="content/js/plugins/jquery.metismenu.js"></script>
+  <script src="content/js/plugins/jquery.ibox.js"></script>
+
+</body>
+
+</html>

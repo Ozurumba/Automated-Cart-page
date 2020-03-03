@@ -1,0 +1,41 @@
+
+  <div id="windowcontent">      <div class="panel panel-default">
+        <div class="panel-heading">2Checkout INS - Setup</div>
+          <div class="panel-body">
+            1: Sign up for a 2Checkout account.<br>
+ 2: Log into your 2Checkout account.<br>
+ 3: Select "Notifications" from the menu OR in their new cpanel "Integrations > Webhooks &amp; API". Make sure the INS is enabled.<br>
+ 4: Generate a secret word and enter it in your Maian Cart admin area along with your 2Checkout account no.<br>
+ 4: In <b>ALL</b> the notification boxes (or "Enable Global Url" in new cpanel) enter the full http path to the 'checkout/twocheckout.php' callback file in your cart installation:<br><br>
+ <b>Example</b>:<br>
+ http://www.example.com/checkout/twocheckout.php (Or https if over SSL)<br><br>
+ 5: Make sure <b>ALL</b> notifications are enabled. 2Checkout requires that the domain you use for your store is on the same domain as your account. This is important!<br>
+ 6: Enter applicable details in your Maian Cart admin area:<br><br><b>Sales > Payment Methods > 2Checkout</b>
+          </div>
+      </div>      <div class="panel panel-default">
+        <div class="panel-heading">2Checkout - Callback Url</div>
+          <div class="panel-body">
+            The callback url for all operations is:<br><br>
+ <b>http://www.example.com/checkout/twocheckout.php</b><br>
+ <b>https://www.example.com/checkout/twocheckout.php (SSL)</b><br><br>
+ Where 'example.com' is your own domain.
+          </div>
+      </div>      <div class="panel panel-default">
+        <div class="panel-heading">2Checkout - Sandbox</div>
+          <div class="panel-body">
+            2Checkout doesn`t have a sandbox system. The only way to mimic the callback is to use their <a href="https://github.com/craigchristenson/2checkout-ins-demo" onclick="window.open(this);return false">INS Simulator</a>.<br><br>
+ The simulator should send back the "<b>ORDER_CREATED - 1 product</b>" callback first, followed by the "<b>FRAUD_STATUS_CHANGED</b>" callback. Point the simulator to the callback url as set above. Other things are required for this
+ to work. For this you will need to view the log file created from the initial payment test.<br><br>
+ <b>vendor_id</b> - Your 2Checkout vendor ID.<br>
+ <b>sale_id</b> - The Sale ID. This is in the log file name. Example: 2checkout-15.txt is sale ID 15.<br>
+ <b>vendor_order_id</b> - Must be the value in "merchant_order_id" field in the logs file. Example: 1ee9dab5a2f4e2083f86-15<br>
+ <b>invoice_list_amount</b> - The exact amount for the sale as shown in the "total" field in the log file. Example: 1.99<br>
+ <b>invoice_id</b> - Random number.<br>
+ <b>md5_hash</b> - For the hash you need to concatenate and md5 the following:<br><br>
+ <b>saleID+vendorID+invoiceNo+secretWord</b><br><br>
+ Example: 1+12345+56789+secret = <b>02679D0CE664EA168C001873D72812F2</b><br><br>
+ The first 3 values must be sent in the forms the same. All other field values are irrelevant. Once you have triggered the callback, view the log file if something didn`t quite happen how
+ you were expecting it to.<br><br>
+ If you aren`t sure you`ll probably have to test with a live payment.
+          </div>
+      </div></div>

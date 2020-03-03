@@ -1,0 +1,18 @@
+Account Closed
+
+<-{separater}->
+
+Hi {NAME},
+
+This email confirms that your account at "{WEBSITE_NAME}" has been closed.
+
+We are sorry to see you go, but you can sign up again at any time.
+
+Kind regards,
+
+<-{separater}->
+
+{WEBSITE_NAME}
+{WEBSITE_URL}
+
+IP address: {IP}

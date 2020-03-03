@@ -1,0 +1,26 @@
+Download Activation
+
+<-{separater}->
+
+Hi {NAME},
+
+You are receiving this email because you have requested some product downloads be reset at "{WEBSITE_NAME}".
+
+Downloads have now been re-activated for the following products:
+-------------------------------------------------------------------
+
+{PRODUCTS}
+
+-------------------------------------------------------------------
+
+To download these products, please click the following url:
+{D_URL}
+
+-------------------------------------------------------------------
+
+Kind regards,
+
+<-{separater}->
+
+{WEBSITE_NAME}
+{WEBSITE_URL}

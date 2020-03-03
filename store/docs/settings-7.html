@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Mail Settings: Maian Cart Documentation</title>
+
+  <link href="content/css/bootstrap.css" rel="stylesheet">
+  <link href="content/css/font-awesome/font-awesome.css" rel="stylesheet">
+  <link href="content/css/mc-docs.css" rel="stylesheet">
+  <link href="content/css/jquery.ibox.css" rel="stylesheet">
+
+  <script src="content/js/jquery.js"></script>
+  <script src="content/js/functions.js"></script>
+
+  <link rel="ICON" href="favicon.ico">
+
+</head>
+
+<body>
+
+  <div id="wrapper">
+
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation" style="margin-bottom: 0">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-collapse">
+          <span class="sr-only">Toggle Navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">Documentation</a>
+      </div>
+
+      <div class="navbar-default navbar-static-side" role="navigation">
+        <div class="sidebar-collapse">
+        </div>
+      </div>
+    </nav>
+
+    <div id="page-wrapper">
+      <div class="row">
+        <div class="col-lg-12">
+          <h1 class="page-header">Mail Settings</h1>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Mail Protocol</div>
+            <div class="panel-body">
+              <b>SMTP</b> - If you prefer to use a SMTP service or server. This is generally more reliable, but can be disabled on many shared servers.<br><br>
+              <b>PHP Mail Function</b> - Assumes you have an internal mail server. If you choose this option, all other SMTP configuration options are ignored except Host and Port Number. For the PHP mail function host is generally "localhost" and port is 25, but check with your host. Also note that if this is enabled messages are ONLY sent in plain text format. Finally, some servers restrict outgoing messages to none internal mailboxes. If this fails you should try and use SMTP. The PHP
+              mail function is generally the faster option.
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">SMTP Host</div>
+            <div class="panel-body">SMTP host or IP. When using SMTP it is recommended you use a stable SMTP service, like SparkPost or MailGun for mail delivery. DO NOT use your own server settings. Once your email details are in place use the test button to send a test message. If you still have issues, enable the mail debug log. Info below.
+              <br>
+              <br>
+              <div class="alert alert-warning" style="margin-bottom:0">
+                <b>IMPORTANT</b>: If you are using Gmail, DO NOT use your Gmail password. You MUST create an app specific password in your Google account and use that. Also, ONLY use SSL if you have SSL installed. If you don`t, you should use TLS. For the Gmail port ONLY use 465 or 587.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">SMTP Port</div>
+            <div class="panel-body">Find out your port number from your web host. Could be 25 or 587, the submission port. 465 for SSL etc.</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">SMTP Security</div>
+            <div class="panel-body">Specify security if required. Only use SSL if you have an SSL certificate installed.</div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">SSL/TLS Only - Do Not Verify Certificates</div>
+            <div class="panel-body">
+              Enable if you are having mail issues with certificates on later versions of PHP. This is not recommended.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">SMTP Username</div>
+            <div class="panel-body">SMTP username if authentication is required.</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">SMTP Password</div>
+            <div class="panel-body">SMTP password if authentication is required.</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">SMTP From Name</div>
+            <div class="panel-body">Your preferred "from" name for outgoing emails sent from the store.</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">SMTP From Email</div>
+            <div class="panel-body">Your preferred "from" email address for outgoing emails sent from the store.</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Enable SMTP Debugging</div>
+            <div class="panel-body">Should be enabled to identify mail issues if your emails aren`t sending. Once enabled, send an email as normal via the test option, then view the "logs" folder and view the debug file created.</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">CleanTalk Anti Spam System</div>
+            <div class="panel-body">
+              Maian Cart supports the <a href="http://cleantalk.org/?pid=161167" onclick="window.open(this);return false">CleanTalk API</a>. CleanTalk is a
+              cloud spam protection system for forums, boards, blogs and sites. It is strongly recommended you take advantage of this cost effective system to help
+              protect your store from spam bots. If enabled, spam checks are done for the Maian Cart contact box (at the bottom of all pages) and the account
+              signup page (if enabled). Data is transmitted to CleanTalk to be analysed.<br><br>
+              CleanTalk offers the ability to block all IP ranges for any given country. A feature list can be found <a href="https://cleantalk.org/features" onclick="window.open(this);return false">here</a>.<br><br>
+              To enable in Maian Cart, <a href="http://cleantalk.org/?pid=161167" onclick="window.open(this);return false">signup for an access key</a>, then enter your key in the box provided. Make sure CleanTalk is enabled in the cart system.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row footerArea">
+      </div>
+    </div>
+
+  </div>
+
+  <script>
+    //<![CDATA[
+    jQuery(document).ready(function() {
+      loadTopMenu();
+      loadLeftMenu();
+      loadFooter();
+    });
+    //]]>
+  </script>
+
+  <script src="content/js/bootstrap.js"></script>
+  <script src="content/js/plugins/jquery.metismenu.js"></script>
+  <script src="content/js/plugins/jquery.ibox.js"></script>
+
+</body>
+
+</html>

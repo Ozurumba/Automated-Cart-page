@@ -1,0 +1,51 @@
+{WEBSITE_NAME} - Order #{INVOICE_NO}
+
+<-{separater}->
+
+Hello {NAME},
+
+Thank you for your order at {WEBSITE_NAME}.
+
+----------------------------------------------------------------
+[B]ITEMS ORDERED[/B]
+----------------------------------------------------------------
+
+{PRODUCT_ORDER}
+
+----------------------------------------------------------------
+
+Discount Applied: {DISCOUNTS}
+Order Total: {TOTAL}
+Payment Currency: {CURRENCY}
+Payment Method: {GATEWAY_NAME} (see below)
+
+----------------------------------------------------------------
+[B]SHIPPING ADDRESS[/B]
+----------------------------------------------------------------
+
+{SHIPPING_ADDRESS}
+
+Shipping Method: {SHIP_METHOD}
+Tel: {SHIPPING_PHONE}
+
+----------------------------------------------------------------
+
+If your payment has been accepted or if you have an account, you can view your order via the following:
+{ORDER_URL}
+
+You elected to pay using the following payment method: {GATEWAY_NAME}
+
+To complete your order, please follow these instructions:
+
+{INSTRUCTIONS}
+
+If you see any errors in your order, please contact us as soon as possible.
+
+Kind regards,
+
+<-{separater}->
+
+{WEBSITE_NAME}
+{WEBSITE_URL}
+
+IP address: {ORDER_IP}

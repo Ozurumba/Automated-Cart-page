@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Other Payment Options - Static Methods:  Maian Cart Documentation</title>
+
+  <link href="content/css/bootstrap.css" rel="stylesheet">
+  <link href="content/css/font-awesome/font-awesome.css" rel="stylesheet">
+  <link href="content/css/mc-docs.css" rel="stylesheet">
+  <link href="content/css/jquery.ibox.css" rel="stylesheet">
+
+  <script src="content/js/jquery.js"></script>
+  <script src="content/js/functions.js"></script>
+
+  <link rel="ICON" href="favicon.ico">
+
+</head>
+
+<body>
+
+  <div id="wrapper">
+
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation" style="margin-bottom: 0">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-collapse">
+          <span class="sr-only">Toggle Navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">Documentation</a>
+      </div>
+
+      <div class="navbar-default navbar-static-side" role="navigation">
+        <div class="sidebar-collapse">
+        </div>
+      </div>
+    </nav>
+
+    <div id="page-wrapper">
+      <div class="row">
+        <div class="col-lg-12">
+          <h1 class="page-header">Other Payment Options - Static Methods</h1>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Overview</div>
+            <div class="panel-body">
+              <b>Bank Transfer, Phone Order, Payment by Cheque/Check, Cash on Delivery.</b><br><br>For any of these options,
+              futher communication between the vendor and the buyer is required. After using one of these methods, further instructions should be presented to the buyer.<br><br>To enable any of these options, select 'Sales &gt; Payment Methods'.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Instructions for Buyer (Web)</div>
+            <div class="panel-body">
+              This is presented on the cart page after the visitor processes their order. This should provide further instructions to buyer. Use <a href="features-6.html">BB Code</a> for formatting, HTML is not allowed.<br><br>
+              Use {INVOICE_NO} to reference sale invoice number.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Instructions for Buyer (E-Mail)</div>
+            <div class="panel-body">
+              This is sent in the order confirmation email to buyers. This should provide further instructions to buyer. Can be the same instructions as seen on web page.<br><br>
+              Use {INVOICE_NO} to reference sale invoice number.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Information About this Payment Method</div>
+            <div class="panel-body">
+              This is presented to visitors if they click for more info on this payment option on the checkout page. Optional. Use <a href="features-6.html">BB Code</a> for formatting, HTML is not allowed.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Alternative Redirect Url (Optional)</div>
+            <div class="panel-body">
+              Alternative redirect url is the page a visitor will be directed to after a successful transaction. You should NOT use this option if you sell downloadable items as visitors will not be able to download their products immediately after purchase.<br><br>Enter full url starting http://
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Order Status Preferences</div>
+            <div class="panel-body">
+              Specify which order statuses to set for callback operations. Leave as default if you aren`t sure. "Pending" statuses restrict download access for none gateway methods and should
+              be used until payment is cleared.<br><br>Setting preferred order statuses can be useful for filtering with other admin operations.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Payment Method Availability</div>
+            <div class="panel-body">
+              Choose when this payment method is available. Useful if you only want certain methods shown for certain checkout types. If none are selected, defaults to all.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Enable Payment Method</div>
+            <div class="panel-body">
+            Enable / disable this method as a payment option.
+            </div>
+          </div>
+        </div>
+      </div>
+      <a href="payment-6.html"><i class="fa fa-arrow-left fa-fw"></i> Return to Other Options Main Screen</a>
+      <div class="row footerArea">
+      </div>
+    </div>
+
+  </div>
+
+  <script>
+    //<![CDATA[
+    jQuery(document).ready(function() {
+      loadTopMenu();
+      loadLeftMenu();
+      loadFooter();
+    });
+    //]]>
+  </script>
+
+  <script src="content/js/bootstrap.js"></script>
+  <script src="content/js/plugins/jquery.metismenu.js"></script>
+  <script src="content/js/plugins/jquery.ibox.js"></script>
+
+</body>
+
+</html>

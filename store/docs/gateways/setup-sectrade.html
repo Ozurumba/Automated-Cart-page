@@ -1,0 +1,72 @@
+
+  <div class="container-fluid">
+
+ <div class="row">
+                <div class="col-lg-12" style="padding:0">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">Secure Trading - Setup</div>
+
+ <div class="panel-body">
+ 1: Sign up for a Secure Trading account to get your site reference and merchant details.<br>
+ 2: Log into your Secure Trading account. Click "Notifications > Add Filter" from the left hand menu. Enter description for new filter, check "Auth" in requests and select ALL payment types and codes. Then save
+ new filter. Next click "Add Destination". Complete the options as follows:<br><br>
+ <b>Description</b>: Any name<br>
+ <b>Notification type</b>: url<br>
+ <b>Process notification</b>: offline<br>
+ <b>Destination</b>: Callback url as shown below<br>
+ <b>Notification password</b>: Unique password different to merchant password<br>
+ <b>Security algorithm</b>: sha256<br><br>
+ Check ALL field boxes and in the "custom fields" box enter and add the field "custom-data". Then click to save destination. Finally, on main notifications screen
+ assign the filter you created to the destination you created and click save. Make sure the "active" box is checked.<br><br>
+ 3: Still in your Secure Trading account area, click "Rule Manager" from the left menu. Click the "Redirect browser to Thanks" option. In the url box enter
+ the following url, substituting the correct url for your setup:<br><br>
+ https://www.example.com/cart/?msg=8<br><br>
+ 4: Enter applicable details in your Maian Cart admin area:<br><br><b>Sales > Payment Methods > Secure Trading</b><br><br>
+ Once you are happy everything is working, contact Secure Trading to switch your account to live.
+ </div>
+</div>
+</div>
+</div>
+
+ <div class="row">
+                <div class="col-lg-12" style="padding:0">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">Secure Trading - Callback Url</div>
+
+ <div class="panel-body">The callback url for all operations is:<br><br>
+ <b>http://www.example.com/checkout/sectrade.php</b><br>
+ <b>https://www.example.com/checkout/sectrade.php (SSL)</b><br><br>
+ Where 'example.com' is your own domain.
+ </div>
+</div>
+</div>
+</div>
+
+<div class="row">
+                <div class="col-lg-12" style="padding:0">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">Secure Trading - Action Url</div>
+
+ <div class="panel-body">The action url for all operations is:<br><br>
+ <b>http://www.example.com/?p=gate1</b><br>
+ <b>https://www.example.com/?p=gate1 (SSL)</b><br><br>
+ Where 'example.com' is your own domain.
+ </div>
+</div>
+</div>
+</div>
+
+ <div class="row">
+                <div class="col-lg-12" style="padding:0">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">Secure Trading - Demo Mode</div>
+
+ <div class="panel-body">Secure Trading has a full test mode via its demo system.<br><br>Please contact Secure Trading for details of the test server. Setup is
+ identical to live.
+ </div>
+</div>
+</div>
+</div>
+
+</div>
+  

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Database Backup:  Maian Cart Documentation</title>
+
+  <link href="content/css/bootstrap.css" rel="stylesheet">
+  <link href="content/css/font-awesome/font-awesome.css" rel="stylesheet">
+  <link href="content/css/mc-docs.css" rel="stylesheet">
+  <link href="content/css/jquery.ibox.css" rel="stylesheet">
+
+  <script src="content/js/jquery.js"></script>
+  <script src="content/js/functions.js"></script>
+
+  <link rel="ICON" href="favicon.ico">
+
+</head>
+
+<body>
+
+  <div id="wrapper">
+
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation" style="margin-bottom: 0">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-collapse">
+          <span class="sr-only">Toggle Navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">Documentation</a>
+      </div>
+
+      <div class="navbar-default navbar-static-side" role="navigation">
+        <div class="sidebar-collapse">
+        </div>
+      </div>
+    </nav>
+
+    <div id="page-wrapper">
+      <div class="row">
+        <div class="col-lg-12">
+          <h1 class="page-header">Database Backup</h1>
+        </div>
+      </div>
+
+            <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Overview</div>
+            <div class="panel-body">
+              This feature lets you take a schematic backup of your database, this is recommended from time to time in case you suffer a server/database crash. You should not totally rely on the backup option here, so a further backup with your database administration software is recommended.<br><br>
+  On loading the backup page, your database tables are shown along with the current table sizes and an estimated total backup size. If you find the backup is taking too long within this software, you should revert to server options.<br><br>
+  You should perform a backup at least once a week. If you are using the e-mail option, e-mail should NOT exist on the same server as your database. If your server crashes, this could also wipe out
+  the e-mail address where your backups are. Use an e-mail address or addresses hosted elsewhere.<br><br>
+  Finally, you can set the backup to run automatically if you wish via a cron job/tab. See below.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Download to Hard Drive</div>
+            <div class="panel-body">
+              Do you wish to download a copy of this backup to your hard drive? This envokes the save-as dialogue box. If not saving, you should enter at least 1 e-mail address to send the backup to.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Compress Backup File</div>
+            <div class="panel-body">
+              Do you wish to compress the backup file? This is recommended for large databases.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Copy as Attachment to E-Mail Address(es)</div>
+            <div class="panel-body">
+              Do you want to copy the backup to other e-mail accounts? E-mail accounts should not be located on the same server. Add multiple e-mails if required separated with a comma. Example:<br><br>email1@example.com,email2@example.com
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Backup as Cron Job/Tab</div>
+            <div class="panel-body">
+              If you prefer to have the backup generated automatically via a cron job/tab (automated task), follow these instructions:<br><br>
+  <span class="badge">1</span> Make sure you have read/write permissions on the following folder.<br><br>
+  <div class="alert alert-info">
+  logs
+  </div>
+  On linux chmod to 755 or 777, depending on which is supported by your host. If you have enabled payment
+  gateway response logging, this may already have the correct permissions.<br><br>
+  <span class="badge">2</span> Set up a cron job/tab in your server admin to point to the following file in your cart installation:<br><br>
+  <div class="alert alert-info">
+    control/cron/db-backup.php
+  </div>
+  If you aren`t sure how to do this contact your host. Note that not all hosts support cron job/tabs. Ideally the cron should run when your website is less busy, so early hours of the morning, maybe 3 or 4am.<br><br>
+  Some of the following may work as commands, but again, contact your host to check.<br><br>
+  <div class="alert alert-info">
+    /usr/local/bin/php /home/admin/domains/yourdomain.co.uk/public_html/cart/control/cron/db-backup.php<br>
+    php q /home/admin/domains/yourdomain.co.uk/public_html/cart/control/cron/db-backup.php<br>
+    /usr/local/bin/php q /home/admin/domains/yourdomain.co.uk/public_html/cart/control/cron/db-backup.php<br>
+    cmd /k C:\Windows\php\php.exe "C:\website\control\cron\db-backup.php" (Windows)
+  </div>
+  <span class="badge">3</span> The default is for backups to save in the 'logs' folder. If you prefer to have them e-mailed, edit the following constant in the 'control/defined.php' file:<br><br>
+  <div class="alert alert-info">
+    BACKUP_CRON_EMAILS
+  </div>
+  You can have multiple addresses separated with a comma. Note that e-mail addresses should NOT exist on the same server as your database. If the server/database crashes, the e-mails
+  may be lost. Examples:<br><br>
+  <div class="alert alert-info">
+    define('BACKUP_CRON_EMAILS', 'email@example.com');<br>
+    define('BACKUP_CRON_EMAILS', 'email@example.com,email2@example.com');
+  </div>
+  Attachments sent and backups saved via the auto cron are Gzip compressed.
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Understanding Cron Tabs/Jobs</div>
+            <div class="panel-body">
+              <a href="http://www.google.co.uk/#hl=en&amp;q=cron+tabs+or+cron+jobs" onclick="window.open(this);return false">Help and Information on Cron Tabs or Cron Jobs</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row footerArea">
+      </div>
+    </div>
+
+  </div>
+
+  <script>
+    //<![CDATA[
+    jQuery(document).ready(function() {
+      loadTopMenu();
+      loadLeftMenu();
+      loadFooter();
+    });
+    //]]>
+  </script>
+
+  <script src="content/js/bootstrap.js"></script>
+  <script src="content/js/plugins/jquery.metismenu.js"></script>
+  <script src="content/js/plugins/jquery.ibox.js"></script>
+
+</body>
+
+</html>

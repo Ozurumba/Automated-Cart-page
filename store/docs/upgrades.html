@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Upgrades: Maian Cart Documentation</title>
+
+    <link href="content/css/bootstrap.css" rel="stylesheet">
+    <link href="content/css/font-awesome/font-awesome.css" rel="stylesheet">
+	<link href="content/css/mc-docs.css" rel="stylesheet">
+
+	<script src="content/js/jquery.js"></script>
+	<script src="content/js/functions.js"></script>
+
+	<link rel="ICON" href="favicon.ico">
+
+</head>
+
+<body>
+
+<div id="wrapper">
+
+        <nav class="navbar navbar-default navbar-fixed-top" role="navigation" style="margin-bottom: 0">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-collapse">
+                    <span class="sr-only">Toggle Navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">Documentation</a>
+            </div>
+
+			<div class="navbar-default navbar-static-side" role="navigation">
+                <div class="sidebar-collapse">
+				</div>
+            </div>
+		</nav>
+
+        <div id="page-wrapper">
+                        <div class="row">
+                <div class="col-lg-12">
+                    <h1 class="page-header">Upgrades</h1>
+                </div>
+            </div>
+
+			<div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">Upgrades | <a href="https://www.maiancart.com/changelog.html" title="Maian Cart Changelog" onclick="window.open(this);return false">View Changelog</a></div>
+
+      <div class="panel-body">Before commencing any upgrade, make sure you have a full backup of your existing system, including a schematic backup of your current database. In the event of something going wrong, you can always revert your database back and try again.<br><br>
+      View the <a href="https://www.maiancart.com/changelog.html" onclick="window.open(this);return false" title="Changelog">changelog</a> to see whats new.<br><br>
+      Please see the <a href="info3.html">version appendix</a> for any major changes that may cause your existing version to break.
+      </div>
+					</div>
+				</div>
+			</div>
+
+      <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-danger">
+                        <div class="panel-heading"><b>Passwords - Please Read</b></div>
+
+      <div class="panel-body">If you are upgrading from a version older than 3.4, all account/staff passwords will be reset. In 3.4+ passwords are now stored using the PHP password API
+     which uses bcrypt. This favours the less secure sha1 used in previous versions.<br><br>
+     For cart staff, you`ll need to log in with the main administrator details (as set in 'admin/control/access.php') to reset staff.<br><br>
+     Account visitors will need to use the 'forgot password' option to reset their password.
+      </div>
+					</div>
+				</div>
+			</div>
+
+
+    <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">How To Upgrade</div>
+
+      <div class="panel-body">Download the patch update and follow the instructions:<br>
+      <a href="https://www.maiancart.com/download/patch/latest-version.zip">https://www.maiancart.com/download/patch/latest-version.zip</a>
+      <br><br>
+      If you aren`t sure of your version, access your database and in the mc_settings table view the value of the following column:<br><br>
+      <b>softwareVersion</b><br><br>
+      (If you are running v2 of Maian Cart, upgrades are no longer available)
+      </div>
+					</div>
+				</div>
+			</div>
+
+      <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">Templates/Language</div>
+
+      <div class="panel-body">Changes made to template and language files will be lost during upgrade. If you have created a custom theme folder or updated
+      a language file, you should use comparison software to find out what has changed since the last update. WinMerge, a FREE tool, is recommended:<br><br>
+      <a href="http://winmerge.org/" onclick="window.open(this);return false">http://winmerge.org</a>
+      </div>
+					</div>
+				</div>
+			</div>
+
+      <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">Stripe Payment Gateway</div>
+
+      <div class="panel-body">If you have upgraded to v3.4+ and you don`t want to change your custom theme, but you do want to add support for the Stripe payment gateway, do the following. Note that
+      it is assumed you have updated the core php files and run the upgrade routine via the zip files above.<br><br>
+      <span class="badge">1</span> Add 'content/**/gateway-api/' folder and contents.<br><br>
+      <span class="badge">2</span> Open the 'content/**/footer.tpl.php' file and add the following code before the closing &lt;/body&gt; tag.<br><br>
+      <div class="alert alert-info">
+      &lt;?php<br>
+      // If Stripe is enabled, load JS API for Stripe..<br>
+      if ($this->STRIPE_EN == 'yes') {<br>
+      include(PATH . $this->THEME_FOLDER . '/gateway-api/stripe.php');<br>
+      }<br>
+      ?&gt;</div>
+      <span class="badge">3</span> Open the 'content/**/js/mc-cart.js' file and find the 'mc_chkNav' function. BEFORE "jQuery(document)....", add the following code:<br><br>
+      <div class="alert alert-info">
+      // Check for stripe..<br>
+      switch(nav) {<br>
+      &nbsp;&nbsp;case 'pay':<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;if (jQuery('select[name="payment-type"]').val() == 'stripe') {<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;mc_ShowSpinner();<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;mc_Stripe();<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return false;<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;}<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;break;<br>
+      &nbsp;&nbsp;default:<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;// Ok, continue..<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;break;<br>
+      }</div>
+      <span class="badge">4</span> Open the 'content/**/checkout-payment.php' file and add the following id to the form tag:<br><br>
+      &lt;form method="post" action="#" <b>id="pform"</b>&gt;<br><br>
+      <span class="badge">5</span> Complete gateway <a href="payment-3.html">setup</a>.
+      </div>
+					</div>
+				</div>
+			</div>
+
+			<div class="row footerArea">
+			</div>
+        </div>
+
+</div>
+
+<script>
+//<![CDATA[
+jQuery(document).ready(function() {
+  loadTopMenu();
+  loadLeftMenu();
+  loadFooter();
+});
+//]]>
+</script>
+
+<script src="content/js/bootstrap.js"></script>
+<script src="content/js/plugins/jquery.metismenu.js"></script>
+<script src="content/js/plugins/jquery.ibox.js"></script>
+
+</body>
+</html>

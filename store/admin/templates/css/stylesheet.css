@@ -1,0 +1,12 @@
+/*
+  Admin CSS Loader
+===================================================*/
+
+@import url('mc-base.css');
+@import url('font-awesome/font-awesome.css');
+@import url('fam-icons.css');
+@import url('mc-layout.css');
+@import url('mc-forms.css');
+@import url('mc-plugins.css');
+@import_url('bootstrap-dialog.css');
+@import url('mc-mobile.css');

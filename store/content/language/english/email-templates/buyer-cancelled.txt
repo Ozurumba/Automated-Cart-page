@@ -1,0 +1,28 @@
+Order Cancelled by Buyer
+
+<-{separater}->
+
+"{NAME}" cancelled his/her order before completing payment at the payment gateway:
+
+[B]ITEMS IN BASKET[/B]:
+----------------------------------------------------------------
+
+{PRODUCT_ORDER}
+
+----------------------------------------------------------------
+
+Trade Sale: {TRADE_SALE}
+
+This order will now be seen in the 'Incomplete Sales' section in your admin area.
+
+You may wish to contact the buyer about this cancellation.
+
+Log into your administration area to view more information:
+{WEBSITE_URL}/{ADMIN_FOLDER}/
+
+<-{separater}->
+
+{WEBSITE_NAME}
+{WEBSITE_URL}
+
+IP address: {ORDER_IP}

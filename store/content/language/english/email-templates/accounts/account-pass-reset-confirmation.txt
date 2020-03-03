@@ -1,0 +1,20 @@
+Account Password Reset Confirmation
+
+<-{separater}->
+
+Hi {NAME},
+
+This email confirms your recent password reset at "{WEBSITE_NAME}".
+
+Your password was successfully updated.
+
+We recommend changing your password from time to time for security.
+
+<-{separater}->
+
+Kind regards,
+
+{WEBSITE_NAME}
+{WEBSITE_URL}
+
+IP address: {IP}

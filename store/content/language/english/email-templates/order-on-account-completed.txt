@@ -1,0 +1,55 @@
+Order Confirmed - #{INVOICE_NO}
+
+<-{separater}->
+
+Hello {NAME},
+
+Thank you for your order at {WEBSITE_NAME}.
+
+----------------------------------------------------------------
+[B]ITEMS ORDERED[/B]
+----------------------------------------------------------------
+
+{PRODUCT_ORDER}
+
+----------------------------------------------------------------
+
+Discount Applied: {DISCOUNTS}
+Order Total: {TOTAL}
+Payment Currency: {CURRENCY}
+Payment Method: Standard Account Invoice
+
+----------------------------------------------------------------
+[B]SHIPPING ADDRESS[/B]
+----------------------------------------------------------------
+
+{SHIPPING_ADDRESS}
+
+Shipping Method: {SHIP_METHOD}
+Tel: {SHIPPING_PHONE}
+
+----------------------------------------------------------------
+
+You will be invoiced via the payment information we have on file for you. Our standard payment terms apply.
+
+To view your order or download products (if applicable), visit the following url:
+{ORDER_URL}
+
+If you have an account with us, you`ll be required to log in to view your order.
+
+If you ordered any gift certificates, these have been created and emailed to the recipient(s).
+
+If you see any errors in your order, please contact us as soon as possible.
+
+If you have goods to be shipped, another email will follow when your order has been updated.
+
+Please quote the above order number with any correspondence.
+
+Kind regards,
+
+<-{separater}->
+
+{WEBSITE_NAME}
+{WEBSITE_URL}
+
+IP address: {ORDER_IP}

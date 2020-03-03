@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Batch Update Products from CSV:  Maian Cart Documentation</title>
+
+  <link href="content/css/bootstrap.css" rel="stylesheet">
+  <link href="content/css/font-awesome/font-awesome.css" rel="stylesheet">
+  <link href="content/css/mc-docs.css" rel="stylesheet">
+  <link href="content/css/jquery.ibox.css" rel="stylesheet">
+
+  <script src="content/js/jquery.js"></script>
+  <script src="content/js/functions.js"></script>
+
+  <link rel="ICON" href="favicon.ico">
+
+</head>
+
+<body>
+
+  <div id="wrapper">
+
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation" style="margin-bottom: 0">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-collapse">
+          <span class="sr-only">Toggle Navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">Documentation</a>
+      </div>
+
+      <div class="navbar-default navbar-static-side" role="navigation">
+        <div class="sidebar-collapse">
+        </div>
+      </div>
+    </nav>
+
+    <div id="page-wrapper">
+      <div class="row">
+        <div class="col-lg-12">
+          <h1 class="page-header">Batch Update Products from CSV</h1>
+        </div>
+      </div>
+
+            <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Batch Update Products from CSV</div>
+            <div class="panel-body">
+              Here you can batch update your products from CSV. Please read the instructions here carefully before updating. It is recommended you back up your store before each batch update in case you need to revert the store back to how it was before the update.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Browse for CSV</div>
+            <div class="panel-body">
+              Locate CSV to import. CSV MUST contain a <a href="examples/batch-update.csv">header row</a> and only certain fields are supported for the batch update. Fields supported are:<br><br>
+              <b>codeID</b> = Current product code OR store product id as displayed on product management page. Click the <i class="fa fa-long-arrow-down fa-fw"></i> icon to show store product ID. Used to identify product to be updated.<br>
+              <b>pName</b> = Product name.<br><b>pTitle</b> = Alternative browser display title.<br>
+              <b>pMetaKeys</b> = Meta keywords.<br>
+              <b>pMetaDesc</b> = Meta description.<br>
+              <b>pTags</b> = Product tags, comma delimited.<br>
+              <b>pDescription</b> = Product full description.<br>
+              <b>pShortDescription</b> = Product short description.<br>
+              <b>pCode</b> = New product code if applicable.<br>
+              <b>pDownload</b> = Is product download. Yes or no.<br>
+              <b>pDownloadPath</b> = Local/HTTP/FTP path to file.<br>
+              <b>pEnable</b> = Is product enabled? Yes or no.<br>
+              <b>pVideo</b> = You Tube Video Code if applicable.<br>
+              <b>pVideo2</b> = Vimeo Video Code if applicable.<br>
+              <b>pVideo3</b> = Daily Motion Video Code if applicable.<br>
+              <b>pMultiBuy</b> - Multi buy value if applicable.<br>
+              <b>countryRestrictions</b> = Restricted countries for product purchase. Comma delimited country IDs.<br>
+              <b>freeShipping</b> = Is free shipping enabled? Yes or no.<br>
+              <b>pPurchase</b> = Is product purchase enabled? Yes or no.<br>
+              <b>pStock</b> = New stock level.<br>
+              <b>pWeight</b> = Product weight. eg: 1000<br>
+              <b>pPrice</b> = Product price, no currency symbol. eg: 9.99<br>
+              <b>minPurchaseQty</b> = Minimum purchase quantity. If applicable. 0 or higher.<br>
+              <b>maxPurchaseQty</b> = Maximum purchase quantity. If applicable. 0 or higher.<br>
+              <b>pOffer</b> = Product offer price, no currency symbol. eg: 9.99<br>
+              <b>pOfferExpiry</b> = Product offer price expiry date if applicable. MUST be 0000-00-00 format.<br>
+              <b>rwslug</b> = Rewrite slug (if using search engine friendly urls)<br>
+              <b>expiry</b> = Product expiry date if applicable. MUST be 0000-00-00 format.<br>
+              <b>pCube</b> = If you are using <a href="http://www.maiancube.com" onclick="window.open(this);return false">Maian Cube</a>, enter Maian Cube product ID. Refer to your cube installation.<br>
+              <b>pGuardian</b> = If you are using <a href="http://www.maianguardian.com" onclick="window.open(this);return false">Maian Guardian</a>, enter Maian Guardian product ID. Refer to your guardian installation.<br>
+              <b>dropshipping</b> = ID of drop shipping supplier if applicable. Refer to ID on drop shipping page in admin.<br>
+
+              <br>
+              Leave columns blank if you don`t wish to update this field. For example if "pTitle" was blank, product title will NOT be updated. An example of the header row is found
+              <a href="examples/batch-update.csv">here</a>. Use this CSV as a template if you wish. Note that columns do not need to be in the above order, but the names MUST be as specified above (case sensitive). Any
+              columns not identified will be skipped.<br><br>
+              Be careful if you have several products with the same code as ALL products would be updated with that code. Use the product ID for uniqueness.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Lines to Read</div>
+            <div class="panel-body">
+              Must be greater than the longest line (in characters) to be found in the CSV file (allowing for trailing line-end characters).<br><br>It became optional in PHP 5. Omitting this parameter (or setting it to 0 in PHP 5.0.4 and later) the maximum line length is not limited, which is slightly slower.<br><br><b>NO</b> commas or period symbols. Examples: 1000, 2000, 3000 etc<br><br>Text &copy;PHP.net
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Delimited/Enclosed by</div>
+            <div class="panel-body">
+              Set the field delimiter and field enclosure character. If left blank delimiter defaults to a comma.<br><br>Fields are enclosed if the delimiter is found in the string to prevent premature end of delimiter. Example on comma delimited string:<br><br><b>0,1,"The delimiter is , a comma",2,3</b><br><br>If left blank defaults to quotes (").
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row footerArea">
+      </div>
+    </div>
+
+  </div>
+
+  <script>
+    //<![CDATA[
+    jQuery(document).ready(function() {
+      loadTopMenu();
+      loadLeftMenu();
+      loadFooter();
+    });
+    //]]>
+  </script>
+
+  <script src="content/js/bootstrap.js"></script>
+  <script src="content/js/plugins/jquery.metismenu.js"></script>
+  <script src="content/js/plugins/jquery.ibox.js"></script>
+
+</body>
+
+</html>

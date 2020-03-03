@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Price Points:  Maian Cart Documentation</title>
+
+  <link href="content/css/bootstrap.css" rel="stylesheet">
+  <link href="content/css/font-awesome/font-awesome.css" rel="stylesheet">
+  <link href="content/css/mc-docs.css" rel="stylesheet">
+  <link href="content/css/jquery.ibox.css" rel="stylesheet">
+
+  <script src="content/js/jquery.js"></script>
+  <script src="content/js/functions.js"></script>
+
+  <link rel="ICON" href="favicon.ico">
+
+</head>
+
+<body>
+
+  <div id="wrapper">
+
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation" style="margin-bottom: 0">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-collapse">
+          <span class="sr-only">Toggle Navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">Documentation</a>
+      </div>
+
+      <div class="navbar-default navbar-static-side" role="navigation">
+        <div class="sidebar-collapse">
+        </div>
+      </div>
+    </nav>
+
+    <div id="page-wrapper">
+      <div class="row">
+        <div class="col-lg-12">
+          <h1 class="page-header">Price Points</h1>
+        </div>
+      </div>
+
+            <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Overview</div>
+            <div class="panel-body">
+              Price points are a useful addition to your store. They enable people to view all products between a specified price range or price point. For example, you may have lots of products
+  and someone may just be looking for a gift between a given range based on their budget. This option appears in the left hand menu and is entirely optional. See the demo to see how it works.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Adding Price Points</div>
+            <div class="panel-body">
+              Enter a 'Price From' and a 'Price To' amount. If you wish you can enter alternative text to appear instead of the price point range. For example, if you enter '0.00' as the price from amount
+  and '9.99' as the price to amount, without alternative text you would see the range as the link instead of the text. Again, see the demo or tutorial videos if available.<br><br><b>NOTE</b> You should always make sure that each price point is not in the same range as a previous price point. For example if you specified:<br><br>
+  0.00 - 5.00<br>
+  5.00 - 10.00<br><br>
+  and someone did a search for items that were 5.00 - 10.00, this would fall into both criteria as the first range is also up to 5.00. Instead you should do:<br><br>
+  0.00 - 5.00<br>
+  5.01 - 10.00<br>
+  10.01 - 20.00<br><br>
+  etc
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Drag and Drop to Order</div>
+            <div class="panel-body">
+              To set the order of the display price point links, drag and drop the rows after creating price points. A <span style="text-decoration:underline;cursor:move">move</span> icon appears if you hover your cursor over the rows. Simply drag and drop to re-order.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row footerArea">
+      </div>
+    </div>
+
+  </div>
+
+  <script>
+    //<![CDATA[
+    jQuery(document).ready(function() {
+      loadTopMenu();
+      loadLeftMenu();
+      loadFooter();
+    });
+    //]]>
+  </script>
+
+  <script src="content/js/bootstrap.js"></script>
+  <script src="content/js/plugins/jquery.metismenu.js"></script>
+  <script src="content/js/plugins/jquery.ibox.js"></script>
+
+</body>
+
+</html>

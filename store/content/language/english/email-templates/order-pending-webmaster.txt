@@ -1,0 +1,37 @@
+Order Pending
+
+<-{separater}->
+
+Hello,
+
+An order has been processed in your cart, but its payment status is 'Pending'. The reason given by {GATEWAY_NAME} is as follows:
+
+"{REASON}"
+
+If no reason has been sent by the gateway, check your gateway logs or contact the gateway directly.
+
+
+[B]PRODUCTS ORDERED[/B]:
+--------------------------------------------------
+
+{PRODUCT_ORDER}
+
+The buyer has been contacted with details about this status.
+
+To review the details of this transaction, log in to your {GATEWAY_NAME} account:
+{GATEWAY_URL}
+
+Once the payment is successfully processed further emails will follow. You should NOT make manual updates to this sale while the sale is in progress.
+
+In the meantime, this sale should be viewable in your admin area under 'Incomplete Sales'.
+
+Once the payment gateway has verified the sale, it will be visible in the normal sales list.
+
+Kind regards,
+
+<-{separater}->
+
+{WEBSITE_NAME}
+{WEBSITE_URL}
+
+IP Address: {ORDER_IP}

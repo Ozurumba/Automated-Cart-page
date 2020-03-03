@@ -1,0 +1,20 @@
+Account Successfully Created
+
+<-{separater}->
+
+Hello {NAME},
+
+Your account at "{WEBSITE_NAME}" is now active.
+
+Please keep your email up to date and change your password from time to time for security.
+
+If you don`t know your password or you haven`t been assigned one, you will need to use the forgot password option to reset your account.
+
+<-{separater}->
+
+Kind regards,
+
+{WEBSITE_NAME}
+{WEBSITE_URL}
+
+IP address: {IP}

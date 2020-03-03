@@ -1,0 +1,947 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>F.A.Q:  Maian Cart Documentation</title>
+
+  <link href="content/css/bootstrap.css" rel="stylesheet">
+  <link href="content/css/font-awesome/font-awesome.css" rel="stylesheet">
+  <link href="content/css/mc-docs.css" rel="stylesheet">
+  <link href="content/css/jquery.ibox.css" rel="stylesheet">
+
+  <script src="content/js/jquery.js"></script>
+  <script src="content/js/functions.js"></script>
+
+  <link rel="ICON" href="favicon.ico">
+
+</head>
+
+<body>
+
+  <div id="wrapper">
+
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation" style="margin-bottom: 0">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-collapse">
+          <span class="sr-only">Toggle Navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">Documentation</a>
+      </div>
+
+      <div class="navbar-default navbar-static-side" role="navigation">
+        <div class="sidebar-collapse">
+        </div>
+      </div>
+    </nav>
+
+    <div id="page-wrapper">
+      <div class="row">
+        <div class="col-lg-12">
+          <h1 class="page-header">Frequently Asked Questions</h1>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-body">
+              <ol style="padding-left:35px">
+                <li><a href="#q1c">Does Maian Cart have an affiliate commission system?</a></li>
+                <li><a href="#q1b">The payment gateway is taking a long time to respond. Why?</a></li>
+                <li><a href="#q1">How Do I Find My Product Key?</a></li>
+                <li><a href="#q2">I`ve forgot my admin login details. Can I reset them?</a></li>
+                <li><a href="#q2b">I have enabled the search engine friendly urls, but am now getting 404, page not found. Why?</a></li>
+                <li><a href="#q2c">The Maian Cart contact form doesn`t have a captcha, will I get loads of spam?</a></li>
+                <li><a href="#q3">Do I need any software on the server to run Maian Cart?</a></li>
+                <li><a href="#q4">Is Maian Cart encoded?</a></li>
+                <li><a href="#q5">Can I edit any template files and change colours etc?</a></li>
+                <li><a href="#q6">Will the system work with PHP7?</a></li>
+                <li><a href="#q7">Can I show the news ticker on all pages?</a></li>
+                <li><a href="#q8">Is there a reseller licence?</a></li>
+                <li><a href="#q9">No emails are being sent, why?</a></li>
+                <li><a href="#q10">Can I disable the product enquiry auto responder?</a></li>
+                <li><a href="#q11">Can I change the text in the software and add my own wording?</a></li>
+                <li><a href="#q12">Can I include personalised order items in order emails?</a></li>
+                <li><a href="#q13">Can I edit the PHP files?</a></li>
+                <li><a href="#q14">Can I change the X-Mailer header that gets sent out in emails?</a></li>
+                <li><a href="#q15">Can I rename the log folder txt files?</a></li>
+                <li><a href="#q16">Can I use multiple languages at the same time?</a></li>
+                <li><a href="#q17">Can I integrate the layout into my own site design?</a></li>
+                <li><a href="#q18">Can I include attribute options in order emails?</a></li>
+                <li><a href="#q19">Can I remove the version check link in the admin area?</a></li>
+                <li><a href="#q20">Can I remove the documentation link in the admin area?</a></li>
+                <li><a href="#q21">Can I remove the Maian Cart links in emails?</a></li>
+                <li><a href="#q22">How much do I have to pay for upgrades?</a></li>
+                <li><a href="#q23">Ok, I`ve purchased a licence. What do I do now?</a></li>
+                <li><a href="#q24">Can I include gift certificate from/to info in order emails?</a></li>
+                <li><a href="#q25">Can you recommend a good web host?</a></li>
+                <li><a href="#q26">What is Twitter Bootstrap?</a></li>
+                <li><a href="#q27">Can I get a discount for Maian Cart, I`m broke?</a></li>
+                <li><a href="#q29">Can I change the youtube, vimeo, mp3, soundcloud or daily motion embed code?</a></li>
+                <li><a href="#q30">Can I omit certain users from being added to the entry log?</a></li>
+                <li><a href="#q31">Can I show banners on mobile devices too?</a></li>
+                <li><a href="#q32">Are there checkout and/or shipping debug logs?</a></li>
+                <li><a href="#q32b">Can I stop the parent category from being shown in the off canvas menu when it opens?</a></li>
+                <li><a href="#q33">Can I disable complete and / or pending sales on admin homescreen?</a></li>
+                <li><a href="#q34">Can I disable the url rewrite slug auto completion / suggestion?</a></li>
+                <li><a href="#q35">Can I disable downloads on invoices and / or packing slips?</a></li>
+                <li><a href="#q36">I thought I could post tweets? I don`t see any link to post tweets, why?</a></li>
+                <li><a href="#q37">Can I disable gift certificates on invoices and / or packing slips?</a></li>
+                <li><a href="#q38">Can I disable writing status when downloads are locked / unlocked or reactivated?</a></li>
+                <li><a href="#q39">Can I disable writing status when products are added to an existing sale?</a></li>
+                <li><a href="#q40">Can I rename the admin 'attachments' folder?</a></li>
+                <li><a href="#q41">Can I disable the tiles at the top of the admin control panel?</a></li>
+                <li><a href="#q42">I need to execute custom code after a successul payment. Is this possible?</a></li>
+                <li><a href="#q43">How do I secure product downloads from scrapers / bots?</a></li>
+                <li><a href="#q44">Can I change the 'product-downloads' folder name?</a></li>
+                <li><a href="#q45">Can I restrict downloads to purchase IP address only?</a></li>
+                <li><a href="#q46">Can I NOT show out of stock items in the cart?</a></li>
+                <li><a href="#q47">Can I disable the cookie option on the admin login?</a></li>
+                <li><a href="#q48">Can I not have pictures renamed when adding product images?</a></li>
+                <li><a href="#q49">Can I change default order by options in the system?</a></li>
+                <li><a href="#q50">Can I increase or decrease the size of the auto created thumbnails?</a></li>
+                <li><a href="#q51">Can I add analytic code to the system?</a></li>
+                <li><a href="#q52">If I upgrade, will my current version break?</a></li>
+                <li><a href="#q53">The installer or upgrade routine fail. Why?</a></li>
+                <li><a href="#q54">Can I force accounts to choose new passwords?</a></li>
+                <li><a href="#q55">Can I batch create PDF invoices and packing slips?</a></li>
+                <li><a href="#q56">What is a cron job?</a></li>
+              </ol>
+            </div>
+					</div>
+				</div>
+			</div>
+
+      <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading" id="q1c">
+                        Does Maian Cart have an affiliate commission system?
+                        </div>
+                        <div class="panel-body">
+                        Maian Cart supports the <a href="https://www.maianaffiliate.com" onclick="window.open(this);return false">Maian Affiliate</a> system. You must install Maian Affiliate first. When, this is
+                        done, setup is completed in your Maian Cart admin area via 'System > General Settings > Settings Menu > Maian Affiliate Integration'.
+                        </div>
+					</div>
+				</div>
+			</div>
+
+      <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading" id="q1b">
+                        The payment gateway is taking a long time to respond. Why?
+                        </div>
+                        <div class="panel-body">
+                        Please see the <a href="gateway.html">payment gateway</a> section.
+                        </div>
+					</div>
+				</div>
+			</div>
+
+      <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading" id="q1">
+						How Do I Find My Product Key?
+                        </div>
+                        <div class="panel-body">
+						If you are using the none commercial version, in your admin area, click 'Purchase Licence' on the top menu to view your product key.<br><br>
+                        If you don`t see this link, access the following link in your admin area: <b>admin/index.php?p=purchase</b>
+                        </div>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading" id="q2">
+						 I`ve forgot my admin login details. Can I reset them?
+                        </div>
+                        <div class="panel-body">
+						Login details are set in the 'admin/control/access.php' file. Just change there.
+                        </div>
+					</div>
+				</div>
+			</div>
+
+      <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading" id="q2b">
+						 I have enabled the search engine friendly urls, but am now getting 404, page not found. Why?
+                        </div>
+                        <div class="panel-body">
+						Did you enable the .htaccess file as per the instructions in the <a href="system-1.html">settings</a>?.
+                        </div>
+					</div>
+				</div>
+			</div>
+
+      <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading" id="q2c">
+						 The Maian Cart contact form doesn`t have a captcha, will I get loads of spam?
+                        </div>
+                        <div class="panel-body">
+						The contact form uses the Honeypot technique for spam prevention. More info <a href="https://www.google.co.uk/search?q=honeypot+technique&amp;oq=honeypot+technique" onclick="window.open(this);return false">here</a>. If you do
+            find that your site is getting spammed, please enable the <a href="http://cleantalk.org/?pid=161167" onclick="window.open(this);return false">CleanTalk</a> API via the <a href="settings-7.html">Mail Settings</a>.
+                        </div>
+					</div>
+				</div>
+			</div>
+
+      <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading" id="q3">
+						 Do I need any software on the server to run Maian Cart?
+                        </div>
+                        <div class="panel-body">
+						 Please see the system requirements on the <a href="install-2.html">installation page</a>.
+                        </div>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading" id="q5">
+						 Can I edit any template files and change colours etc?
+                        </div>
+                        <div class="panel-body">
+						 Yes, you can change anything in the free or commercial version. See the <a href="language.html">template</a> section for more help.
+                        </div>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading" id="q6">
+						 Will the system work with PHP7?
+                        </div>
+                        <div class="panel-body">
+						 Yes, it is written and tested for PHP5.6+ and PHP7+. See the software <a href="info.html">info page</a> for version numbers.
+                        </div>
+					</div>
+				</div>
+			</div>
+
+      <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading" id="q7">
+                        Can I show the news ticker on all pages?
+                        </div>
+                        <div class="panel-body">
+                        Yes, edit the 'control/defined.php' file and the 'NEWS_TICKER_DISPLAY_PREF' option. Also see the 'NEWS_TICKER_DISPLAY_CUSTOM_PAGES' option
+                        for custom pages.
+                        </div>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading" id="q8">
+						 Is there a reseller licence?
+                        </div>
+                        <div class="panel-body">
+						 Yes, more information <a href="white.html">here</a>.
+                        </div>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading" id="q9">
+						 No emails are being sent, why?
+                        </div>
+                        <div class="panel-body">
+						 You should enable SMTP debugging to help resolve mail issues. More info on the <a href="settings-7.html">mail settings</a> page.<br><br>
+             As mentioned on that page, use a reliable SMTP service for better mail reliability, DO NOT use your own server settings, especially if you are
+             on a shared server!! Using a trusted SMTP service is always recommended. Alternatively, try the PHP mail function option.
+             </div>
+					</div>
+				</div>
+			</div>
+
+      <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading" id="q10">
+                        Can I disable the product enquiry auto responder?
+                        </div>
+                        <div class="panel-body">
+                        Yes, edit the 'control/defined.php' file and the 'PROD_ENQUIRY_AUTO_RESPONDER' option.
+                        </div>
+					</div>
+				</div>
+			</div>
+
+      <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading" id="q11">
+						 Can I change the text in the software and add my own wording?
+                        </div>
+                        <div class="panel-body">
+						 Yes, of course, see the <a href="language.html">language</a> section.
+                        </div>
+					</div>
+				</div>
+			</div>
+
+      <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading" id="q12">
+                        Can I include personalised order items in order emails?
+                        </div>
+                        <div class="panel-body">
+                        Yes, edit the 'control/defined.php' file and the 'EMAIL_PERSONALISATION_INCL' option.
+                        </div>
+					</div>
+				</div>
+			</div>
+
+      <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading" id="q13">
+						 Can I edit the PHP files?
+                        </div>
+                        <div class="panel-body">
+						 If you feel you need to and know what you are doing. Note that PHP changes can break when the system is upgraded.
+                        </div>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading" id="q14">
+						Can I change the X-Mailer header that gets sent out in emails?
+						</div>
+                        <div class="panel-body">
+						Yes, via the 'control/defined.php' file. Set a value in the 'MAIL_X_MAIL_HEADER' option.
+                        </div>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading" id="q15">
+						Can I rename the log folder txt files?
+                        </div>
+                        <div class="panel-body">
+						If you want to rename the error log you may do so via the 'control/classes/class.errors.php' file. The
+            folder must be renamed / updated manually.
+                        </div>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading" id="q16">
+						 Can I use multiple languages at the same time?
+                        </div>
+                        <div class="panel-body">
+						 This isn`t supported, sorry.
+                        </div>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading" id="q17">
+						 Can I integrate the layout into my own site design?
+                        </div>
+                        <div class="panel-body">
+						 Yes, by editing the template. See the templates section via the left hand menu.
+                        </div>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading" id="q18">
+                        Can I include attribute options in order emails?
+                        </div>
+                        <div class="panel-body">
+                        Yes, edit the 'control/defined.php' file and the 'EMAIL_ATTRIBUTES_INCL' option.
+                        </div>
+					</div>
+				</div>
+			</div>
+
+      <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading" id="q19">
+						 Can I remove the version check link in the admin area?
+                        </div>
+                        <div class="panel-body">
+						 Yes, via the 'admin/control/defined.php' file and the 'DISPLAY_SOFTWARE_VERSION_CHECK' option.<br><br>
+             NOTE: The version check option sends ONLY the version number and script ID to the Maian Script World servers for version comparison. No user
+             identifiable information or information relating to your setup is sent.
+                        </div>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading" id="q20">
+						 Can I remove the documentation link in the admin area?
+                        </div>
+                        <div class="panel-body">
+						 Yes, via the 'admin/control/defined.php' file and the 'DISPLAY_HELP_LINK' option.
+                        </div>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading" id="q21">
+						 Can I remove the Maian Cart links in emails?
+                        </div>
+                        <div class="panel-body">
+						 No, this will disappear when a commercial licence is applied.
+                        </div>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading" id="q22">
+						 How much do I have to pay for upgrades?
+                        </div>
+                        <div class="panel-body">
+						 Nothing, all upgrades are FREE.
+                        </div>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading" id="q23">
+						 Ok, I`ve purchased a licence. What do I do now?
+                        </div>
+                        <div class="panel-body">
+						 Firstly, go to the <a href="https://www.maiangateway.com">Maian Script World Licence Centre</a> and log in with the username/password sent to you in the email you received after purchase. If you
+      didn`t receive this email, please contact me via the Maian Cart website.<br><br>
+      Once you have logged in, use the options provided to generate your licence. Your new licence file will be included in a zip file along with a readme file. You should
+      replace the default .lic file with your new one. This will unlock the free feature restrictions.
+                        </div>
+					</div>
+				</div>
+			</div>
+
+      <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading" id="q24">
+                        Can I include gift certificate from/to info in order emails?
+                        </div>
+                        <div class="panel-body">
+                        Yes, edit the 'control/defined.php' file and the 'EMAIL_GIFT_FROM_TO_INCL' option.
+                        </div>
+					</div>
+				</div>
+			</div>
+
+      <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading" id="q25">
+						 Can you recommend a good web host?
+                        </div>
+                        <div class="panel-body">
+						 There are lots of good web hosting companies around. Try a search on Google. Read what other people say.
+                        </div>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading" id="q26">
+						What is Twitter Bootstrap?
+                        </div>
+                        <div class="panel-body">
+						Its a frontend/mobile design framework. More information on their website <a href="http://getbootstrap.com" title="Twitter Bootstrap" onclick="window.open(this);return false">here</a>.
+                        </div>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading" id="q27">
+						 Can I get a discount for Maian Cart, I`m broke?
+                        </div>
+                        <div class="panel-body">
+						 Regular monthly discount coupons are emailed to subscribers of my newsletter. Its an infrequent newsletter. You can unsubscribe at any time.
+                        </div>
+					</div>
+				</div>
+			</div>
+      <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading" id="q29">
+                        Can I change the youtube, vimeo, mp3, soundcloud or daily motion embed code?
+                        </div>
+                        <div class="panel-body">
+                        Yes, edit the 'control/defined.php' file and the following:<br><br>
+                        YOU_TUBE_EMBED_CODE<br>
+                        VIMEO_EMBED_CODE<br>
+                        DAILY_MOTION_EMBED_CODE<br>
+                        SOUNDCLOUD_EMBED_CODE<br>
+                        MP3_EMBED_CODE
+                        </div>
+					</div>
+				</div>
+			</div>
+
+      <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading" id="q30">
+                        Can I omit certain users from being added to the entry log?
+                        </div>
+                        <div class="panel-body">
+						            Yes, edit the 'control/defined.php' file and the 'ENTRY_LOG_SKIP_USERS' option.
+                        </div>
+					</div>
+				</div>
+			</div>
+
+      <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading" id="q31">
+                        Can I show banners on mobile devices too?
+                        </div>
+                        <div class="panel-body">
+						            Yes, edit the 'control/defined.php' file and the 'MC_MB_BANNERS' option.
+                        </div>
+					</div>
+				</div>
+			</div>
+
+      <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading" id="q32">
+                        Are there checkout and/or shipping debug logs?
+                        </div>
+                        <div class="panel-body">
+						            Yes, edit the 'control/defined.php' file and the following options:<br><br>
+                        SHIP_DEBUG_LOG<br>
+                        CHECKOUT_DEBUG_LOG
+                        </div>
+					</div>
+				</div>
+			</div>
+
+      <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading" id="q32b">
+                        Can I stop the parent category from being shown in the off canvas menu when it opens?
+                        </div>
+                        <div class="panel-body">
+						            Yes, edit the 'control/defined.php' file and the following option:<br><br>
+                        OFF_CANVAS_PARENT_AS_CHILD
+                        </div>
+					</div>
+				</div>
+			</div>
+
+      <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading" id="q33">
+                        Can I disable complete and / or pending sales on admin homescreen?
+                        </div>
+                        <div class="panel-body">
+						            Yes, edit the 'admin/control/defined.php' file and the following options:<br><br>
+                        SHOW_COMPLETED_SALES_ON_MAIN_PAGE<br>
+                        SHOW_PENDING_SALES_ON_MAIN_PAGE
+                        </div>
+					</div>
+				</div>
+			</div>
+
+      <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading" id="q34">
+                        Can I disable the url rewrite slug auto completion / suggestion?
+                        </div>
+                        <div class="panel-body">
+						            Yes, edit the 'admin/control/defined.php' file and the 'ENABLE_SLUG_SUGGESTION' option.
+                        </div>
+					</div>
+				</div>
+			</div>
+
+      <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading" id="q35">
+                        Can I disable downloads on invoices and / or packing slips?
+                        </div>
+                        <div class="panel-body">
+						            Yes, edit the 'admin/control/defined.php' file and the following options:<br><br>
+                        INCLUDE_DOWNLOADS_ON_PACKING_SLIP<br>
+                        INCLUDE_DOWNLOADS_ON_INVOICE
+                        </div>
+					</div>
+				</div>
+			</div>
+
+      <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading" id="q36">
+						I thought I could post tweets? I don`t see any link to post tweets, why?
+                        </div>
+                        <div class="panel-body">
+						            Have you actually enabled the option by setting up an app and adding your access keys? More info <a href="api-twitter.html">here</a>.
+                        </div>
+					</div>
+				</div>
+			</div>
+
+      <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading" id="q37">
+                        Can I disable gift certificates on invoices and / or packing slips?
+                        </div>
+                        <div class="panel-body">
+						            Yes, edit the 'admin/control/defined.php' file and the following options:<br><br>
+                        INCLUDE_GIFT_ON_PACKING_SLIP<br>
+                        INCLUDE_GIFT_ON_INVOICE
+                        </div>
+					</div>
+				</div>
+			</div>
+
+      <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading" id="q38">
+                        Can I disable writing status when downloads are locked / unlocked or reactivated?
+                        </div>
+                        <div class="panel-body">
+						            Yes, edit the 'admin/control/defined.php' file and the following options:<br><br>
+                        DL_LOCK_UNLOCK_STATUS<br>
+                        DL_ACTIVATE_STATUS
+                        </div>
+					</div>
+				</div>
+			</div>
+
+      <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading" id="q39">
+                        Can I disable writing status when products are added to an existing sale?
+                        </div>
+                        <div class="panel-body">
+						            Yes, edit the 'admin/control/defined.php' file and the 'NEW_PRODUCT_EDIT_STATUS' option.
+                        </div>
+					</div>
+				</div>
+			</div>
+
+      <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading" id="q40">
+                        Can I rename the admin 'attachments' folder?
+                        </div>
+                        <div class="panel-body">
+						            Yes, edit the 'admin/control/defined.php' file and the 'ATTACH_FOLDER' option. Folder should be created manually.
+                        </div>
+					</div>
+				</div>
+			</div>
+
+      <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading" id="q41">
+                        Can I disable the tiles at the top of the admin control panel?
+                        </div>
+                        <div class="panel-body">
+						            Yes, edit the 'admin/control/defined2.php' file and the 'ADMIN_HOMESCREEN_TILES' option.
+                        </div>
+					</div>
+				</div>
+			</div>
+
+      <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading" id="q42">
+                        I need to execute custom code after a successul payment. Is this possible?
+                        </div>
+                        <div class="panel-body">
+						            Yes, see the notes in the 'control/gateways/callback-custom.php' file.
+                        </div>
+					</div>
+				</div>
+			</div>
+
+      <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading" id="q43">
+                        How do I secure product downloads from scrapers / bots?
+                        </div>
+                        <div class="panel-body">
+						            Your 'product-downloads' folder should be OUTSIDE of your web root. That is, in a location, not accessible in a web browser. This will prevent links from being shared. However, it won`t prevent people from sharing files. With standard email and the many free cloud storage solutions, its impossible to prevent file sharing. Even DRM encoding is pointless these days as software can be purchased to remove the DRM encoding.
+                        </div>
+					</div>
+				</div>
+			</div>
+
+      <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading" id="q44">
+                        Can I change the 'product-downloads' folder name?
+                        </div>
+                        <div class="panel-body">
+						            Yes. Log into your admin area and go to 'Store Settings > Global Store Settings' and select the 'Other Options > Downloads &amp; Restrictions' tab.
+                        Folder must be created / renamed manually.
+                        </div>
+					</div>
+				</div>
+			</div>
+
+      <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading" id="q45">
+                        Can I restrict downloads to purchase IP address only?
+                        </div>
+                        <div class="panel-body">
+						            Yes. Log into your admin area and go to 'Store Settings > Global Store Settings' and select the 'Other Options > Downloads &amp; Restrictions' tab.
+                        Make sure 'Restrict Access to Downloads by IP Address' is set to yes.
+                        </div>
+					</div>
+				</div>
+			</div>
+
+      <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading" id="q46">
+                        Can I NOT show out of stock items in the cart?
+                        </div>
+                        <div class="panel-body">
+						            Yes, log into your admin area and access 'Store Settings > Global Store Settings' and edit the 'Out of Stock Product Handling' option.
+                        </div>
+					</div>
+				</div>
+			</div>
+
+      <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading" id="q47">
+                        Can I disable the cookie option on the admin login?
+                        </div>
+                        <div class="panel-body">
+						            Yes, see 'admin/control/defined.php' and the following value option<br><br>
+                        <b>define('ENABLE_LOGIN_COOKIE', 1);</b><br><br>
+                        Set to 0.
+                        </div>
+					</div>
+				</div>
+			</div>
+
+      <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading" id="q48">
+                        Can I not have pictures renamed when adding product images?
+                        </div>
+                        <div class="panel-body">
+						            Yes, access the following page in your admin area:<br><br>
+                        System > General Settings > Settings Menu > Auto Thumbnail Creation
+                        </div>
+					</div>
+				</div>
+			</div>
+
+      <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading" id="q49">
+                        Can I change default order by options in the system?
+                        </div>
+                        <div class="panel-body">
+						            Yes, see the 'control/defined.php' file. Scroll down for order options.
+                        </div>
+					</div>
+				</div>
+			</div>
+
+      <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading" id="q50">
+                        Can I increase or decrease the size of the auto created thumbnails?
+                        </div>
+                        <div class="panel-body">
+						            Yes, access the following page in your admin area:<br><br>
+                        System > General Settings > Settings Menu > Auto Thumbnail Creation
+                        </div>
+					</div>
+				</div>
+			</div>
+
+      <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading" id="q51">
+                        Can I add analytic code to the system?
+                        </div>
+                        <div class="panel-body">
+						            Yes, more information <a href="analytics.html">here</a>.
+                        </div>
+					</div>
+				</div>
+			</div>
+
+      <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading" id="q52">
+                        If I upgrade, will my current version break?
+                        </div>
+                        <div class="panel-body">
+						            Of course anything is possible. Server software upgrades can always cause issues. You should make sure you have a full backup of
+                        any existing systems before attempting an upgrade. Please see the <a href="info3.html">version appendix</a> for any major changes
+              that may cause your existing version to break.
+                        </div>
+					</div>
+				</div>
+			</div>
+
+      <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading" id="q53">
+                        The installer or upgrade routine fail. Why?
+                        </div>
+                        <div class="panel-body">
+						            Please enable the debug logs via the 'install/control/config.php' file and send me the log file written to the
+                        logs folder.
+                        </div>
+					</div>
+				</div>
+			</div>
+
+      <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading" id="q54">
+                        Can I force accounts to choose new passwords?
+                        </div>
+                        <div class="panel-body">
+						            Yes. System > General Settings > Settings Menu > Account Options > Force Password Reset for ALL Personal / Trade Accounts
+                        </div>
+					</div>
+				</div>
+			</div>
+
+      <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading" id="q55">
+                        Can I batch create PDF invoices and packing slips?
+                        </div>
+                        <div class="panel-body">
+						            Yes. Batch printing is allowed from the <a href="sales-3.html">sales search</a> screen. PDF template information <a href="language-4.html">here</a>.
+                        </div>
+					</div>
+				</div>
+			</div>
+
+      <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading" id="q55">
+                        What is a cron job?
+                        </div>
+                        <div class="panel-body">
+						            It`s an automated task, much like Windows task scheduler.
+                        </div>
+					</div>
+				</div>
+			</div>
+
+      <div class="row footerArea">
+      </div>
+    </div>
+
+  </div>
+
+  <script>
+    //<![CDATA[
+    jQuery(document).ready(function() {
+      loadTopMenu();
+      loadLeftMenu();
+      loadFooter();
+    });
+    //]]>
+  </script>
+
+  <script src="content/js/bootstrap.js"></script>
+  <script src="content/js/plugins/jquery.metismenu.js"></script>
+  <script src="content/js/plugins/jquery.ibox.js"></script>
+
+</body>
+
+</html>

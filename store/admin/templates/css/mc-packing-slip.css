@@ -1,0 +1,80 @@
+/*
+  Admin CSS - Packing Slip
+===================================================*/
+
+.packsliptemplate {
+  margin-top:30px;
+}
+
+.packsliptemplate .panel {
+  border-width: 2px;
+}
+
+.packsliptemplate .panel-heading {
+  color: #777;
+  text-transform:uppercase;
+}
+
+.packsliptemplate .tickbox {
+  width:5%;
+}
+
+.packsliptemplate .tickbox span {
+  border: 2px solid #ddd;
+  width: 30px;
+  height: 30px;
+  display: block;
+}
+
+.packsliptemplate .height {
+  min-height: 200px;
+}
+
+.packsliptemplate h2 {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.packsliptemplate .icon {
+  font-size: 47px;
+  color: #5CB85C;
+}
+
+.packsliptemplate .iconbig {
+  font-size: 77px;
+  color: #5CB85C;
+}
+
+.packsliptemplate .table > tbody > tr > .emptyrow {
+  border-top: none;
+}
+
+.packsliptemplate .table > thead > tr > .emptyrow {
+  border-bottom: none;
+}
+
+.packsliptemplate .table > tbody > tr > .highrow {
+  border-top: 1px solid #ddd;
+}
+
+.packsliptemplate .company {
+  min-height: 130px;
+}
+
+.packsliptemplate .infoboxes {
+  min-height: 220px;
+}
+
+.packsliptemplate .ip {
+  text-align:center;
+  padding:20px 0 30px 0;
+  font-style:italic;
+}
+
+.checkarea p {
+  padding: 20px 0 20px 0;
+}
+
+.checkarea p:nth-child(2) {
+  padding-bottom:0;
+}

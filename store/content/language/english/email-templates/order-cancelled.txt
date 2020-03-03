@@ -1,0 +1,28 @@
+{WEBSITE_NAME} - Order Cancelled #{INVOICE_NO}
+
+<-{separater}->
+
+An order which had previously been charged has now been cancelled by the buyer.
+
+Name: {NAME}
+Payment Gateway: {GATEWAY_NAME}
+Trade Sale: {TRADE_SALE}
+
+[B]ITEMS ORDERED[/B]
+----------------------------------------------------------------
+
+{PRODUCT_ORDER}
+
+----------------------------------------------------------------
+
+This order has now been marked as Cancelled.
+
+To view this order, log into your administration area:
+{WEBSITE_URL}/{ADMIN_FOLDER}/?loadOrder={ORDER_ID}
+
+<-{separater}->
+
+{WEBSITE_NAME}
+{WEBSITE_URL}
+
+IP address: {ORDER_IP}

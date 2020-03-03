@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Download Management:  Maian Cart Documentation</title>
+
+  <link href="content/css/bootstrap.css" rel="stylesheet">
+  <link href="content/css/font-awesome/font-awesome.css" rel="stylesheet">
+  <link href="content/css/mc-docs.css" rel="stylesheet">
+  <link href="content/css/jquery.ibox.css" rel="stylesheet">
+
+  <script src="content/js/jquery.js"></script>
+  <script src="content/js/functions.js"></script>
+
+  <link rel="ICON" href="favicon.ico">
+
+</head>
+
+<body>
+
+  <div id="wrapper">
+
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation" style="margin-bottom: 0">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-collapse">
+          <span class="sr-only">Toggle Navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">Documentation</a>
+      </div>
+
+      <div class="navbar-default navbar-static-side" role="navigation">
+        <div class="sidebar-collapse">
+        </div>
+      </div>
+    </nav>
+
+    <div id="page-wrapper">
+      <div class="row">
+        <div class="col-lg-12">
+          <h1 class="page-header">Download Management</h1>
+        </div>
+      </div>
+
+            <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Overview</div>
+            <div class="panel-body">
+              Here you can reset product downloads, lock download pages and update IP restrictions for this sale if applicable.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Top Action Bar</div>
+            <div class="panel-body">
+              <i class="fa fa-search fa-fw"></i> - Click to view download page. Note that access locks have no affect when clicking this link from the admin control panel. If you lock the download page, it is ONLY locked when visiting from outside admin via direct link (guest) or account.<br><br>
+              <i class="fa fa-lock fa-fw"></i> / <i class="fa fa-unlock fa-fw"></i> - Locks and unlocks access to download page. See note above.<br><br>
+              <i class="fa fa-globe fa-fw"></i> - Only shown if the "Restrict Access to Downloads by IP Address" is enabled in the global store settings.<br><br>
+              <b>Store Settings > Global Store Settings > Downloads &amp; Restrictions</b><br><br>
+              This restricts the download ONLY to the IP addresses you enter in the box when you click link. See below.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">ReActivate Downloads</div>
+            <div class="panel-body">
+            Use the checkboxes to select which products need resettting, then click the button to reset:<br><br>
+            <img class="img-responsive screenshot" src="content/images/screenshots/18.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Restrict Access to Downloads by IP Address</div>
+            <div class="panel-body">
+            If shown, click to show box to enter IP addresses. If set, only access via these IP addresses is allowed. Useful if you
+            think some downloads are being shared or abused.<br><br>
+            <img class="img-responsive screenshot" src="content/images/screenshots/15.png" alt=""><br>
+            For bigger textarea, click the crosshair, top right, in the textarea box. Click "Close &amp; Save" to save and close box.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">View Click History</div>
+            <div class="panel-body">
+            Click this to view a history of clicks for this product download. History shows date / time and IP address.<br><br>
+            <img class="img-responsive screenshot" src="content/images/screenshots/16.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Download ReActivation History</div>
+            <div class="panel-body">
+            Dislays a list of the current reactivation history. History shows products that were reset, who actioned it and the date / time.<br><br>
+            <img class="img-responsive screenshot" src="content/images/screenshots/17.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row footerArea">
+      </div>
+    </div>
+
+  </div>
+
+  <script>
+    //<![CDATA[
+    jQuery(document).ready(function() {
+      loadTopMenu();
+      loadLeftMenu();
+      loadFooter();
+    });
+    //]]>
+  </script>
+
+  <script src="content/js/bootstrap.js"></script>
+  <script src="content/js/plugins/jquery.metismenu.js"></script>
+  <script src="content/js/plugins/jquery.ibox.js"></script>
+
+</body>
+
+</html>

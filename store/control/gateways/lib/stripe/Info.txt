@@ -1,0 +1,2 @@
+Stripe Library - 7.14.1
+https://github.com/stripe/stripe-php

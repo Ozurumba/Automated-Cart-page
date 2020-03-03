@@ -1,0 +1,27 @@
+{WEBSITE_NAME} - Order #{INVOICE_NO}
+
+<-{separater}->
+
+Hello {NAME},
+
+A refund or part refund has been issued for the following order:
+
+----------------------------------------------------------------
+{PRODUCT_ORDER}
+----------------------------------------------------------------
+
+The following amount has been refunded back to you. This may include other charges, such as shipping/tax/insurance if applicable.
+
+[B]Refund Amount[/B]: {CURRENCY}{REF_AMOUNT}
+
+We are sorry this order did not meet your requirements and your payment was refunded back via your {GATEWAY_NAME} account.
+{GATEWAY_URL}
+
+Kind regards,
+
+<-{separater}->
+
+{WEBSITE_NAME}
+{WEBSITE_URL}
+
+IP Address: {ORDER_IP}

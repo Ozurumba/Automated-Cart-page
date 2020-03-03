@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Disqus Comments System:  Maian Cart Documentation</title>
+
+  <link href="content/css/bootstrap.css" rel="stylesheet">
+  <link href="content/css/font-awesome/font-awesome.css" rel="stylesheet">
+  <link href="content/css/mc-docs.css" rel="stylesheet">
+  <link href="content/css/jquery.ibox.css" rel="stylesheet">
+
+  <script src="content/js/jquery.js"></script>
+  <script src="content/js/functions.js"></script>
+
+  <link rel="ICON" href="favicon.ico">
+
+</head>
+
+<body>
+
+  <div id="wrapper">
+
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation" style="margin-bottom: 0">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-collapse">
+          <span class="sr-only">Toggle Navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">Documentation</a>
+      </div>
+
+      <div class="navbar-default navbar-static-side" role="navigation">
+        <div class="sidebar-collapse">
+        </div>
+      </div>
+    </nav>
+
+    <div id="page-wrapper">
+      <div class="row">
+        <div class="col-lg-12">
+          <h1 class="page-header">Disqus Comments System</h1>
+        </div>
+      </div>
+
+            <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Disqus Comments System</div>
+            <div class="panel-body">
+              <a href="http://www.disqus.com" onclick="window.open(this);return false">Disqus</a> is a free comments platform that helps you build an active community from your website's audience. Maian
+  Cart supports disqus on product pages to enable visitors to leave comments about products. Disqus enables you to moderate comments and fully manage your comments system via the attractive
+  Disqus administration interface. Enabling Disqus in Maian Cart is very simple.
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Enable Disqus in Maian Cart</div>
+            <div class="panel-body">
+              <span class="badge">1</span> Sign up for a new free account at <a href="http://www.disqus.com" onclick="window.open(this);return false">Disqus.com</a>. You should enter the domain where your store is installed or going to be installed NOT the full path TO the store. So, if your store is at 'http://www.example.com/cart/', you would enter 'example.com'.<br><br>
+              <span class="badge">2</span> Access your Maian Cart administration interface and click on:<br><br>
+              <div class="alert alert-info">
+              System &gt; General Settings &gt; Settings Menu &gt; Social Network Settings
+              </div>
+              Enter your Disqus short name into the box provided and also a category ID if applicable.<br><br>
+              Disqus is now enabled. You should then also enable disqus for the relevant category and products you wish to have comments as an option. You can totally disable Disqus again by removing the
+              short name from the settings.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Disqus Settings and Administration</div>
+            <div class="panel-body">
+              To manage your comments log into your <a href="http://www.disqus.com" onclick="window.open(this);return false">Disqus</a> account. Click 'Admin &gt; Settings' to manage your comments
+  settings. It is recommended you enable approval for comments. Other options are available to you as well. There are no admin options for Disqus within Maian Cart. If you need to make any
+  changes to the javascript in Maian Cart, edit the following file:<br><br><b>content/*theme*/html/products/disqus.htm</b>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Enable / Disable in Maian Cart</div>
+            <div class="panel-body">
+              Disqus can be enabled / disabled in various ways.:<br><br>
+              <span class="badge">1</span> In the settings, entering a short name enables the system, removing it disables the system. The short name in the settings must always be in place to enable.<br><br>
+              <span class="badge">2</span> Enabling / disabling Disqus on a category page disables comments for ALL products in that category.<br><br>
+              <span class="badge">3</span> Enabling / disabling Disqus on a product page disables comments for that product ONLY.<br><br>
+              <span class="badge">4</span> On the 'Tools &gt; Batch Enable / Disable' page. Here you can batch update for products / categories.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Disqus on Localhost</div>
+            <div class="panel-body">
+              If you are testing the system on localhost, make sure this is in the allowed domains list at Disqus.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Disqus Widgets</div>
+            <div class="panel-body">
+              Disqus provide a number of widgets which you can add on any page in your store, this includes any new pages you create in the Maian Cart administration area. These widgets can
+  provide useful stats and other useful information.<br><br>
+  To get your widget code, log into your <a href="http://www.disqus.com" onclick="window.open(this);return false">Disqus</a> account and click 'Admin &gt; Tools' from the menu. Note that widgets
+  are optional and aren`t required. If you are happy with the system as it is, don`t change anything.
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Internet Explorer 6 &amp; 7 Bugs</div>
+            <div class="panel-body">
+              The Disqus system may be buggy in Internet Explorer 6 &amp; 7 as they don`t support the indexOf method for the Array prototype. Maian Cart does NOT support
+              older browsers.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row footerArea">
+      </div>
+    </div>
+
+  </div>
+
+  <script>
+    //<![CDATA[
+    jQuery(document).ready(function() {
+      loadTopMenu();
+      loadLeftMenu();
+      loadFooter();
+    });
+    //]]>
+  </script>
+
+  <script src="content/js/bootstrap.js"></script>
+  <script src="content/js/plugins/jquery.metismenu.js"></script>
+  <script src="content/js/plugins/jquery.ibox.js"></script>
+
+</body>
+
+</html>

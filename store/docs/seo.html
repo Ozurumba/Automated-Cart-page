@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Search Engine Friendly Urls:  Maian Cart Documentation</title>
+
+  <link href="content/css/bootstrap.css" rel="stylesheet">
+  <link href="content/css/font-awesome/font-awesome.css" rel="stylesheet">
+  <link href="content/css/mc-docs.css" rel="stylesheet">
+  <link href="content/css/jquery.ibox.css" rel="stylesheet">
+
+  <script src="content/js/jquery.js"></script>
+  <script src="content/js/functions.js"></script>
+
+  <link rel="ICON" href="favicon.ico">
+
+</head>
+
+<body>
+
+  <div id="wrapper">
+
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation" style="margin-bottom: 0">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-collapse">
+          <span class="sr-only">Toggle Navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">Documentation</a>
+      </div>
+
+      <div class="navbar-default navbar-static-side" role="navigation">
+        <div class="sidebar-collapse">
+        </div>
+      </div>
+    </nav>
+
+    <div id="page-wrapper">
+      <div class="row">
+        <div class="col-lg-12">
+          <h1 class="page-header">Search Engine Friendly Urls</h1>
+        </div>
+      </div>
+
+            <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Overview</div>
+            <div class="panel-body">
+              Maian Cart supports search engine friendly urls via mod_rewrite. For this to function correctly, your server <b>MUST</b> support .htaccess and mod_rewrite.<br><br>
+              To enable search engine friendly urls, enable the following option in your settings:<br><br>
+  <div class="alert alert-info">
+  System &gt; General Settings > Enable Search Engine Friendly URLs
+  </div>
+  and then rename the <b>htaccess_COPY.txt</b> file to <b>.htaccess</b>:<br><br>
+  Note the period symbol (or dot) before the file. This is required!<br><br>
+  If your server doesn`t support this feature and you enable it, you could see a '500 Internal Server Error' or a '404 Page Not Found' message. If this is the case, disable this option and remove the '.htaccess' file.<br><br>
+  Finally, if you install to a directory that already contains a .htaccess file, you may need to copy the directives from Maian Cart into this file.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Re-Write Base Rule</div>
+            <div class="panel-body">
+              Some servers require a RewriteBase rule to be in place in the .htaccess file. If you have enabled search engine friendly urls and you see a 404 and your server DOES support mod_rewrite, this could be the problem, especially if your store is not in your web root. If this is the case, uncomment the RewriteBase rule line in the .htaccess file. This adjustment may require the inclusion of your installation directory, depending
+  on where the system is installed. Valid examples are:<br><br>
+  <div class="alert alert-info" style="margin-bottom:0">
+     RewriteBase /<br>
+     RewriteBase /cart/<br>
+     RewriteBase http://www.example.com/cart/
+  </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Custom Url Slugs</div>
+            <div class="panel-body">
+              For products, categories and new pages, custom slugs can be set in your admin area. If a custom slug isn`t set, the system will create one
+              automatically from the category or product name etc. It is recommended you add your own custom slugs if enabling this feature. For example,
+              you may be selling 'watches' and you enter 'watches' as your custom slug. Your store url would look similar to the following:<br><br>
+              <div class="alert alert-info">
+                http://www.example.com/category/1/1/watches
+              </div>
+              This is similar to wordpress. The 1/1 is category ID and page number.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Advanced Users ONLY</div>
+            <div class="panel-body">
+              For certain urls, english text will be used in the url and you may wish to change it. For example, consider the following url:<br><br>
+              <div class="alert alert-info">
+                http://www.example.com/category/1/1/watches
+              </div>
+              'watches' would be from your custom slug, but 'category' is default. To change this edit the rewrite class file><br><br>
+              <div class="alert alert-info">
+                control/classes/class.rewrite.php
+              </div>
+              In the case of 'category', change the following in the first array:<br><br>
+              <div class="alert alert-info">
+              'cat' => 'category',
+              </div>
+              Enter your own value. <b>DO NOT</b> change the key, in this case 'cat'. So your new text might look like this:<br><br>
+              <div class="alert alert-info">
+              'cat' => 'my-new-cat',
+              </div>
+              <b>DO NOT</b> use spaces in names as this is bad for urls. Also, forward slashes are not allowed. So, now your url would look like this:<br><br>
+              <div class="alert alert-info">
+               http://www.example.com/my-new-cat/1/1/watches
+              </div>
+              If you have enabled the cache, make sure you clear it to see the changes.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row footerArea">
+      </div>
+    </div>
+
+  </div>
+
+  <script>
+    //<![CDATA[
+    jQuery(document).ready(function() {
+      loadTopMenu();
+      loadLeftMenu();
+      loadFooter();
+    });
+    //]]>
+  </script>
+
+  <script src="content/js/bootstrap.js"></script>
+  <script src="content/js/plugins/jquery.metismenu.js"></script>
+  <script src="content/js/plugins/jquery.ibox.js"></script>
+
+</body>
+
+</html>

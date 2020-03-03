@@ -1,0 +1,38 @@
+      <script>
+      //<![CDATA[
+      jQuery(document).ready(function() {
+       jQuery('#from').datepicker({
+         changeMonth     : true,
+         changeYear      : true,
+         monthNamesShort : {calendar1},
+         dayNamesMin     : {calendar2},
+         firstDay        : '{calendar3}',
+         dateFormat      : '{calendar4}',
+         isRTL           : false
+       });
+       jQuery('#to').datepicker({
+         changeMonth     : true,
+         changeYear      : true,
+         monthNamesShort : {calendar1},
+         dayNamesMin     : {calendar2},
+         firstDay        : '{calendar3}',
+         dateFormat      : '{calendar4}',
+         isRTL           : false
+       });
+       jQuery('#slider-range').slider({
+         range  : true,
+         min    : {slider_min},
+         max    : {slider_max},
+         values : [{slider_start},{slider_end}],
+         slide  : function(event, ui) {
+           jQuery('input[name="price1"]').val(ui.values[0]);
+           jQuery('input[name="price2"]').val(ui.values[1]);
+           jQuery('span[class="sliderAmount"]').html(ui.values[0] + '.00 - ' + ui.values[1] + '.00');
+         }
+       });
+       jQuery('input[name="price1"]').val(jQuery('#slider-range').slider('values', 0) + '.00');
+       jQuery('input[name="price2"]').val(jQuery('#slider-range').slider('values', 1) + '.00');
+       jQuery('span[class="sliderAmount"]').html(jQuery('#slider-range').slider('values', 0) + '.00 - ' + jQuery('#slider-range').slider('values', 1) + '.00');
+      });
+      //]]>
+      </script>

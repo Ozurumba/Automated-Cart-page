@@ -1,0 +1,23 @@
+Account Verification - Please Read
+
+<-{separater}->
+
+Hi {NAME},
+
+Thank you for signing up for an account at "{WEBSITE_NAME}".
+
+Before you can log in, you must verify your account.
+
+Please click the following to complete registration:
+{WEBSITE_URL}/?ve={CODE}
+
+If you did NOT sign up for an account, please disregard this email.
+
+<-{separater}->
+
+Kind regards,
+
+{WEBSITE_NAME}
+{WEBSITE_URL}
+
+IP address: {IP}

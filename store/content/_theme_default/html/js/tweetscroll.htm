@@ -1,0 +1,16 @@
+      <script>
+      //<![CDATA[
+      jQuery(document).ready(function () {
+        setTimeout(function() {
+          jQuery('#mc_ltweets').tweetscroll({
+            limit          : {limit},
+            replies        : true,
+            position       : 'append',
+            animation      : 'fade',
+            visible_tweets : {visible},
+            request_url    : '{url}'
+          });
+        }, 1500);
+      });
+      //]]>
+      </script>

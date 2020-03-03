@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Sales - Update Order:  Maian Cart Documentation</title>
+
+  <link href="content/css/bootstrap.css" rel="stylesheet">
+  <link href="content/css/font-awesome/font-awesome.css" rel="stylesheet">
+  <link href="content/css/mc-docs.css" rel="stylesheet">
+  <link href="content/css/jquery.ibox.css" rel="stylesheet">
+
+  <script src="content/js/jquery.js"></script>
+  <script src="content/js/functions.js"></script>
+
+  <link rel="ICON" href="favicon.ico">
+
+</head>
+
+<body>
+
+  <div id="wrapper">
+
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation" style="margin-bottom: 0">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-collapse">
+          <span class="sr-only">Toggle Navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">Documentation</a>
+      </div>
+
+      <div class="navbar-default navbar-static-side" role="navigation">
+        <div class="sidebar-collapse">
+        </div>
+      </div>
+    </nav>
+
+    <div id="page-wrapper">
+      <div class="row">
+        <div class="col-lg-12">
+          <h1 class="page-header">Sales - Update Order</h1>
+        </div>
+      </div>
+
+            <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Overview</div>
+            <div class="panel-body">
+              Here you can update the sale with a new status and e-mail the buyer to let them know the status has changed. You can include additional e-mail attachments if you want to. The statuses
+              help keep a running inventory of the progress of orders and when certain admin actions are performed. You can save statuses for easy recall later.<br><br>
+              You can also batch update sales via the main <a href="sales-1.html">sales list</a> screen.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Top Action Bar</div>
+            <div class="panel-body">
+              <i class="fa fa-save fa-fw"></i> - Click to save status. A pop up will ask you for a reference name / title (Max 250 chars). This and the subject field will be searched.<br><br>
+              <i class="fa fa-search fa-fw"></i> - Click to search statuses. This will show a search box. Start typing reference to see suggestions listed by subject. Once you the see the status you need, click to load.<br><br>
+              <img class="img-responsive screenshot" src="content/images/screenshots/20.png" alt=""><br>
+              <i class="fa fa-pencil fa-fw"></i> - Click to load status <a href="sales-14.html">edit screen</a>. Here you can delete and edit existing saved statuses.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Subject / Message</div>
+            <div class="panel-body">
+            Enter subject and message. Subject is email subject. Tags are available for the message:<br><br>
+            {ORDER} = Product Order Info<br>
+            {DOWNLOADS} = Download Page Link (if sale was from account holder, link would load login screen)
+            <br><br> Note: For bigger textarea, click the crosshair, top right, in the textarea box.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Send Email to XX, Copy Email to</div>
+            <div class="panel-body">
+            Specify whether you want update notification sent. Copy email is for additional email addresses, comma delimit.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Attach File(s) / Save Attachments to Server</div>
+            <div class="panel-body">
+            Use the buttons and locate option to add attachments. Very large attachments are not recommended. As the attachments are sent
+            via email, make sure they are email friendly. Example: .zip, .pdf, .rar etc<br><br>
+            Check radio as YES if you want to save the attachments to the server. Useful for archiving. If not saved, they are deleted from memory after send. If YES is
+            selected specify a destination folder via the "Save to Folder" option.<br><br>
+            <img class="img-responsive screenshot" src="content/images/screenshots/21.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Order Status</div>
+            <div class="panel-body">
+            Change order status if applicable. You can add / edit statuses via the <a href="catalogue-7.html">order statuses</a> screen.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Is this Update Visible to Customer (Applicable to accounts ONLY)</div>
+            <div class="panel-body">
+            If set to YES will shown in visitor account area beneath sale on the sale view screen. Useful if you only want statuses
+            visible in certain areas. Not applicable for guest checkout.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Manage Order History</div>
+            <div class="panel-body">
+            Click the <i class="fa fa-pencil fa-fw"></i>icon to edit and the <i class="fa fa-times fa-fw"></i> icon to
+            delete existing statuses.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Print Friendly Statuses</div>
+            <div class="panel-body">
+            Click the <i class="fa fa-print fa-fw"></i> icon to view print friendly screen.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row footerArea">
+      </div>
+    </div>
+
+  </div>
+
+  <script>
+    //<![CDATA[
+    jQuery(document).ready(function() {
+      loadTopMenu();
+      loadLeftMenu();
+      loadFooter();
+    });
+    //]]>
+  </script>
+
+  <script src="content/js/bootstrap.js"></script>
+  <script src="content/js/plugins/jquery.metismenu.js"></script>
+  <script src="content/js/plugins/jquery.ibox.js"></script>
+
+</body>
+
+</html>

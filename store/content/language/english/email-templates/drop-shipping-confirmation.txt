@@ -1,0 +1,29 @@
+Shipping Confirmation from "{WEBSITE_NAME}"
+
+<-{separater}->
+
+Hello,
+
+Can you please ship the following items:
+
+{ITEMS}
+
+------------------------------------------
+
+[B]Shipping Name/Address[/B]:
+
+{SHIP_ADDRESS}
+
+This order should be shipped via the following shipping method:
+
+{SHIP_METHOD}
+
+Any questions or problems, please contact us:
+{WEBSITE_EMAIL}
+
+Kind regards,
+
+<-{separater}->
+
+{WEBSITE_NAME}
+{WEBSITE_URL}

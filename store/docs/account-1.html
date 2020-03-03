@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Add New Account:  Maian Cart Documentation</title>
+
+  <link href="content/css/bootstrap.css" rel="stylesheet">
+  <link href="content/css/font-awesome/font-awesome.css" rel="stylesheet">
+  <link href="content/css/mc-docs.css" rel="stylesheet">
+  <link href="content/css/jquery.ibox.css" rel="stylesheet">
+
+  <script src="content/js/jquery.js"></script>
+  <script src="content/js/functions.js"></script>
+
+  <link rel="ICON" href="favicon.ico">
+
+</head>
+
+<body>
+
+  <div id="wrapper">
+
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation" style="margin-bottom: 0">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-collapse">
+          <span class="sr-only">Toggle Navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">Documentation</a>
+      </div>
+
+      <div class="navbar-default navbar-static-side" role="navigation">
+        <div class="sidebar-collapse">
+        </div>
+      </div>
+    </nav>
+
+    <div id="page-wrapper">
+      <div class="row">
+        <div class="col-lg-12">
+          <h1 class="page-header">Add New Account</h1>
+        </div>
+      </div>
+
+            <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Overview</div>
+            <div class="panel-body">
+             Manually add a new buyer account to the database. Accounts can be personal or trade. More info below.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Name, Email, Password</div>
+            <div class="panel-body">
+            Enter preferred name, email and password. Email addresses must be unique. Use the <i class="fa fa-key fa-fw"></i> option
+            to auto generate a password. If you
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Receive Newsletter</div>
+            <div class="panel-body">
+            Specifies whether this account will be included in newsletter mailings. Manage newsletter <a href="tools-8.html">here</a>.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Enable Entry Log</div>
+            <div class="panel-body">
+            Useful for security. Logins viewable on the <a href="tools-6.html">entry log</a> page.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Addresses / Notes</div>
+            <div class="panel-body">
+             Enter default shipping addresses and backend notes. Use the <i class="fa fa-copy fa-fw"></i> icon to copy addresses
+             between shipping and billing and vice versa. Notes for backend only, not seen in account area.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Marketing Tracking Code</div>
+            <div class="panel-body">
+            Only shown on edit screen and only if marketing trackers exist. This is the tracking code assigned to this account (if applicable) via
+            a tracking code url. More info on trackers <a href="marketing.html">here</a>.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Account Type</div>
+            <div class="panel-body">
+            Standard or Trade. Trade accounts can have global discounts set. Useful if you sell to the trade industry. If the trade
+            option is set, other options will appear as shown below. NOTE that the following store links won`t be seen by trade logins:<br><br>
+            Special Offers Screen<br>
+            Gift Certificates<br>
+            Wish Lists<br>
+            Price Points<br>
+            Advanced Search Price Points &amp; Filters<br><br>
+            <b class="mc_red">NOTE: For trade logins, stock does not reduce on products / attributes after a purchase occurs.</b>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Trade ONLY - Trade Discount (%):</div>
+            <div class="panel-body">
+            This is a global trade discount across all products. This discount overrides all other discounts when this person is logged in.
+            So, if a global store discount and product special offers etc are set, these are ignored in favour of the trade discount. Set discount in percentage
+            value ONLY.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Trade ONLY - Trade Min Quantity Override</div>
+            <div class="panel-body">
+            If set, trade buyer must always add the min quantity to their basket. This overrides any regular product min restriction.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Trade ONLY - Trade Max Quantity Override</div>
+            <div class="panel-body">
+            If set, trade buyer can buy no more than the max allowed products. This overrides any regular product max restriction.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Trade ONLY - Min Checkout Amount</div>
+            <div class="panel-body">
+            If set, goods total must be greater than or equal to min checkout amount before buyer can complete checkout procedure. Leave blank for no restriction.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Trade ONLY - Trade Product Stock / Attribute Override</div>
+            <div class="panel-body">
+            Overrides stock and attribute values globally across store, but only for trade account. Example, for regular visitors / accounts
+            you may have a stock of 5 for any given product, but an override of 100 here, would be seen as stock 100 for trade accounts.<br><br>
+            <b class="mc_red">Note: If a product is shown as out of stock for a standard visitor, setting an override here makes all products available for
+            trade logins. To hide for trade logins, disable product in admin control panel.</b>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Send Email Notification</div>
+            <div class="panel-body">
+            If set, sends email notification to account email with log in details.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row footerArea">
+      </div>
+    </div>
+
+  </div>
+
+  <script>
+    //<![CDATA[
+    jQuery(document).ready(function() {
+      loadTopMenu();
+      loadLeftMenu();
+      loadFooter();
+    });
+    //]]>
+  </script>
+
+  <script src="content/js/bootstrap.js"></script>
+  <script src="content/js/plugins/jquery.metismenu.js"></script>
+  <script src="content/js/plugins/jquery.ibox.js"></script>
+
+</body>
+
+</html>
