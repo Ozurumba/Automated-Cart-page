@@ -59,14 +59,7 @@ I hope you enjoy your new e-commerce system,
 
 ==================================================================
 
-David Ian Bennett
-Lead Developer / Designer
+Ozurumba Obinna
+Lead Developer 
 
-Maian Cart
-https://www.maiancart.com
 
-Maian Script World
-https://www.maianscriptworld.co.uk
-
-Latest news and server status:
-https://twitter.com/#!/maianscripts
